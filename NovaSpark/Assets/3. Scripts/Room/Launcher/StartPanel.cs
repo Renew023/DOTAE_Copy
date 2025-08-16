@@ -10,6 +10,7 @@ public class StartPanel : MonoBehaviour
     [SerializeField] private Button singleButton;
     [SerializeField] private Button multiButton;
     [SerializeField] private Button gameDescriptionButton;
+    [SerializeField] private Button patchNotePanelButton;
 
     //TODO 임시
 
@@ -32,6 +33,11 @@ public class StartPanel : MonoBehaviour
             () =>
             {
                 StartPopupUI.Instance.ShowRoomSetting(StartPopupType.GameDescriptionPanel);
+            });
+        patchNotePanelButton.onClick.AddListener(
+            () =>
+            {
+                StartPopupUI.Instance.PatchNotePanelOpen();
             });
     }
 

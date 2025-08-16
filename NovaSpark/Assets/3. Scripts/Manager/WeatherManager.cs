@@ -28,39 +28,6 @@ public class WeatherManager : MonoBehaviourPun, ISaveable
     public event Action<WeatherType> OnWeatherChanged;
 
 
-    // 테스트용
-    [ContextMenu("날씨변경-랜덤")]
-    public void TestRandomWeather()
-    {
-        if (_isSingleMode || PhotonNetwork.IsMasterClient)
-        {
-            ChangeRandomWeather();
-        }
-    }
-
-    [ContextMenu("날씨변경-비")]
-    public void TestRain()
-    {
-        ApplyWeather(WeatherType.Rain);
-    }
-
-    [ContextMenu("날씨변경-눈")]
-    public void TestSnow()
-    {
-        ApplyWeather(WeatherType.Snow);
-    }
-
-    // protected override void Awake()
-    // {
-    //     base.Awake();
-    //     _camera = Camera.main;
-    //     _rainEffect = transform.Find("Rain_Particle")?.gameObject;
-    //     _snowEffect = transform.Find("Snow_Particle")?.gameObject;
-    //
-    //     CurrentWeather = _startWeather;
-    //     // ApplyWeather(CurrentWeather);
-    // }
-
     public void Init(SaveManager saveManager, TimeManager timeManager)
     {
         this.saveManager = saveManager;
@@ -91,15 +58,6 @@ public class WeatherManager : MonoBehaviourPun, ISaveable
         UpdateEffectTransform(_rainEffect, followPos, followRot);
         UpdateEffectTransform(_snowEffect, followPos, followRot);
     }
-
-    // private void OnEnable()
-    // {
-    //     saveManager = SaveManager.Instance;
-    //     timeManager = TimeManager.Instance;
-    //
-    //     saveManager.Register(this); // 저장 시스템에 등록
-    //     timeManager.OneDayPassed += ChangeRandomWeather; // 하루 경과 시 날씨 변경
-    // }
 
     private void OnDisable()
     {
@@ -137,14 +95,14 @@ public class WeatherManager : MonoBehaviourPun, ISaveable
         //}
     }
 
-    [PunRPC]
-    private void RPC_ApplyWeather(int weatherInt)
-    {
-        WeatherType newWeather = (WeatherType)weatherInt;
-        CurrentWeather = newWeather;
-        ApplyWeather(newWeather);
-        OnWeatherChanged?.Invoke(newWeather);
-    }
+    // [PunRPC]
+    // private void RPC_ApplyWeather(int weatherInt)
+    // {
+    //     WeatherType newWeather = (WeatherType)weatherInt;
+    //     CurrentWeather = newWeather;
+    //     ApplyWeather(newWeather);
+    //     OnWeatherChanged?.Invoke(newWeather);
+    // }
 
     // 랜덤으로 날씨 타입을 반환
     private WeatherType GetRandomWeather()
@@ -181,25 +139,4 @@ public class WeatherManager : MonoBehaviourPun, ISaveable
         ApplyWeather(CurrentWeather);
         OnWeatherChanged?.Invoke(CurrentWeather);
     }
-
-
-    /*
-    private void OnEnable() => WeatherManager.Instance.OnWeatherChanged += OnWeatherChanged;
-    private void OnDisable() => WeatherManager.Instance.OnWeatherChanged -= OnWeatherChanged;
-    private void OnWeatherChanged(WeatherType weather)
-    {
-        switch (weather)
-        {
-            case WeatherType.Clear:
-                _currentSpeed = 기본이동속도;
-                break;
-            case WeatherType.Rain:
-                _currentSpeed = 기본이동속도 * 0.8f;
-                break;
-            case WeatherType.Snow:
-                _currentSpeed = 기본이동속도 * 0.6f;
-                break;
-        }
-    }
-    */
 }

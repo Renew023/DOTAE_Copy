@@ -144,7 +144,7 @@ public class Enemy : CharacterObject
         //Target = PhotonView.Find(targetViewID).GetComponent<CharacterObject>();
         StateMachine.ChangeState(StateMachine.EnemyFollowState);
     }
-
+    
     public bool TargetingEnemy(float radius)
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius, EnemyLayer); //NonAlloc 방식으로 Collider2D를 가져오는 코드가 필요.
@@ -226,7 +226,7 @@ public class Enemy : CharacterObject
             return;
         }
         //패링 기능
-        if (isParring)
+        if (isStun)
         {
             StateMachine.ChangeState(StateMachine.EnemyIdleState);
             return;

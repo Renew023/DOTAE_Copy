@@ -31,6 +31,8 @@ public class Player : CharacterObject
     [field: SerializeField] public PlayerBuffData BuffData { get; private set; }
 
     [field: SerializeField] public CinemachineVirtualCamera VirtualCamera;
+
+    [field: SerializeField] public CinemachineBasicMultiChannelPerlin noise;
     
     [field: SerializeField] private GameObject deadBodyPrefab;
 
@@ -67,7 +69,6 @@ public class Player : CharacterObject
         RigidBody = GetComponent<Rigidbody2D>();
         Inventory = GetComponent<PlayerInventory>();
         PlayerRecipe = GetComponent<PlayerRecipe>();
-
         //Animator = GetComponent<Animator>();
         BuffData = new PlayerBuffData(this);
         //Animator = Front; //기본 애니메이션은 Front로 설정
@@ -97,7 +98,7 @@ public class Player : CharacterObject
     {
         var data = PlayerRuntimeData;
         var chaData = characterRuntimeData;
-        var weight = RoomSettingData.Instance.playerLevelUpPerStatWeights * (data.curLevel - 1);
+        var weight = 1 + RoomSettingData.Instance.playerLevelUpPerStatWeights * (data.curLevel - 1);
 
         chaData.health.AddStat(DataManager.Instance.CharacterDataByID[characterRuntimeData.characterID].health
             * RoomSettingData.Instance.playerLevelUpStatWeight * weight * RoomSettingData.Instance.playerHPWeight);
@@ -171,10 +172,29 @@ public class Player : CharacterObject
         skills.Add(Instantiate(AddressableManager.Instance._prefabCash["4004Skill"]).GetComponent<Skill>());
         skills[3].gameObject.SetActive(false);
     }
-    //public void InitializeLocal()
-    //{
-    //    PlayerInput.enabled = true;
-    //}
+
+    private IEnumerator CameraShake(float shakeSize, float shakeSpeed, float time)
+    {
+        noise.m_AmplitudeGain = shakeSize;
+        noise.m_FrequencyGain = shakeSpeed;
+        float timer = 0f;
+        float curWeight = 0f;
+
+        while(timer < time)
+        {
+            timer += Time.deltaTime;
+            curWeight = 1 - (timer / time);
+
+            noise.m_AmplitudeGain = shakeSize * curWeight;
+            noise.m_FrequencyGain = shakeSpeed * curWeight;
+
+            yield return null;
+        }
+
+        noise.m_AmplitudeGain = 0;
+        noise.m_FrequencyGain = 0;
+    }
+
     private void OnEnable()
     {
         timeManager = GameManager.Instance.TimeManager;
@@ -297,6 +317,8 @@ public class Player : CharacterObject
             return;
         }
 
+        StartCoroutine(CameraShake(5f, 5f, 0.2f));
+
         if (characterRuntimeData.health.Current <= 0)
         {
             PlayerDeath();  
@@ -304,7 +326,7 @@ public class Player : CharacterObject
             //TODO : 부활 패널 생성 혹은 캐릭터 생성 씬으로 이동(방은 그대로)
         }
 
-        if (isParring)
+        if (isStun)
         {
             StateMachine.ChangeState(StateMachine.PlayerIdleState);
             return;
@@ -479,9 +501,13 @@ public class Player : CharacterObject
         //}
     }
 
+    public bool isClickPos = false;
+
     [PunRPC]
     public void SetPoint(Vector2 clickPos)
     {
+        isMove = true;
+        isClickPos = true;
         ClickPos = clickPos;
         StateMachine.ChangeState(StateMachine.PlayerIdleState);
         StateMachine.ChangeState(StateMachine.PlayerMoveState);
@@ -490,12 +516,29 @@ public class Player : CharacterObject
     public void MoveStop()
     {
         this.RigidBody.velocity = Vector2.zero;
-        isMove = false;
+        isClickPos = false;
+    }
+
+    public void MoveIdle(Vector2 moveSize)
+    {
+        if (isClickPos) MoveStop();
+
+        Vector2 speed = moveSize.normalized
+            * characterRuntimeData.moveSpeed.Current *
+            (isRun ? 2f : 1f);
+
+        if (characterRuntimeData.ability.ContainsKey(DesignEnums.Ability.Run))
+        {
+            speed += moveSize.normalized * Vector2.one * characterRuntimeData.ability[DesignEnums.Ability.Run].GetAbility()
+                    * PlayerRuntimeData.moveSpeed;
+        }
+
+        this.RigidBody.velocity = speed * testSpeedValue;
+        StateMachine.ChangeState(StateMachine.PlayerMoveState);
     }
 
     public void Move() // 도착지 + 이동까지 엮여잇음.
     {
-        isMove = true;
         Vector2 angle = (ClickPos - (Vector2)this.transform.position).normalized;
 
         Vector2 speed = angle
@@ -514,7 +557,10 @@ public class Player : CharacterObject
         _distance = Vector2.Distance(this.transform.position, ClickPos);
 
         if (_distance <= this.RigidBody.velocity.magnitude * 0.05f)
+        {
             MoveStop();
+            isMove = false;
+        }
 
         if (playerIcon != null) //&& playerIcon.transform.parent != null
         {
@@ -598,6 +644,11 @@ public class Player : CharacterObject
         if(curLook == getLook) return;
 
         float stateInfoTime = Animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        foreach(var sprite in spriteRenderers)
+        {
+            sprite.color = Color.white;
+        }
+
         //await Task.Yield();
 
         Animator.SetBool(hash, false);
@@ -634,7 +685,7 @@ public class Player : CharacterObject
         Back.gameObject.SetActive(curLook == nameof(Back));
 
         spriteRenderers.Clear();
-        spriteRenderers = Animator.gameObject.GetComponentsInChildren<SpriteRenderer>().ToList();
+        spriteRenderers = Animator.gameObject.GetComponentsInChildren<SpriteRenderer>(true).ToList();
 
         //await Task.Yield();
 

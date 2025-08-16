@@ -439,6 +439,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 1e535f54-1a32-48a9-a406-caf1eeedd3fc
     m_ActionName: ModeChange/Building[/Keyboard/b]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5324471205604182152}
+        m_TargetAssemblyTypeName: PlayerKey, Assembly-CSharp
+        m_MethodName: OnKeyMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a41eec3a-b38c-4f1e-8ae6-e5049a838b26
+    m_ActionName: Player/KeyMove[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -759,16 +775,19 @@ MonoBehaviour:
       Current: 0
   textMeshProUGUI: {fileID: 2633662739741598573}
   Weapon: {fileID: 0}
+  Animator: {fileID: 0}
   <Front>k__BackingField: {fileID: 0}
   <Back>k__BackingField: {fileID: 0}
   <Side>k__BackingField: {fileID: 0}
-  Animator: {fileID: 0}
+  attackType: 0
   spawnVillage: {fileID: 0}
   curPlace: {fileID: 0}
   skills: []
+  skillNums: 
   isSkill: 0
   Parent: {fileID: 0}
   isAttack: 1
+  isKnockBack: 0
   curLook: 
   hash: 
   testSpeedValue: 0.1
@@ -776,7 +795,7 @@ MonoBehaviour:
   rightHandTransform_Forward: {fileID: 0}
   rightHandTransform_Side: {fileID: 0}
   rightHandTransform_Back: {fileID: 0}
-  isParring: 0
+  isStun: 0
   <CharacterID>k__BackingField: 1
   <StateMachine>k__BackingField:
     player: {fileID: 7338645949713733145}
@@ -791,6 +810,7 @@ MonoBehaviour:
   <Inventory>k__BackingField: {fileID: 0}
   <PlayerRecipe>k__BackingField: {fileID: 0}
   VirtualCamera: {fileID: 0}
+  noise: {fileID: 0}
   deadBodyPrefab: {fileID: 0}
   playerLight: {fileID: 1994197140733296582}
   nightIntensity: 2
@@ -828,6 +848,7 @@ MonoBehaviour:
   isRun: 0
   isMove: 0
   isSit: 0
+  isClickPos: 0
 --- !u!70 &3532482560972412782
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

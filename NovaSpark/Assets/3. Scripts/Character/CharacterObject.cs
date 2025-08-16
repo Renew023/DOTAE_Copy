@@ -21,11 +21,12 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
     public Stats weaponStats = new();
     public TextMeshProUGUI textMeshProUGUI;
     [field: SerializeField] public Weapon Weapon; //적의 무기, 공격을 담당합니다.
+    
+    public Animator Animator;
     [field: SerializeField] public Animator Front { get; private set; }
     [field: SerializeField] public Animator Back { get; private set; }
     [field: SerializeField] public Animator Side { get; private set; }
 
-    public Animator Animator;
     public AttackType attackType;
 
     [Header("Serializable")]
@@ -38,6 +39,7 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
     //public PhotonView photonView;
     public Transform Parent;
     public bool isAttack = true;
+    public bool isKnockBack;
 
     public string curLook;
     public string hash;
@@ -52,7 +54,7 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
     private readonly Dictionary<string, GameObject> _weaponGOs = new();
 
     private float _weightPart;
-    public bool isParring;
+    public bool isStun;
 
     //public void SkillAction(int key)
     //{
@@ -96,6 +98,7 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
         //spawnVillage.Respawn();
     }
 
+    //캐릭터 초기화 코드
     public virtual void Initialize(int key, int villageNumber = 0)
     {
         int randomAttackType = UnityEngine.Random.Range(0, 2);
@@ -108,36 +111,24 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
         if (Front != null) return;
 
         textMeshProUGUI = GetComponentInChildren<Canvas>(true).GetComponentInChildren<TextMeshProUGUI>(true);
-        //Weapon = GetComponentInChildren<Weapon>(true);
         gameObject.transform.parent = Parent;
 
-        //Debug.Log("캐릭터 동기화" + key);
         textMeshProUGUI.text = characterRuntimeData.name_kr; //임시
         if (CreateGame.Instance.SpawnPointDict.ContainsKey(villageNumber))
         {
             spawnVillage = CreateGame.Instance.SpawnPointDict[villageNumber];
         }
-        //spriteRenderer.sprite = DataManager.Instance.SpriteDict["Character"+characterRuntimeData.characterID];
-        // -> sprite 아님, Front, Side, Back에 해당하는 프리팹 오브젝트를 넣어줘어야함.
-        //
-        //
-
-        if (spawnVillage != null)
-        {
-            //gameObject.transform.localPosition = CreateGame.Instance.SpawnPointDict[spawnVillage.villageNumber].transform.localPosition;
-        }
 
         gameObject.name = characterRuntimeData.characterID +": "+ characterRuntimeData.name_kr;
 
-
+        //캐릭터의 Front, Side, Back에 해당하는 스프라이트 박스를 넣어주는 코드
+        //if문은 해당 애니메이션이 없을 때 강제로 501번을 받도록 하는 예외처리 코드.
         var frontKey = "Forward_" + key;
         if (!AddressableManager.Instance.animatorCache.ContainsKey(frontKey))
         {
-            //Debug.LogError($"캐릭터 {key}의 전방 애니메이션 프리팹이 없습니다: {frontKey}");
             frontKey = "Forward_" + 501;
             key = 501;
         }
-        //Debug.Log($"캐릭터 {key} 생성");
         
         GameObject frontPrefab = Instantiate(AddressableManager.Instance.animatorCache[frontKey], transform);
         Front = frontPrefab.GetComponent<Animator>();
@@ -153,16 +144,18 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
         frontPrefab.name = "Forward";
         sidePrefab.name = "Side";
         backPrefab.name = "Back";
-
-        //TODO : 데이터 각 PhotonNetwork.Instantiate 든 뭐든 즉시 생성 구조.
         Animator = Front;
 
+        //무기 장착코드
         SetRightHand();
         spriteRenderers = Front.gameObject.GetComponentsInChildren<SpriteRenderer>(true).ToList();
 
         Side.gameObject.SetActive(false);
         Back.gameObject.SetActive(false);
     }
+
+    private Coroutine damageCoroutine;
+    private Coroutine knockBackCoroutine;
     public virtual void TakeDamage(float damage, CharacterObject characterObject)
     {
         if (characterRuntimeData.missPercent.Current * RoomSettingData.Instance.missBalance > UnityEngine.Random.Range(0f, 100f))
@@ -177,12 +170,18 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
 
         if (RoomSettingData.Instance.isknockBackEnable)
         {
-            if (characterRuntimeData.missPercent.Current * RoomSettingData.Instance.KnockBackBalance > UnityEngine.Random.Range(0, 100))
+            Debug.Log("넉백이 찍혔고");
+            if (characterRuntimeData.criticalPercent.Current * RoomSettingData.Instance.KnockBackBalance > UnityEngine.Random.Range(0, 100))
             {
-                Vector2 knockBack = (characterObject.transform.position - this.gameObject.transform.position).normalized;
+                Vector2 knockBack = (this.gameObject.transform.position - characterObject.transform.position).normalized;
                 Vector2 force = knockBack * RoomSettingData.Instance.KnockBackDistance;
-                StartCoroutine(KnockBackValue(characterObject, force));
-                return;
+                if (knockBackCoroutine != null)
+                {
+                    StopCoroutine(knockBackCoroutine);
+                    knockBackCoroutine = null;
+                }
+                Debug.Log("넉백됨");
+                StartCoroutine(KnockBackValue(force));
             }
         }
 
@@ -195,63 +194,87 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
             }
         }
 
-        BodyColorChangeDuration(Color.white, Color.red, 1.0f);
+        if (isStun) return;
+        BodyColorChangeDuration(Color.white, Color.red, 0.3f);
         //UserHelpManager.Instance.CreateText($"데미지 {damage}를 맞아 {characterRuntimeData.health.Current} 남았습니다.");
     }
 
-    private IEnumerator KnockBackValue(CharacterObject characterObject, Vector2 force)
+    private IEnumerator KnockBackValue(Vector2 force)
     {
-        if (characterObject.TryGetComponent<NavMeshAgent>(out var agent))
+        if (gameObject.TryGetComponent<NavMeshAgent>(out var agent))
         {
             float timer = 0f;
+            float time = 0.2f;
+            float weight = 1 / time;
+            isKnockBack = true;
+
             agent.isStopped = true;
-            while(0.5f > timer)
+
+            while(time > timer)
             {
-                agent.transform.position += (Vector3)(force * Time.deltaTime);
+                agent.Move(force * Time.deltaTime * weight);
                 timer += Time.deltaTime;
                 yield return null;
             }
             agent.isStopped = false;
-            agent.velocity = force;
+            isKnockBack = false;
+            knockBackCoroutine = null;
+            yield break;
         }
 
-        if (characterObject.TryGetComponent<Rigidbody2D>(out var rigid))
+        if (gameObject.TryGetComponent<Rigidbody2D>(out var rigid))
         {
             float timer = 0f;
+            float time = 0.2f;
+            float weight = 1 / time;
+            isKnockBack = true;
 
-            rigid.velocity = Vector2.zero;
-            rigid.AddForce(force, ForceMode2D.Impulse);
-            yield return null;
+            while (timer < time)
+            {
+                rigid.MovePosition(rigid.position + force * weight * Time.deltaTime);
+                timer += Time.deltaTime;
+                yield return null;
+            }
+
+            //rigid.AddForce(force * rigid.mass, ForceMode2D.Impulse);
+            //yield return null;
+            //rigid.velocity = Vector2.zero;
+
+            isKnockBack = false;
+            knockBackCoroutine = null;
+            yield break;
         }
-
         yield return null;
     }
 
     private void BodyColorChangeDuration(Color baseColor, Color changeColor, float duration)
     {
+        if (damageCoroutine != null)
+        {
+            StopCoroutine(damageCoroutine);
+            damageCoroutine = null;
+        }
+
+        Color targetColor = Color.Lerp(baseColor, changeColor, 0.8f);
+        targetColor.a = 1.0f;
         
         foreach (var sprite in spriteRenderers)
         {
-            sprite.color = changeColor; //피격 시 빨간색으로 변경
+            sprite.color = targetColor; //피격 시 빨간색으로 변경
         }
 
         //spriteRenderer.color = hitColor; //피격 시 빨간색으로 변경
-        StartCoroutine(WhileBack(
+        damageCoroutine = StartCoroutine(WhileBack(
             duration,
             (timer) =>
             {
                 foreach (var sprite in spriteRenderers)
                 {
-                    sprite.color = Color.Lerp(changeColor, baseColor, timer / 0.2f);
+                    float ratio = Mathf.Clamp(timer / duration, 0f, 1f);
+                    sprite.color = Color.Lerp(targetColor, baseColor, ratio);
                 }
                 //spriteRenderer.color = Color.Lerp(hitColor, baseColor, timer / 0.2f);
             }));
-    }
-
-    private IEnumerator TakeBack(float time, Action action)
-    {
-        yield return new WaitForSeconds(time);
-        action();
     }
 
     private IEnumerator WhileBack(float time, Action<float> action)
@@ -264,6 +287,9 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
             action(timer);
             yield return null;
         }
+        action(time);
+
+        damageCoroutine = null;
     }
 
     public async void Equip(EquipmentItem item)
@@ -418,6 +444,13 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
             sideWeapon.transform.localScale = Vector3.one * size; // 크기 조정
             GameObject backWeapon = Instantiate(weapon, rightHandTransform_Back);
             backWeapon.transform.localScale = Vector3.one * size; // 크기 조정
+
+            if (this.attackType == AttackType.Magic)
+            {
+                forwardWeapon.SetActive(false);
+                sideWeapon.SetActive(false);
+                backWeapon.SetActive(false);
+            }
         }
         else if(this is Player)
         {
@@ -426,18 +459,26 @@ public class CharacterObject : MonoBehaviour, IDamageable, IPlace, ISpawn, IData
         }
     }
 
+    private Coroutine parringCoroutine;
+
     public void Parring()
     {
-        return;
-        isParring = true;
-        BodyColorChangeDuration(Color.white, Color.yellow, 1.0f);
-        StartCoroutine(ChangeParringState());
+        isStun = true;
+        BodyColorChangeDuration(Color.white, Color.yellow, RoomSettingData.Instance.stunTime);
+
+        if(parringCoroutine != null)
+        {
+            StopCoroutine(parringCoroutine);
+            parringCoroutine = null;
+        }
+        parringCoroutine = StartCoroutine(ChangeParringState());
     }
 
     private IEnumerator ChangeParringState()
     {
         yield return new WaitForSeconds(RoomSettingData.Instance.stunTime);
-        isParring = false;
+        isStun = false;
+        parringCoroutine = null;
     }
 
     public float GetHpPercent()

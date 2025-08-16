@@ -19,7 +19,6 @@ public class PlayerMoveState : PlayerBaseState
         base.Enter();
         _particle = ParticleManager.Instance.CreateEffect(ParticleParameterHash.PlayerWalk_Particle, stateMachine.player.gameObject);
         StartAnimation(AnimationParameter.MoveParameter);
-        stateMachine.player.Move();
         //_footstepTimer = 0f;
     }
 
@@ -28,7 +27,6 @@ public class PlayerMoveState : PlayerBaseState
         base.Exit();
         ParticleManager.Instance.RemoveEffect(ParticleParameterHash.PlayerWalk_Particle, _particle);
         StopAnimation(AnimationParameter.MoveParameter);
-        stateMachine.player.MoveStop();
     }
 
     public override void Update()
@@ -49,10 +47,11 @@ public class PlayerMoveState : PlayerBaseState
         }
         else
         {
-            stateMachine.player.Move();
+            if (stateMachine.player.isClickPos)
+                stateMachine.player.Move();
         }
 
-        _footstepTimer += Time.fixedDeltaTime;
+            _footstepTimer += Time.fixedDeltaTime;
         if (_footstepTimer >= _footstepInterval)
         {
             _footstepTimer = 0f;

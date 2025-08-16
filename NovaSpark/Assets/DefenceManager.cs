@@ -31,6 +31,12 @@ public class DefenceManager : Singleton<DefenceManager>
 
     public GameObject npcPrefab; // NPC 프리팹
 
+    [Header("웨이브 안내 구성")]
+    public bool isWaveCheck;
+    public Image waveCountFill;
+    public TextMeshProUGUI waveCountSecondsText;
+    public Button waveStartButton;
+
     public List<int> NpcIds = new List<int> { 501, 507, 513, 514 };
     
     public void DeathCycle()
@@ -45,6 +51,16 @@ public class DefenceManager : Singleton<DefenceManager>
         //Spawn(10);
         //TextReload();
         endPanel.gameObject.SetActive(false); // 게임 종료 패널 비활성화
+
+        if(RoomSettingData.Instance.isWaveStartButtonActive)
+        {
+            waveStartButton.onClick.AddListener(() =>
+            {
+                isWaveCheck = true;
+                waveStartButton.gameObject.SetActive(false);
+            });
+        }
+        waveStartButton.gameObject.SetActive(false);
 
     }
     private void Start()

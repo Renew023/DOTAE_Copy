@@ -19,7 +19,6 @@ public class CraftSlotUI : MonoBehaviour,
     [SerializeField] private Slot _slotData;
     private System.Action<EquipmentItem> onClick;
     private int _iconVersion;
-    [SerializeField] private TMP_Text _nameText;
     [SerializeField] private Image _icon;
     private void Awake()
     {
@@ -39,7 +38,6 @@ public class CraftSlotUI : MonoBehaviour,
         this.item = item;
         this.onClick = onClick;
 
-        _nameText.text = item.name_kr;
         int version = ++_iconVersion;
 
         AddressableManager.Instance.LoadIconToImage(_icon, item.icon, version, () => _iconVersion);

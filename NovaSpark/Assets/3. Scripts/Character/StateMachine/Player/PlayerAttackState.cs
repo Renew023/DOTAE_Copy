@@ -30,7 +30,7 @@ public class PlayerAttackState : PlayerBaseState
         base.Exit();
         StopAnimation(AnimationParameter.attackParameter);
         //stateMachine.player.Weapon.animator.SetBool(AnimationParameter.attackParameter, false);
-        isAttack = false;
+        isAttack = true;
         stateMachine.player.AttackEnd();
         //stateMachine.player.photonView.RPC(nameof(stateMachine.player.AttackEnd), RpcTarget.All);
         // StopAnimation

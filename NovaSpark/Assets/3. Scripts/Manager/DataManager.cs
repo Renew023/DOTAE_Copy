@@ -16,7 +16,6 @@ public class DataManager : Singleton<DataManager>
     public Dictionary<int, Dictionary<int, NPCDialog>> NpcDialogueById { get; private set; } = new();
     public Dictionary<int, NPCDialog> DialogById { get; private set; } = new();
 
-
     public bool IsLoaded { get; private set; } = false; // 데이터가 로드되었는지 여부
     public List<SlotData> SlotDataList { get; private set; }
 
@@ -32,46 +31,21 @@ public class DataManager : Singleton<DataManager>
     public IReadOnlyList<Material> AllMaterial { get; private set; }
     private Dictionary<int, MaterialItem> _materialItemById = new();
     public IReadOnlyList<MaterialItem> AllMaterialItems { get; private set; }
-
-    //-------------------------------------------------s
-    //public Dictionary<int, CharacterObject> CharacterObjectByID { get; private set; } = new(); // 캐릭터 ID로 찾기용
-
-    //TODO : Character
+    
     public Dictionary<int, CharacterData> CharacterDataByID { get; private set; } = new();
-
-    //TODO : NPC
+    
     public Dictionary<int, NPCData> NPCDataByID { get; private set; } = new();
-
-    //TODO : Blood
+    
     public Dictionary<DesignEnums.BloodType, BloodData> BloodDataByID { get; private set; } = new();
 
-    //TODO : Enemy
     public Dictionary<int, EnemyData> EnemyDataByID { get; private set; } = new();
 
-    //TODO : Player
     public Dictionary<int, PlayerData> PlayerDataByID { get; private set; } = new();
 
     public Dictionary<string, Sprite> SpriteDict = new();
 
     public Dictionary<int, FarmingData> farmingData { get; private set; } = new();
-    //TODO : Skill
     public Dictionary<int, SkillData> SkillDataByID { get; private set; } = new();
-
-    //TODO : 캐릭터 선택창을 만들어서 보이게 하는 효과를 만들고자 한다면,
-    //마찬가지로 보일 Sprite를 int와 연결해야할 듯.
-
-    //public Dictionary<int, UnitStatBase> UnitStatBaseByID { get; private set; } = new(); // 유닛 스탯 베이스 ID로 찾기용
-    //public Dictionary<int, UnitStatMax> UnitStatMaxByID { get; private set; } = new(); // 유닛 스탯 최대치 ID로 찾기용
-    //public Dictionary<int, TecBase> TecBaseByID { get; private set; } = new(); // 기술 베이스 ID로 찾기용
-    //public Dictionary<int, TecMax> TecMaxByID { get; private set; } = new(); // 기술 최대치 ID로 찾기용
-    //public Dictionary<int, PartData> PartDataByID { get; private set; } = new(); // 파트 데이터 ID로 찾기용
-    //public Dictionary<int, UnitStatWeight> UnitStatWeightByID { get; private set; } = new(); // 유닛 스탯 웨이트 ID로 찾기용
-    //public Dictionary<int, List<LevelInfo>> LevelInfoByID { get; private set; } = new(); // 레벨 정보 ID로 찾기용
-    //public Dictionary<int, List<TecLevelInfo>> TecLevelInfoByID { get; private set; } = new(); // 기술 레벨 정보 ID로 찾기용
-
-    public List<CharacterObject> TestCharacterView;
-
-    // TODO: 다른 데이터 딕셔너리/리스트도 여기에 추가 예정
 
     protected override void Awake()
     {
@@ -101,19 +75,12 @@ public class DataManager : Singleton<DataManager>
         await LoadConsumableDataAsync();
         await LoadDialogueDataAsync();
         await LoadMaterialDataAsync();
-        //TODO : Character
         await LoadCharacterDataAsync();
-        //TODO : NPC
         await LoadNPCDataAsync();
-        //TODO : Blood
         await LoadBloodDataAsync();
-        //TODO : Enemy
         await LoadEnemyDataAsync();
-        //TODO : Player
         await LoadPlayerDataAsync();
         await LoadImageResource();
-        
-        //TODO : FarmingData
         await LoadFarmingDataAsync();
         await LoadSkillDataAsync();
 
@@ -122,10 +89,10 @@ public class DataManager : Singleton<DataManager>
 
     public async Task WaitUntilLoaded()
     {
-        //while (!IsLoaded)
-        //{
-        //    await Task.Yield(); // 데이터가 로드될 때까지 대기
-        //}
+    //     while (!IsLoaded)
+    //     {
+    //         await Task.Yield(); // 데이터가 로드될 때까지 대기
+    //     }
     }
 
     private async Task LoadImageResource()
@@ -306,7 +273,7 @@ public class DataManager : Singleton<DataManager>
 
     public ConsumableItem GetConsumableItem(int id) =>
         _consumableItemById.TryGetValue(id, out var item) ? item : null;
-
+    
     public NpcDialogue[] GetDialogues(int startIndex, int endIndex)
     {
         //var result = new List<NpcDialogue>();
@@ -316,21 +283,13 @@ public class DataManager : Singleton<DataManager>
         //return result.ToArray();
         return null;
     }
-
+    
     public Material GetMaterial(int id) =>
         _materialById.TryGetValue(id, out var item) ? item : null;
 
     public MaterialItem GetMaterialItem(int id) =>
         _materialItemById.TryGetValue(id, out var item) ? item : null;
-
-    //-------------------------------------
-
-    //private async Task LoadCharacterDataAsync()
-    //{
-    //    var list = await LoadListDataAsync<CharacterData>("CharacterData");
-    //    if (list != null)
-    //        characterDatas = list;
-    //}
+    
 
     private async Task LoadCharacterDataAsync()
     {
@@ -458,20 +417,6 @@ public class DataManager : Singleton<DataManager>
                     // .Where(m => m.isShopItem)
                     .Cast<Item>()
                     .ToList();
-            //case DesignEnums.NPCType:
-            //    return AllEquipmentItems
-            //        // .Where(i => i.isShopItem)
-            //        .Cast<Item>()
-            //        .Concat(
-            //            AllConsumableItems //.Where(i => i.isShopItem)
-            //                .Cast<Item>()
-            //        )
-            //        .Concat(
-            //            AllMaterialItems //.Where(i => i.isShopItem)
-            //                .Cast<Item>()
-            //        )
-            //        .ToList();
-
             default:
                 Debug.LogWarning($"지원되지 않는 상점 타입: {type}");
                 return new List<Item>();

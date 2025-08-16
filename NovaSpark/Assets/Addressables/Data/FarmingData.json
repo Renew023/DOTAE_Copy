@@ -79,7 +79,7 @@
     ],
     "itemDropValue": [
       10.0,
-      10.0,
+      8.0,
       30.0
     ],
     "respawnCooltime": 60.0,
@@ -110,7 +110,7 @@
       20.0,
       10.0,
       30.0,
-      10.0
+      8.0
     ],
     "respawnCooltime": 60.0,
     "toolId": 1005,

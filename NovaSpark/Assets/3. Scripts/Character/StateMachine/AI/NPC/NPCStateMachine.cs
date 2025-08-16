@@ -28,7 +28,7 @@ public class NPCStateMachine : StateMachine //ITalk, IInteractable
     public override void ChangeState(IState state)
     {
         if (stateValue == state) return;
-        if (npc.isParring && npc.characterRuntimeData.health.Current > 0) return; //기절 되어있을 떄는 움직일 수 없음.
+        if (npc.isStun && npc.characterRuntimeData.health.Current > 0) return; //기절 되어있을 떄는 움직일 수 없음.
         base.ChangeState(state);
         //Debug.Log($"NPCStateMachine: ChangeState to {state.GetType().Name}");
         //npc.RPCChangeState(state);

@@ -10,7 +10,7 @@
       "Heal"
     ],
     "effectValue": [
-      100
+      300
     ],
     "isStackable": true,
     "maxStack": 99,
@@ -31,14 +31,14 @@
       "Heal"
     ],
     "effectValue": [
-      250
+      1000
     ],
     "isStackable": true,
     "maxStack": 99,
     "duration": [
       0
     ],
-    "price": 250,
+    "price": 300,
     "weight": 1.0
   },
   {
@@ -96,7 +96,7 @@
       "hunger"
     ],
     "effectValue": [
-      100,
+      10000,
       100,
       100
     ],
@@ -277,7 +277,7 @@
     ],
     "effectValue": [
       10,
-      10
+      20
     ],
     "isStackable": true,
     "maxStack": 30,
@@ -476,7 +476,7 @@
       "Heal"
     ],
     "effectValue": [
-      300
+      1200
     ],
     "isStackable": true,
     "maxStack": 30,

@@ -19,7 +19,8 @@ public enum UIType
     StorageUI,
     HUD,
     TooltipUI,
-    QuantitySelectUI
+    QuantitySelectUI,
+    EnhancePopupUI
 }
 
 public class UIManager : Singleton<UIManager> // UIManager는 Singleton을 상속받아 싱글톤 패턴을 적용

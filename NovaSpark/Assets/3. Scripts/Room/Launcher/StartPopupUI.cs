@@ -19,6 +19,7 @@ public class StartPopupUI : Singleton<StartPopupUI>
     [SerializeField] private CanvasGroup lobbyPanel;
     [SerializeField] private CanvasGroup roomDetailPanel;
     [SerializeField] private CanvasGroup gameDescriptionPanel;
+    [SerializeField] private CanvasGroup patchNotePanel;
 
     protected override void Awake()
     {
@@ -35,6 +36,16 @@ public class StartPopupUI : Singleton<StartPopupUI>
                                    type == StartPopupType.RoomDetailPanel);
         GroupSetActive(roomDetailPanel, type == StartPopupType.RoomDetailPanel);
         GroupSetActive(gameDescriptionPanel, type == StartPopupType .GameDescriptionPanel);
+    }
+
+    public void PatchNotePanelOpen()
+    {
+        GroupSetActive(patchNotePanel, true);
+    }
+
+    public void PatchNotePanelClose()
+    {
+        GroupSetActive(patchNotePanel, false);
     }
 
     private void GroupSetActive(CanvasGroup data, bool isTrue)

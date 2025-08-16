@@ -58,9 +58,34 @@ public class PlayerKey : MonoBehaviour
         if (context.phase == InputActionPhase.Started)
         {
             if (UserHelpManager.Instance.SelectObject()) return;
+            //player.isMove = true;
             player.Point();
             //Direction = ClickPos;
             //angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        }
+
+        if (context.phase == InputActionPhase.Canceled)
+        {
+            //player.isMove = false;
+        }
+    }
+
+    public void OnKeyMove(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Started)
+        {
+            player.isMove = true;
+        }
+
+        if(context.phase == InputActionPhase.Performed)
+        {
+            Vector2 moveInput = context.ReadValue<Vector2>();
+            player.MoveIdle(moveInput);
+        }
+
+        if(context.phase == InputActionPhase.Canceled)
+        {
+            player.isMove = false;
         }
     }
 

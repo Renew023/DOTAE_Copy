@@ -5,24 +5,6 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    //private static GameManager instance;
-
-    //public static GameManager Instance
-    //{
-    //    get
-    //    {
-    //        if (instance == null)
-    //        {
-    //            instance = FindAnyObjectByType<GameManager>();
-    //            if (instance == null)
-    //            {
-    //                Debug.LogError($"싱글톤{typeof(GameManager).Name} 존재하지않음");
-    //            }
-    //        }
-
-    //        return instance;
-    //    }
-    //}
 
     public TimeManager TimeManager { get; private set; }
     public WeatherManager WeatherManager { get; private set; }
@@ -34,14 +16,6 @@ public class GameManager : Singleton<GameManager>
 
     private void Awake()
     {
-        //if (instance != null)
-        //{
-        //    Destroy(gameObject);
-        //    return;
-        //}
-
-        //instance = this;
-
         _saveManager = SaveManager.Instance;
 
         TimeManager = GetComponentInChildren<TimeManager>();
@@ -75,11 +49,5 @@ public class GameManager : Singleton<GameManager>
         SoundManager.Instance.StopBGM();
         SoundManager.Instance.PlayBGMAsync(SoundParameterData.IngameBGM);
 
-    }
-
-    private void OnDestroy()
-    {
-        //if (instance == this)
-        //    instance = null;
     }
 }

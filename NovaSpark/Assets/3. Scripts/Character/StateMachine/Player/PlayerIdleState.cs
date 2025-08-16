@@ -15,6 +15,7 @@ public class PlayerIdleState : PlayerBaseState
     public override void Enter()
     {
         base.Enter();
+        stateMachine.player.RigidBody.velocity = Vector2.zero;
         StartAnimation(AnimationParameter.IdleParameter);
     }
 

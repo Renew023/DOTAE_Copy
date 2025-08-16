@@ -6,9 +6,7 @@ using Photon.Pun;
 
 public enum DayState
 {
-    Dawn,
     Day,
-    Noon,
     Night,
 }
 
@@ -75,17 +73,17 @@ public class TimeManager : MonoBehaviourPun, ISaveable
     }
 
     // 시간 동기화 RPC
-    [PunRPC]
-    private void RPC_SyncStartTime(float totalTime, double photonTime)
-    {
-        _syncedTimeOfDay = totalTime;
-        _syncedPhotonTime = photonTime;
-        _isSynced = true;
-
-        UpdateTime();
-        CheckDayState();
-        RefreshLighting();
-    }
+    // [PunRPC]
+    // private void RPC_SyncStartTime(float totalTime, double photonTime)
+    // {
+    //     _syncedTimeOfDay = totalTime;
+    //     _syncedPhotonTime = photonTime;
+    //     _isSynced = true;
+    //
+    //     UpdateTime();
+    //     CheckDayState();
+    //     RefreshLighting();
+    // }
 
 
     private void OnDisable() => saveManager.Unregister(this);
@@ -210,10 +208,4 @@ public class TimeManager : MonoBehaviourPun, ISaveable
         CheckDayState();
         RefreshLighting();
     }
-}
-
-public interface ISaveable
-{
-    void SaveData(GameSaveData data);
-    void LoadData(GameSaveData data);
 }

@@ -27,7 +27,7 @@ public class PlayerStateMachine : StateMachine
     public override void ChangeState(IState state)
     {
         if (stateValue == state) return;
-        if (player.isParring) return; //기절 되어있을 떄는 움직일 수 없음.
+        if (player.isStun) return; //기절 되어있을 떄는 움직일 수 없음.
         base.ChangeState(state);
         //Debug.Log(GetState().GetType().Name + " 상태로 변경됨");
         //player.RPCChangeState(state);

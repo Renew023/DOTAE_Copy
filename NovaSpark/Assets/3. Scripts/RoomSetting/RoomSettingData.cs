@@ -100,7 +100,7 @@ public class RoomSettingData : Singleton<RoomSettingData>
     [field: SerializeField] public bool isknockBackEnable { get; private set; } = true;
 
     //37. 전체적인 넉백 비율
-    [field: Header("모든 객체에 대해서 넉백 비율 (회피 기반)")]
+    [field: Header("모든 객체에 대해서 넉백 비율 (크리티컬 기반)")]
     [field: SerializeField] public float KnockBackBalance { get; private set; } = 1.0f;
 
     //37. 전체적인 넉백 거리
@@ -187,6 +187,12 @@ public class RoomSettingData : Singleton<RoomSettingData>
 
     #region Wave 설정
     [field: Header("Wave 설정")]
+
+    [field: Header("Wave 시작 버튼 ON/OFF")]
+    [field: SerializeField] public bool isWaveStartButtonActive { get; private set; } = false;
+
+    [field: Header("Wave 시작 여유 시간")]
+    [field: SerializeField] public float waveStartDelayTime { get; private set; } = 60f;
 
     //30. 웨이브 클리어 보상이 있는지
     [field: Header("웨이브 클리어 보상 On/OFF")]

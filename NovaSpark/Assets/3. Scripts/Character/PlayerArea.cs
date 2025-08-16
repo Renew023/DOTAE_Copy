@@ -38,7 +38,7 @@ public class PlayerArea : MonoBehaviour
         StartCoroutine(MonsterSpawn());       
         DefenceManager.Instance.Spawn(RoomSettingData.Instance.startNpcSpawnCount, this.transform.localPosition);
     }
-
+    
     private void Init()
     {
         //날짜에서 쏴줘야.
@@ -50,10 +50,29 @@ public class PlayerArea : MonoBehaviour
     private IEnumerator MonsterWave()
     {
         if (RoomSettingData.Instance.monsterMaxCount < DefenceManager.Instance.totalMonsterCount) yield break;
+        
+        float timer = 0f;
+        while(timer < RoomSettingData.Instance.waveStartDelayTime && !RoomSettingData.Instance.isWaveStartButtonActive)
+        {
+            timer += Time.deltaTime;
+            DefenceManager.Instance.waveCountSecondsText.text = $"웨이브 타이머 시작까지 : {(RoomSettingData.Instance.waveStartDelayTime - timer):F1} 초";
+            DefenceManager.Instance.waveCountFill.fillAmount = (RoomSettingData.Instance.waveStartDelayTime - timer) / RoomSettingData.Instance.waveStartDelayTime;
+            yield return null;
+        }
+
+        DefenceManager.Instance.waveCountFill.fillAmount = 1f;
+
+        if (RoomSettingData.Instance.isWaveStartButtonActive)
+        {
+            DefenceManager.Instance.waveCountSecondsText.text = $"게임 시작 버튼을 눌러주세요";
+            DefenceManager.Instance.waveStartButton.gameObject.SetActive(true);
+            yield return new WaitUntil(() => DefenceManager.Instance.isWaveCheck == true);
+        }
+
+        DefenceManager.Instance.waveCountSecondsText.text = "타이머가 움직이기 시작합니다";
 
         while (true)
         {
-
             DesignEnums.VillageType village = new();
             List<int> family = new();
 
@@ -109,10 +128,15 @@ public class PlayerArea : MonoBehaviour
                 {
                     timeCount += Time.deltaTime;
                 }
+                DefenceManager.Instance.waveCountSecondsText.text = $"다음 웨이브까지 : {(spawnTime - timeCount):F1} 초";
+                DefenceManager.Instance.waveCountFill.fillAmount = (spawnTime - timeCount) / spawnTime;
                 yield return null;
             }
 
-            if(DefenceManager.Instance.waveCount > 1)
+            DefenceManager.Instance.waveCountSecondsText.text = $"몬스터 소환 중";
+            DefenceManager.Instance.waveCountFill.fillAmount = 1f;
+
+            if (DefenceManager.Instance.waveCount > 1)
             {
                 UserHelpManager.Instance.CreateText($"웨이브 {DefenceManager.Instance.waveCount} 도달 보상");
 
@@ -182,8 +206,13 @@ public class PlayerArea : MonoBehaviour
             DefenceManager.Instance.waveCount++;
             DefenceManager.Instance.TextReload();
             yield return null;
-            
-            if (RoomSettingData.Instance.isWaveClearMonsterSpawn) yield return new WaitUntil(() => DefenceManager.Instance.totalMonsterCount == 0);
+
+            if (RoomSettingData.Instance.isWaveClearMonsterSpawn)
+            {
+                DefenceManager.Instance.waveCountSecondsText.text = $"몬스터가 아직 남아있습니다.";
+                DefenceManager.Instance.waveCountFill.fillAmount = 1f;
+                yield return new WaitUntil(() => DefenceManager.Instance.totalMonsterCount == 0);
+            }
 
             DefenceManager.Instance.Spawn(RoomSettingData.Instance.waveNpcCount, this.transform.localPosition);
 

@@ -169,7 +169,7 @@ public class NPC : CharacterObject, IInteractable
         {
             if(isDialog)
             {
-                npcQuestion.questButton.gameObject.SetActive(true);
+                //npcQuestion.questButton.gameObject.SetActive(true);
             }
 
             switch (npcType)
@@ -498,7 +498,7 @@ public class NPC : CharacterObject, IInteractable
             Target = attacker;
         }
 
-        if (isParring)
+        if (isStun)
         {
             StateMachine.ChangeState(StateMachine.NPCIdleState);
             return;

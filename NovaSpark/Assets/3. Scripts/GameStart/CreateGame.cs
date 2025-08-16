@@ -109,6 +109,7 @@ public class CreateGame : Singleton<CreateGame>
             farmingBlock.GetComponent<FarmingBlock>().Initialize(blockID);
             RoomSettingData.Instance.blockCount++;
 
+            #region 멀티용 블럭 생성
             //farmingBlockPrefab.AddPhoton();
             //GameObject farmingBlock = PhotonNetwork.Instantiate(
             //    farmingBlockPrefab.name, (Vector2)randomPosition, Quaternion.identity
@@ -122,9 +123,11 @@ public class CreateGame : Singleton<CreateGame>
             //(nameof(block.Initialize), RpcTarget.All, key, key);
             //멀티 없는 버전 : 
             //Instantiate(farmingBlockPrefab, (Vector2)randomPosition, Quaternion.identity);
+            #endregion
         }
     }
-
+    
+    #region DrawGizmo 마을 만들 때 활용
     //public void OnDrawGizmos()
     //{
     //    playerSpawnPoint = gameObject.transform.GetChild(0).transform.GetComponentsInChildren<Village>().ToList();
@@ -137,7 +140,7 @@ public class CreateGame : Singleton<CreateGame>
     //        Gizmos.DrawSphere(playerSpawnPoint[i].transform.localPosition, 3f); //10f는 확인을 위한 것.
 
     //        //Handles.Label(playerSpawnPoint[i].localPosition + Vector3.up * 5f, $"Player 좌표 {playerSpawnPoint[i].gameObject.name}" + playerSpawnPoint[i].localPosition);
-            
+
     //    }
     //    Gizmos.color = Color.yellow;
     //    for (int i = 0; i < enemySpawnPoint.Count; i++)
@@ -154,4 +157,5 @@ public class CreateGame : Singleton<CreateGame>
     //        //Handles.Label(NPCSpawnPoint[i].localPosition + Vector3.up * 5f, $"NPC 좌표 {NPCSpawnPoint[i].gameObject.name}" + NPCSpawnPoint[i].localPosition);
     //    }
     //}
+    #endregion
 }

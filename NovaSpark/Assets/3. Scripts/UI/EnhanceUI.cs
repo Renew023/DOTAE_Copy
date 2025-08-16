@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EnhanceUI : PopupUI
 {
-    public EquipmentItem selectedEquipment;
+    private EquipmentItem selectedEquipment;
 
     [Header("UI")] [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI levelText;
@@ -17,13 +17,15 @@ public class EnhanceUI : PopupUI
     [SerializeField] private Inventory _targetInventory;
     [SerializeField] private Image iconImage;
     [SerializeField] private Button closeButton;
+    [SerializeField] private EnhancePopupUI _enhancePopup;
 
     private void OnEnable()
     {
+        selectedEquipment = null;
         enhanceButton.onClick.AddListener(OnClickEnhance);
         closeButton.onClick.AddListener(HidePanel);
     }
-    
+
     public override void HidePanel()
     {
         base.HidePanel();
@@ -82,16 +84,28 @@ public class EnhanceUI : PopupUI
         successRateText.text = "";
     }
 
+    private void ShowEnhanceMessage(string msg)
+    {
+        if (_enhancePopup == null) return;
+        _enhancePopup.SetMessage(msg);
+        UIManager.Instance.ShowPanel(UIType.EnhancePopupUI);
+    }
+
     // 강화 버튼 클릭 시
     private void OnClickEnhance()
     {
-        if (!selectedEquipment.CanEnhance())
+        if (selectedEquipment == null)
         {
-            Debug.Log("강화 불가(최대 레벨");
+            ShowEnhanceMessage("강화할 장비가 없습니다");
             return;
         }
 
-        int cost = selectedEquipment.GetEnhanceCost();
+        if (!selectedEquipment.CanEnhance() && selectedEquipment != null)
+        {
+            ShowEnhanceMessage("최대 강화 레벨입니다");
+            return;
+        }
+
 
         if (_targetInventory == null)
         {
@@ -99,8 +113,10 @@ public class EnhanceUI : PopupUI
             return;
         }
 
+        int cost = selectedEquipment.GetEnhanceCost();
         if (!_targetInventory.HasEnoughGold(cost))
         {
+            ShowEnhanceMessage("골드가 부족합니다");
             return;
         }
 
@@ -108,14 +124,7 @@ public class EnhanceUI : PopupUI
 
         bool success = TryEnhance(selectedEquipment);
 
-        if (success)
-        {
-            Debug.Log("강화 성공");
-        }
-        else
-        {
-            Debug.Log("강화 실패");
-        }
+        ShowEnhanceMessage(success ? "강화 성공!" : "강화 실패");
 
         UpdateUI();
     }

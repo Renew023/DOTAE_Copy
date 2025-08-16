@@ -4,7 +4,12 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using UnityEngine;
-using UnityEngine.Serialization;
+
+public interface ISaveable
+{
+    void SaveData(GameSaveData data);
+    void LoadData(GameSaveData data);
+}
 
 public class SaveManager : Singleton<SaveManager>
 {
@@ -20,12 +25,6 @@ public class SaveManager : Singleton<SaveManager>
         // LoadLatestGame();
         // StartAutoSave();
     }
-
-    // public void Init()
-    // {
-    //     LoadLatestGame();
-    //     // StartAutoSave();
-    // }
 
     [ContextMenu("자동 저장 시작")]
     public void StartAutoSave()
@@ -46,7 +45,7 @@ public class SaveManager : Singleton<SaveManager>
         }
     }
 
-    [ContextMenu("최근 데이터 불러옹기")]
+    [ContextMenu("최근 데이터 불러오기")]
     public void LoadRecentSaveFiles()
     {
         string latestPath = GetLatestSavePath();
@@ -60,12 +59,12 @@ public class SaveManager : Singleton<SaveManager>
         Debug.Log($"최근 저장 데이터 지정됨: {SaveSData.SelectedSavePath}");
     }
 
-    [ContextMenu("저장")]
-    public void TestSave()
-    {
-        SaveGame();
-        Debug.Log("저장 완료");
-    }
+    // [ContextMenu("저장")]
+    // public void TestSave()
+    // {
+    //     SaveGame();
+    //     Debug.Log("저장 완료");
+    // }
 
     // 일정 시간마다 자동 저장
     private IEnumerator AutoSaveRoutine()
@@ -74,7 +73,8 @@ public class SaveManager : Singleton<SaveManager>
         {
             yield return new WaitForSeconds(_autoSaveInterval);
             SaveGame();
-            Debug.Log("자동 저장 완료");
+            // TODO: 자동 저장 완료 표시
+            // Debug.Log("자동 저장 완료");
         }
     }
 
@@ -93,7 +93,8 @@ public class SaveManager : Singleton<SaveManager>
         string latestPath = GetLatestSavePath();
         if (string.IsNullOrEmpty(latestPath))
         {
-            Debug.LogWarning("세이브 파일 없음");
+            // Debug.LogWarning("세이브 파일 없음");
+            // TODO: 세이브 파일 없음 표시
             return;
         }
 
@@ -105,7 +106,8 @@ public class SaveManager : Singleton<SaveManager>
     {
         if (!File.Exists(path))
         {
-            Debug.LogWarning("세이브 파일 없음");
+            // Debug.LogWarning("세이브 파일 없음");
+            // TODO: 세이브 파일 없음 표시
             return;
         }
 
@@ -128,7 +130,7 @@ public class SaveManager : Singleton<SaveManager>
         string encrypted = AESUtil.Encrypt(json);
         File.WriteAllText(path, encrypted);
         // File.WriteAllText(path, json); 암호화 사용안할 시
-        Debug.Log($"저장 완료: {path}");
+        // Debug.Log($"저장 완료: {path}");
     }
 
     // JSON으로부터 데이터 로딩 및 적용
@@ -142,7 +144,8 @@ public class SaveManager : Singleton<SaveManager>
         foreach (var saveable in _saveables)
             saveable.LoadData(data);
 
-        Debug.Log($"불러오기 완료: {path}");
+        // Debug.Log($"불러오기 완료: {path}");
+        // TODO: 불러오기 완료 표시
     }
 
     // 저장 경로 생성 (현재 시각 기준)
@@ -173,7 +176,7 @@ public class SaveManager : Singleton<SaveManager>
 
         for (int i = maxSaveCount; i < files.Length; i++)
         {
-            Debug.Log($"오래된 저장 파일 삭제: {files[i].Name}");
+            // Debug.Log($"오래된 저장 파일 삭제: {files[i].Name}");
             files[i].Delete();
         }
     }
@@ -210,15 +213,5 @@ public class SaveManager : Singleton<SaveManager>
     public void Unregister(ISaveable saveable)
     {
         _saveables.Remove(saveable);
-    }
-
-    // 테스트용 저장/불러오기 단축키
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Z))
-            SaveGame();
-        // Debug.Log(Application.persistentDataPath);
-        if (Input.GetKeyDown(KeyCode.X))
-            LoadLatestGame();
     }
 }

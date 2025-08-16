@@ -49,74 +49,133 @@ public class AddressableManager : Singleton<AddressableManager>
         // Debug.LogError("[AES Key (Base64)] " + _aesKeyAsset.key);
         // Debug.LogError("[AES IV  (Base64)] " + _aesKeyAsset.iv);
 
-        _ = InitCash();
+        InitCash();
+    }
+
+    private async Task LoadAndCacheAsync<T>(string label, Dictionary<string, T> cache)
+    {
+        var loadedAssets = await InitAsync<T>(label);
+        foreach (var kv in loadedAssets)
+        {
+            cache[kv.Key] = kv.Value;
+            // Debug.Log("로드됨");
+        }
+
+        DataManager.Instance.progressCount++;
     }
 
     private async Task InitCash()
     {
-        var animLoaded = await InitAsync<GameObject>("Animator");
-        foreach (var kv in animLoaded)
-        {
-            _animatorCache[kv.Key] = kv.Value;
-            Debug.Log("어드래서블 오브젝트 데이터 파밍블럭" + $"{kv.Key}");
-        }
-        DataManager.Instance.progressCount++;
-
-        var farmLoaded = await InitAsync<GameObject>("FarmingBlock");
-        foreach (var kv in farmLoaded)
-        {
-            _farmingBlockCache[kv.Key] = kv.Value;
-            Debug.Log("어드래서블 오브젝트 데이터 파밍블럭" + $"{kv.Key}");
-        }
-        DataManager.Instance.progressCount++;
-
-        var characterIcons = await InitAsync<Sprite>("CharacterIcon");
-        foreach (var kv in characterIcons)
-        {
-            IconCash[kv.Key] = kv.Value;
-            Debug.Log("로드됨"+ kv.Key);
-            Debug.Log("로드된 이미지 " + kv.Value);
-        }
-        DataManager.Instance.progressCount++;
-
-        var Icons = await InitAsync<Sprite>("Icons");
-        foreach (var kv in Icons)
-        {
-            IconCash[kv.Key] = kv.Value;
-            Debug.Log("로드됨" + kv.Key);
-            Debug.Log("로드된 이미지 " + kv.Value);
-        }
-        DataManager.Instance.progressCount++;
-
-        var Images = await InitAsync<Sprite>("Images");
-        foreach (var kv in Images)
-        {
-            IconCash[kv.Key] = kv.Value;
-            Debug.Log("로드됨" + kv.Key);
-            Debug.Log("로드된 이미지 " + kv.Value);
-        }
-        DataManager.Instance.progressCount++;
-
-        var audioSource = await InitAsync<AudioClip>("Audios");
-        foreach (var kv in audioSource)
-        {
-            _audioCash[kv.Key] = kv.Value;
-            Debug.Log("로드됨" + kv.Key);
-            Debug.Log("로드된 사운드 " + kv.Value);
-        }
-        DataManager.Instance.progressCount++;
-
-        var weapon = await InitAsync<GameObject>("Prefabs");
-        foreach (var kv in weapon)
-        {
-            _prefabCash[kv.Key] = kv.Value;
-            Debug.Log("로드됨" + kv.Key);
-            Debug.Log("로드된 프리팹 " + kv.Value);
-        }
-        DataManager.Instance.progressCount++;
+        await LoadAndCacheAsync("Animator", _animatorCache);
+        await LoadAndCacheAsync("FarmingBlock", _farmingBlockCache);
+        await LoadAndCacheAsync("CharacterIcon", IconCash);
+        await LoadAndCacheAsync("Icons", IconCash);
+        await LoadAndCacheAsync("Images", IconCash);
+        await LoadAndCacheAsync("Audios", _audioCash);
+        await LoadAndCacheAsync("Prefabs", _prefabCash);
 
         isCashing = true;
     }
+
+    public async Task<Dictionary<string, T>> InitAsync<T>(string label)
+    {
+        var result = new Dictionary<string, T>();
+        // 예: "Effect" 라는 라벨을 가진 모든 프리팹 로드
+        var locationsHandle = Addressables.LoadResourceLocationsAsync(label, typeof(T));
+        var locations = await locationsHandle.Task;
+
+        foreach (var location in locations)
+        {
+            Debug.Log("주소 빌딩" + location.PrimaryKey);
+            string key = location.PrimaryKey; // 이게 실제 Addressables 주소 (키)
+
+            var prefabHandle = Addressables.LoadAssetAsync<T>(key);
+            var prefab = await prefabHandle.Task;
+
+            result[key] = prefab;
+
+            if (prefab != null)
+            {
+                result[key] = prefab;
+            }
+            else
+            {
+                Debug.LogError($"프리팹 로드 실패: {key}");
+            }
+
+            //Addressables.Release(prefabHandle); // 메모리 관리
+        }
+
+        Addressables.Release(locationsHandle); // 리소스 위치 핸들도 해제
+
+        return result;
+    }
+
+    // private async Task InitCash()
+    // {
+    //     var animLoaded = await InitAsync<GameObject>("Animator");
+    //     foreach (var kv in animLoaded)
+    //     {
+    //         _animatorCache[kv.Key] = kv.Value;
+    //         Debug.Log("어드래서블 오브젝트 데이터 파밍블럭" + $"{kv.Key}");
+    //     }
+    //     DataManager.Instance.progressCount++;
+    //
+    //     var farmLoaded = await InitAsync<GameObject>("FarmingBlock");
+    //     foreach (var kv in farmLoaded)
+    //     {
+    //         _farmingBlockCache[kv.Key] = kv.Value;
+    //         Debug.Log("어드래서블 오브젝트 데이터 파밍블럭" + $"{kv.Key}");
+    //     }
+    //     DataManager.Instance.progressCount++;
+    //
+    //     var characterIcons = await InitAsync<Sprite>("CharacterIcon");
+    //     foreach (var kv in characterIcons)
+    //     {
+    //         IconCash[kv.Key] = kv.Value;
+    //         Debug.Log("로드됨"+ kv.Key);
+    //         Debug.Log("로드된 이미지 " + kv.Value);
+    //     }
+    //     DataManager.Instance.progressCount++;
+    //
+    //     var Icons = await InitAsync<Sprite>("Icons");
+    //     foreach (var kv in Icons)
+    //     {
+    //         IconCash[kv.Key] = kv.Value;
+    //         Debug.Log("로드됨" + kv.Key);
+    //         Debug.Log("로드된 이미지 " + kv.Value);
+    //     }
+    //     DataManager.Instance.progressCount++;
+    //
+    //     var Images = await InitAsync<Sprite>("Images");
+    //     foreach (var kv in Images)
+    //     {
+    //         IconCash[kv.Key] = kv.Value;
+    //         Debug.Log("로드됨" + kv.Key);
+    //         Debug.Log("로드된 이미지 " + kv.Value);
+    //     }
+    //     DataManager.Instance.progressCount++;
+    //
+    //     var audioSource = await InitAsync<AudioClip>("Audios");
+    //     foreach (var kv in audioSource)
+    //     {
+    //         _audioCash[kv.Key] = kv.Value;
+    //         Debug.Log("로드됨" + kv.Key);
+    //         Debug.Log("로드된 사운드 " + kv.Value);
+    //     }
+    //     DataManager.Instance.progressCount++;
+    //
+    //     var weapon = await InitAsync<GameObject>("Prefabs");
+    //     foreach (var kv in weapon)
+    //     {
+    //         _prefabCash[kv.Key] = kv.Value;
+    //         Debug.Log("로드됨" + kv.Key);
+    //         Debug.Log("로드된 프리팹 " + kv.Value);
+    //     }
+    //     DataManager.Instance.progressCount++;
+    //
+    //     isCashing = true;
+    // }
 
     public async Task<bool> LoadAesKeyAsset(string key = "AESKeyAsset")
     {
@@ -325,23 +384,6 @@ public class AddressableManager : Singleton<AddressableManager>
         Debug.Log("모든 메모리 캐시 리소스를 해제했습니다.");
     }
 
-    /* 프리팹 사용시
-    GameObject prefab = await AddressableManager.Instance.LoadPrefab(key);
-    Instantiate(prefab, Vector3.zero, Quaternion.identity);
-
-    public async void SpawnPrefab(string key)
-    {
-        GameObject prefab = await AddressableManager.Instance.LoadPrefab(key);
-        if (prefab != null)
-        {
-            Instantiate(prefab, Vector3.zero, Quaternion.identity);
-        }
-    }*/
-
-    // var handle = Addressables.InstantiateAsync("key", position, rotation);
-    // InstantiateAsync()도 있지만 캐시 / 메모리 관리 직접하려면 Load + Instantiate 조합이 더 나음
-    // Addressables.ReleaseInstance(obj); << 이걸 직접 해줘야함
-
     public void ClearIconCache()
     {
         foreach (var sprite in _iconCache.Values)
@@ -387,38 +429,5 @@ public class AddressableManager : Singleton<AddressableManager>
         {
             targetImage.enabled = false;
         }
-    }
-
-    public async Task<Dictionary<string, T>> InitAsync<T>(string label)
-    {
-        var result = new Dictionary<string, T>();
-        // 예: "Effect" 라는 라벨을 가진 모든 프리팹 로드
-        var locationsHandle = Addressables.LoadResourceLocationsAsync(label, typeof(T));
-        var locations = await locationsHandle.Task;
-
-        foreach (var location in locations)
-        {
-            Debug.Log("주소 빌딩" + location.PrimaryKey);
-            string key = location.PrimaryKey; // 이게 실제 Addressables 주소 (키)
-
-            var prefabHandle = Addressables.LoadAssetAsync<T>(key);
-            var prefab = await prefabHandle.Task;
-
-            result[key] = prefab;
-
-            if (prefab != null)
-            {
-                result[key] = prefab;
-            }
-            else
-            {
-                Debug.LogError($"프리팹 로드 실패: {key}");
-            }
-
-            //Addressables.Release(prefabHandle); // 메모리 관리
-        }
-        Addressables.Release(locationsHandle); // 리소스 위치 핸들도 해제
-
-        return result;
     }
 }

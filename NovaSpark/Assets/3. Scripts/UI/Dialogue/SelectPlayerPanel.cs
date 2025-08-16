@@ -87,6 +87,7 @@ public class SelectPlayerValue : MonoBehaviour
         var key = playerData[initValue];
         player.Initialize(key);
         player.VirtualCamera = cameraObj.GetComponent<CinemachineVirtualCamera>();
+        player.noise = player.VirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
 
         //CreateGame.Instance.MapSpawn(RoomSettingData.Instance.farmingBlockSettingCount);
         //GameManager.Instance.TimeManager.OneDayPassed += () => CreateGame.Instance.MapSpawn(RoomSettingData.Instance.farmingBlockPerOneDayCount);
