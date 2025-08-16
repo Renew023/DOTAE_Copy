@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "characterName": "르탄",
+    "DialogueType": "Basic",
+    "contexts": [
+      "안녕 나는 르탄이야!",
+      "너의 이름은 뭐야?"
+    ],
+    "choiceTexts": null,
+    "choiceActions": null,
+    "questId": 0,
+    "questName": "",
+    "questDescription": "",
+    "prerequisiteQuestId": 0,
+    "failContexts": null
+  },
+  {
+    "id": 2,
+    "characterName": "상점 주인",
+    "DialogueType": "PlayerChoice",
+    "contexts": [
+      "상점을 보러왔는가?"
+    ],
+    "choiceTexts": [
+      "예",
+      "아니요"
+    ],
+    "choiceActions": [
+      "OpenShop",
+      "3"
+    ],
+    "questId": 0,
+    "questName": "",
+    "questDescription": "",
+    "prerequisiteQuestId": 0,
+    "failContexts": null
+  },
+  {
+    "id": 3,
+    "characterName": "상점 주인",
+    "DialogueType": "Basic",
+    "contexts": [
+      "아쉽구만"
+    ],
+    "choiceTexts": null,
+    "choiceActions": null,
+    "questId": 0,
+    "questName": "",
+    "questDescription": "",
+    "prerequisiteQuestId": 0,
+    "failContexts": null
+  },
+  {
+    "id": 4,
+    "characterName": "르탄",
+    "DialogueType": "Quest",
+    "contexts": [
+      "부탁을 들어줘"
+    ],
+    "choiceTexts": [
+      "수락",
+      "거절"
+    ],
+    "choiceActions": [
+      "5",
+      "6"
+    ],
+    "questId": 1001,
+    "questName": "첫 퀘스트",
+    "questDescription": "과자를 구해줘.",
+    "prerequisiteQuestId": 0,
+    "failContexts": null
+  },
+  {
+    "id": 5,
+    "characterName": "르탄",
+    "DialogueType": "Basic",
+    "contexts": [
+      "이런 간단한 것도 못해줘?"
+    ],
+    "choiceTexts": null,
+    "choiceActions": null,
+    "questId": 0,
+    "questName": "",
+    "questDescription": "",
+    "prerequisiteQuestId": 0,
+    "failContexts": null
+  },
+  {
+    "id": 6,
+    "characterName": "르탄",
+    "DialogueType": "Quest",
+    "contexts": [
+      "혹시 물도 가져다줄 수 있어?"
+    ],
+    "choiceTexts": [
+      "수락",
+      "거절"
+    ],
+    "choiceActions": null,
+    "questId": 1002,
+    "questName": "두번쨰",
+    "questDescription": "물도 구해줘",
+    "prerequisiteQuestId": 1001,
+    "failContexts": [
+      "아직 과자를 안 줬어."
+    ]
+  },
+  {
+    "id": 7,
+    "characterName": "네크로맨서",
+    "DialogueType": "Basic",
+    "contexts": null,
+    "choiceTexts": null,
+    "choiceActions": null,
+    "questId": 0,
+    "questName": "",
+    "questDescription": "",
+    "prerequisiteQuestId": 0,
+    "failContexts": null
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "id": 1001,
+    "name_kr": "녹슨 검",
+    "name_en": "Rusty Sword",
+    "description": "녹슨 오래된 검이다.",
+    "rarity": "Common",
+    "icon": "icon_sword_rusty",
+    "statType": [
+      "Damage",
+      "AttackSpeed"
+    ],
+    "statValue": [
+      5.0,
+      0.5
+    ],
+    "type": "Weapon",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 1.0,
+    "enhanceAtkRatio": 0.2,
+    "enhanceCostMultiplier": 0.1,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "RustySword",
+    "canProduced": true,
+    "producedMaterial": [
+      3201,
+      3203
+    ],
+    "requiredQuantity": [
+      2,
+      1
+    ],
+    "ProjectileID": "",
+    "price": 200
+  },
+  {
+    "id": 1002,
+    "name_kr": "철 검",
+    "name_en": "Iron Sword",
+    "description": "튼튼한 철로 만들어진 검.",
+    "rarity": "Uncommon",
+    "icon": "icon_sword_iron",
+    "statType": [
+      "Damage",
+      "AttackSpeed"
+    ],
+    "statValue": [
+      12.0,
+      0.8
+    ],
+    "type": "Weapon",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.98,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "IronSword",
+    "canProduced": true,
+    "producedMaterial": [
+      3201,
+      3203,
+      3004
+    ],
+    "requiredQuantity": [
+      3,
+      1,
+      2
+    ],
+    "ProjectileID": "",
+    "price": 500
+  },
+  {
+    "id": 1003,
+    "name_kr": "은 검",
+    "name_en": "Silver Blade",
+    "description": "은으로 제작된 날카로운 검.",
+    "rarity": "Rare",
+    "icon": "icon_sword_silver",
+    "statType": [
+      "Damage",
+      "AttackSpeed"
+    ],
+    "statValue": [
+      18.0,
+      1.2
+    ],
+    "type": "Weapon",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.95,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "SilverBlade",
+    "canProduced": true,
+    "producedMaterial": [
+      3201,
+      3203,
+      3004
+    ],
+    "requiredQuantity": [
+      4,
+      2,
+      2
+    ],
+    "ProjectileID": "",
+    "price": 800
+  },
+  {
+    "id": 1004,
+    "name_kr": "화염 세이버",
+    "name_en": "Flame Saber",
+    "description": "불꽃을 두른 강력한 검이다.",
+    "rarity": "Epic",
+    "icon": "icon_sword_flame",
+    "statType": [
+      "Damage",
+      "AttackSpeed"
+    ],
+    "statValue": [
+      25.0,
+      1.5
+    ],
+    "type": "Weapon",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.92,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "FlameSaber",
+    "canProduced": true,
+    "producedMaterial": [
+      3209,
+      3203,
+      2213,
+      3004
+    ],
+    "requiredQuantity": [
+      2,
+      3,
+      1,
+      3
+    ],
+    "ProjectileID": "",
+    "price": 1200
+  },
+  {
+    "id": 1005,
+    "name_kr": "드래곤 슬레이어",
+    "name_en": "Dragon Slayer",
+    "description": "전설 속 용 사냥용 대검.",
+    "rarity": "Legendary",
+    "icon": "icon_sword_dragon",
+    "statType": [
+      "Damage",
+      "AttackSpeed"
+    ],
+    "statValue": [
+      35.0,
+      1.8
+    ],
+    "type": "Weapon",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.9,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "DragonSlayer",
+    "canProduced": true,
+    "producedMaterial": [
+      3209,
+      3203,
+      2213,
+      3004
+    ],
+    "requiredQuantity": [
+      3,
+      3,
+      2,
+      4
+    ],
+    "ProjectileID": "",
+    "price": 1800
+  },
+  {
+    "id": 1006,
+    "name_kr": "가죽 장갑",
+    "name_en": "Leather Gloves",
+    "description": "가볍고 단순한 가죽 장갑.",
+    "rarity": "Common",
+    "icon": "icon_gloves_leather",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      1.0,
+      50.0
+    ],
+    "type": "Arm",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 1.0,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "LeatherGloves",
+    "canProduced": true,
+    "producedMaterial": [
+      3004
+    ],
+    "requiredQuantity": [
+      3
+    ],
+    "ProjectileID": "",
+    "price": 300
+  },
+  {
+    "id": 1007,
+    "name_kr": "철 장갑",
+    "name_en": "Iron Gloves",
+    "description": "철로 만들어 튼튼하다.",
+    "rarity": "Uncommon",
+    "icon": "icon_gloves_iron",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      3.0,
+      150.0
+    ],
+    "type": "Arm",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.9,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "IronGloves",
+    "canProduced": true,
+    "producedMaterial": [
+      3209,
+      3201,
+      3004
+    ],
+    "requiredQuantity": [
+      3,
+      3,
+      2
+    ],
+    "ProjectileID": "",
+    "price": 900
+  },
+  {
+    "id": 1008,
+    "name_kr": "가죽 갑옷",
+    "name_en": "Leather Armor",
+    "description": "가죽으로 만든 갑옷",
+    "rarity": "Common",
+    "icon": "icon_armor_leather",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      1.0,
+      100.0
+    ],
+    "type": "Armor",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 1.0,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "LeatherArmor",
+    "canProduced": true,
+    "producedMaterial": [
+      3004
+    ],
+    "requiredQuantity": [
+      6
+    ],
+    "ProjectileID": "",
+    "price": 400
+  },
+  {
+    "id": 1009,
+    "name_kr": "철 갑옷",
+    "name_en": "Iron Armor",
+    "description": "철로 만든 갑옷이다.",
+    "rarity": "Uncommon",
+    "icon": "icon_armor_iron",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      3.0,
+      200.0
+    ],
+    "type": "Armor",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.9,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "IronArmor",
+    "canProduced": true,
+    "producedMaterial": [
+      3209,
+      3201
+    ],
+    "requiredQuantity": [
+      4,
+      4
+    ],
+    "ProjectileID": "",
+    "price": 1250
+  },
+  {
+    "id": 1011,
+    "name_kr": "녹슨 갑옷",
+    "name_en": "Rusty Armor",
+    "description": "녹슨 오래된 갑옷이다.",
+    "rarity": "Common",
+    "icon": "icon_armor_rusty",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      2.0,
+      125.0
+    ],
+    "type": "Armor",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.95,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "RustyArmor",
+    "canProduced": true,
+    "producedMaterial": [
+      3201,
+      3200
+    ],
+    "requiredQuantity": [
+      4,
+      6
+    ],
+    "ProjectileID": "",
+    "price": 800
+  },
+  {
+    "id": 1012,
+    "name_kr": "녹슨 갑옷 하의",
+    "name_en": "Rusty Pants",
+    "description": "녹슨 오래된 갑옷하의이다.",
+    "rarity": "Common",
+    "icon": "icon_pants_rusty",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      2.0,
+      125.0
+    ],
+    "type": "Leg",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.95,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "RustyPants",
+    "canProduced": true,
+    "producedMaterial": [
+      3201,
+      3200
+    ],
+    "requiredQuantity": [
+      4,
+      6
+    ],
+    "ProjectileID": "",
+    "price": 800
+  },
+  {
+    "id": 1013,
+    "name_kr": "철갑옷하의",
+    "name_en": "Iron Pants",
+    "description": "기본적인 철 갑옷하의이다",
+    "rarity": "Uncommon",
+    "icon": "icon_pants_iron",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      3.0,
+      200.0
+    ],
+    "type": "Leg",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.9,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "IronPants",
+    "canProduced": true,
+    "producedMaterial": [
+      3209,
+      3201
+    ],
+    "requiredQuantity": [
+      4,
+      4
+    ],
+    "ProjectileID": "",
+    "price": 1250
+  },
+  {
+    "id": 1014,
+    "name_kr": "가죽 갑옷 하의",
+    "name_en": "Leather Pants",
+    "description": "가죽으로 만든 갑옷 하의",
+    "rarity": "Common",
+    "icon": "icon_pants_leather",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      1.0,
+      100.0
+    ],
+    "type": "Leg",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 1.0,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "LeatherPants",
+    "canProduced": true,
+    "producedMaterial": [
+      3004
+    ],
+    "requiredQuantity": [
+      6
+    ],
+    "ProjectileID": "",
+    "price": 400
+  },
+  {
+    "id": 1015,
+    "name_kr": "녹슨 철 장갑",
+    "name_en": "Rusty Gloves",
+    "description": "녹슨 오래된 장갑이다.",
+    "rarity": "Common",
+    "icon": "icon_gloves_rusty",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      2.0,
+      100.0
+    ],
+    "type": "Arm",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.95,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "RustyGloves",
+    "canProduced": true,
+    "producedMaterial": [
+      3201,
+      3200,
+      3004
+    ],
+    "requiredQuantity": [
+      3,
+      4,
+      2
+    ],
+    "ProjectileID": "",
+    "price": 480
+  },
+  {
+    "id": 1016,
+    "name_kr": "가죽 투구",
+    "name_en": "Leather Helmet",
+    "description": "가죽으로 만든 투구",
+    "rarity": "Common",
+    "icon": "icon_helmet_leather",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      1.0,
+      50.0
+    ],
+    "type": "Head",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 1.0,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "LeatherHelmet",
+    "canProduced": true,
+    "producedMaterial": [
+      3004
+    ],
+    "requiredQuantity": [
+      4
+    ],
+    "ProjectileID": "",
+    "price": 300
+  },
+  {
+    "id": 1017,
+    "name_kr": "녹슨 철 투구",
+    "name_en": "Rusty Helmet",
+    "description": "녹슨 오래된 철 투구",
+    "rarity": "Common",
+    "icon": "icon_helmet_rusty",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      2.0,
+      100.0
+    ],
+    "type": "Head",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.95,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "RustyHelmet",
+    "canProduced": true,
+    "producedMaterial": [
+      3201,
+      3200,
+      3004
+    ],
+    "requiredQuantity": [
+      3,
+      4,
+      2
+    ],
+    "ProjectileID": "",
+    "price": 480
+  },
+  {
+    "id": 1018,
+    "name_kr": "철 투구",
+    "name_en": "Iron Helmet",
+    "description": "철로 만든 투구",
+    "rarity": "Uncommon",
+    "icon": "icon_helmet_iron",
+    "statType": [
+      "Defence",
+      "Hp"
+    ],
+    "statValue": [
+      3.0,
+      150.0
+    ],
+    "type": "Head",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 99,
+    "baseEnhanceRate": 0.9,
+    "enhanceAtkRatio": 0.18,
+    "enhanceCostMultiplier": 0.09,
+    "isStackable": false,
+    "maxStack": 1,
+    "prefabName": "IronHelmey",
+    "canProduced": true,
+    "producedMaterial": [
+      3209,
+      3201,
+      3004
+    ],
+    "requiredQuantity": [
+      3,
+      3,
+      2
+    ],
+    "ProjectileID": "",
+    "price": 900
+  },
+  {
+    "id": 1101,
+    "name_kr": "승준님",
+    "name_en": "",
+    "description": "",
+    "rarity": "None",
+    "icon": "",
+    "statType": [
+      "None"
+    ],
+    "statValue": [
+      0.0
+    ],
+    "type": "None",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 0,
+    "baseEnhanceRate": 0.0,
+    "enhanceAtkRatio": 0.0,
+    "enhanceCostMultiplier": 0.0,
+    "isStackable": false,
+    "maxStack": 0,
+    "prefabName": "",
+    "canProduced": false,
+    "producedMaterial": [
+      0
+    ],
+    "requiredQuantity": [
+      0
+    ],
+    "ProjectileID": "",
+    "price": 0
+  },
+  {
+    "id": 0,
+    "name_kr": "",
+    "name_en": "",
+    "description": "",
+    "rarity": "None",
+    "icon": "",
+    "statType": [
+      "None"
+    ],
+    "statValue": [
+      0.0
+    ],
+    "type": "None",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 0,
+    "baseEnhanceRate": 0.0,
+    "enhanceAtkRatio": 0.0,
+    "enhanceCostMultiplier": 0.0,
+    "isStackable": false,
+    "maxStack": 0,
+    "prefabName": "",
+    "canProduced": false,
+    "producedMaterial": [
+      0
+    ],
+    "requiredQuantity": [
+      0
+    ],
+    "ProjectileID": "",
+    "price": 0
+  },
+  {
+    "id": 1201,
+    "name_kr": "손유민",
+    "name_en": "",
+    "description": "",
+    "rarity": "None",
+    "icon": "",
+    "statType": [
+      "None"
+    ],
+    "statValue": [
+      0.0
+    ],
+    "type": "None",
+    "enhanceLevel": 0,
+    "maxEnhanceLevel": 0,
+    "baseEnhanceRate": 0.0,
+    "enhanceAtkRatio": 0.0,
+    "enhanceCostMultiplier": 0.0,
+    "isStackable": false,
+    "maxStack": 0,
+    "prefabName": "",
+    "canProduced": false,
+    "producedMaterial": [
+      0
+    ],
+    "requiredQuantity": [
+      0
+    ],
+    "ProjectileID": "",
+    "price": 0
+  }
+]

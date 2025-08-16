@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
+  m_Name: PhotonServerSettings
+  m_EditorClassIdentifier: 
+  AppSettings:
+    AppIdRealtime: f22d4b7e-ae25-425f-a4a7-edf29b5c0600
+    AppIdFusion: 
+    AppIdChat: d3028096-63c3-4e33-9159-c8ca58ce1fcd
+    AppIdVoice: 
+    AppVersion: 
+    UseNameServer: 1
+    FixedRegion: kr
+    Server: 
+    Port: 0
+    ProxyServer: 
+    Protocol: 0
+    EnableProtocolFallback: 1
+    AuthMode: 0
+    EnableLobbyStatistics: 1
+    NetworkLogging: 1
+  DevRegion: kr
+  PunLogging: 0
+  EnableSupportLogger: 0
+  RunInBackground: 1
+  StartInOfflineMode: 0
+  RpcList:
+  - ClickRpc
+  - DestroyRpc
+  - DestroySpaceship
+  - Fire
+  - RespawnSpaceship
+  - RPC_StartCountdown
+  - LoadGame
+  - StartCountdown
+  - PlayAttack
+  - PlayerAttack
+  - StopAttack
+  - Enter
+  - Exit
+  - PlayerIdleState
+  - PlayerMoveState
+  - PlayerAttackState
+  - PlayerRunState
+  - EnemyAttackState
+  - EnemyIdleState
+  - EnemyTargetState
+  - EnemyWanderState
+  - NPCAttackState
+  - NPCIdleState
+  - NPCTargetState
+  - BeginCountdown
+  - AbilityLevelUp
+  - Attack
+  - ChangePlace
+  - EnemyDeathState
+  - Initialize
+  - LevelUp
+  - NPCDeathState
+  - TakeDamage
+  - WanderPoint
+  - Look
+  - Move
+  - Run
+  - Sit
+  - Targeting
+  - AttackEnd
+  - Point
+  - SetPoint
+  - SetLook
+  - Respawn
+  - RespawnInit
+  - EnemyChaseState
+  - EnemyFollowState
+  - SetTarget
+  - RPC_SyncInventory
+  - RPC_ApplyWeather
+  - RPC_SyncTime
+  - RPC_SyncStartTime
+  DisableAutoOpenWizard: 1
+  ShowSettings: 1
+  DevRegionSetOnce: 1

@@ -1,0 +1,192 @@
+[
+  {
+    "characterID": 1,
+    "abilityExpWeight": [
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "abilityMaxLevel": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "hungry": 100.0,
+    "thirsty": 100.0,
+    "initLevel": 1,
+    "maxLevel": 40,
+    "levelWeight": 0.03,
+    "exp": 20.0,
+    "questID": 0,
+    "health": 100.0,
+    "damage": 5.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.0,
+    "missPercent": 0.0,
+    "moveSpeed": 10.0,
+    "force": 500,
+    "preQuestID": 100001
+  },
+  {
+    "characterID": 2,
+    "abilityExpWeight": [
+      0.5,
+      0.5
+    ],
+    "abilityMaxLevel": [
+      20,
+      20
+    ],
+    "hungry": 100.0,
+    "thirsty": 100.0,
+    "initLevel": 1,
+    "maxLevel": 40,
+    "levelWeight": 0.03,
+    "exp": 20.0,
+    "questID": 0,
+    "health": 500.0,
+    "damage": 40.0,
+    "defence": 10.0,
+    "attackSpeed": 0.7,
+    "criticalPercent": 10.0,
+    "aimPercent": 1.0,
+    "missPercent": 1.0,
+    "moveSpeed": 12.0,
+    "force": 1000,
+    "preQuestID": 100002
+  },
+  {
+    "characterID": 3,
+    "abilityExpWeight": [
+      1.8,
+      1.8,
+      1.2
+    ],
+    "abilityMaxLevel": [
+      20,
+      20,
+      20
+    ],
+    "hungry": 100.0,
+    "thirsty": 100.0,
+    "initLevel": 1,
+    "maxLevel": 40,
+    "levelWeight": 0.03,
+    "exp": 20.0,
+    "questID": 0,
+    "health": 200.0,
+    "damage": 10.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "moveSpeed": 5.0,
+    "force": 500,
+    "preQuestID": 100003
+  },
+  {
+    "characterID": 4,
+    "abilityExpWeight": [
+      1.8,
+      1.2,
+      0.5,
+      1.5,
+      1.5,
+      1.0,
+      1.8,
+      0.8,
+      1.0,
+      1.0
+    ],
+    "abilityMaxLevel": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "hungry": 100.0,
+    "thirsty": 100.0,
+    "initLevel": 1,
+    "maxLevel": 40,
+    "levelWeight": 0.03,
+    "exp": 20.0,
+    "questID": 0,
+    "health": 300.0,
+    "damage": 20.0,
+    "defence": 8.0,
+    "attackSpeed": 0.8,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.7,
+    "missPercent": 0.5,
+    "moveSpeed": 5.0,
+    "force": 400,
+    "preQuestID": 100004
+  },
+  {
+    "characterID": 5,
+    "abilityExpWeight": [
+      1.5,
+      1.5
+    ],
+    "abilityMaxLevel": [
+      20,
+      20
+    ],
+    "hungry": 100.0,
+    "thirsty": 100.0,
+    "initLevel": 1,
+    "maxLevel": 40,
+    "levelWeight": 0.03,
+    "exp": 20.0,
+    "questID": 0,
+    "health": 100.0,
+    "damage": 5.0,
+    "defence": 3.0,
+    "attackSpeed": 4.0,
+    "criticalPercent": 10.0,
+    "aimPercent": 1.0,
+    "missPercent": 1.5,
+    "moveSpeed": 3.0,
+    "force": 200,
+    "preQuestID": 100005
+  },
+  {
+    "characterID": 6,
+    "abilityExpWeight": [
+      1.2,
+      1.2
+    ],
+    "abilityMaxLevel": [
+      30,
+      30
+    ],
+    "hungry": 100.0,
+    "thirsty": 100.0,
+    "initLevel": 1,
+    "maxLevel": 40,
+    "levelWeight": 0.1,
+    "exp": 20.0,
+    "questID": 0,
+    "health": 20.0,
+    "damage": 3.0,
+    "defence": 1.0,
+    "attackSpeed": 0.1,
+    "criticalPercent": 0.1,
+    "aimPercent": 0.5,
+    "missPercent": 0.2,
+    "moveSpeed": 0.2,
+    "force": 50,
+    "preQuestID": 100006
+  }
+]

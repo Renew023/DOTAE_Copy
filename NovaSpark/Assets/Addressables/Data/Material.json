@@ -1,0 +1,371 @@
+[
+  {
+    "id": 0,
+    "name_kr": "",
+    "name_en": "",
+    "rarity": "None",
+    "description": "",
+    "type": [
+      "None"
+    ],
+    "icon": "",
+    "price": 0,
+    "isStackable": false,
+    "maxStack": 0,
+    "Alchemy": "None",
+    "weight": 0.0
+  },
+  {
+    "id": 3002,
+    "name_kr": "마법 보석",
+    "name_en": "Magic Gem",
+    "rarity": "Rare",
+    "description": "장비를 강화하는 보석",
+    "type": [
+      "Enhance"
+    ],
+    "icon": "icon_gem_magic",
+    "price": 50,
+    "isStackable": true,
+    "maxStack": 50,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3003,
+    "name_kr": "나무 조각",
+    "name_en": "Wood Piece",
+    "rarity": "Common",
+    "description": "방패 제작에 사용되는 목재",
+    "type": [
+      "Common"
+    ],
+    "icon": "icon_wood_piece",
+    "price": 10,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3004,
+    "name_kr": "몬스터 가죽",
+    "name_en": "Monster Hide",
+    "rarity": "Uncommon",
+    "description": "몬스터에서 얻은 튼튼한 가죽",
+    "type": [
+      "Common"
+    ],
+    "icon": "icon_monster_hide",
+    "price": 20,
+    "isStackable": true,
+    "maxStack": 50,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3005,
+    "name_kr": "불꽃의 심장",
+    "name_en": "Flame Core",
+    "rarity": "Epic",
+    "description": "불 속성 무기 강화 재료",
+    "type": [
+      "Enchant"
+    ],
+    "icon": "icon_flame_core",
+    "price": 100,
+    "isStackable": true,
+    "maxStack": 10,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3006,
+    "name_kr": "수정 조각",
+    "name_en": "Crystal Shard",
+    "rarity": "Rare",
+    "description": "고급 장비에 쓰이는 결정 조각",
+    "type": [
+      "Enhance"
+    ],
+    "icon": "icon_crystal",
+    "price": 40,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3007,
+    "name_kr": "어둠의 정수",
+    "name_en": "Dark Essence",
+    "rarity": "Epic",
+    "description": "어둠 속성을 부여하는 재료",
+    "type": [
+      "Enchant"
+    ],
+    "icon": "icon_dark_essence",
+    "price": 80,
+    "isStackable": true,
+    "maxStack": 20,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3008,
+    "name_kr": "야수의 발톱",
+    "name_en": "Beast Claw",
+    "rarity": "Uncommon",
+    "description": "야수형 몬스터의 발톱",
+    "type": [
+      "Common"
+    ],
+    "icon": "icon_beast_claw",
+    "price": 30,
+    "isStackable": true,
+    "maxStack": 50,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3009,
+    "name_kr": "강철 주괴",
+    "name_en": "Steel Ingot",
+    "rarity": "Uncommon",
+    "description": "단단하게 제련된 철괴",
+    "type": [
+      "Common"
+    ],
+    "icon": "icon_steel_ingot",
+    "price": 60,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3010,
+    "name_kr": "나무 수액",
+    "name_en": "Tree Sap",
+    "rarity": "Common",
+    "description": "접착제나 연료로 쓰이는 수액",
+    "type": [
+      "Common"
+    ],
+    "icon": "icon_tree_sap",
+    "price": 15,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3011,
+    "name_kr": "허브",
+    "name_en": "hub",
+    "rarity": "Common",
+    "description": "약한 약재를 만드는 약초",
+    "type": [
+      "Alchemy"
+    ],
+    "icon": "icon_hub",
+    "price": 10,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "Heal",
+    "weight": 1.0
+  },
+  {
+    "id": 3012,
+    "name_kr": "덤불",
+    "name_en": "bush",
+    "rarity": "Common",
+    "description": "평범한 덤불이다.",
+    "type": [
+      "Craft"
+    ],
+    "icon": "icon_bush",
+    "price": 10,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "None",
+    "weight": 3.0
+  },
+  {
+    "id": 3013,
+    "name_kr": "크리스탈",
+    "name_en": "crystal",
+    "rarity": "Common",
+    "description": "보랏빛 광석에서 나오는 크리스탈",
+    "type": [
+      "Craft"
+    ],
+    "icon": "icon/Crystal",
+    "price": 20,
+    "isStackable": true,
+    "maxStack": 30,
+    "Alchemy": "None",
+    "weight": 15.0
+  },
+  {
+    "id": 3014,
+    "name_kr": "노란 광석",
+    "name_en": "Yellow crystal",
+    "rarity": "Common",
+    "description": "평범한 광석에서 흔하게 추출할 수 있는 광석이다.",
+    "type": [
+      "Craft",
+      "Enhance"
+    ],
+    "icon": "icon/yellow_crystal",
+    "price": 30,
+    "isStackable": true,
+    "maxStack": 30,
+    "Alchemy": "None",
+    "weight": 20.0
+  },
+  {
+    "id": 3200,
+    "name_kr": "돌 조각",
+    "name_en": "small stone",
+    "rarity": "Common",
+    "description": "작은 조각으로 깨진 돌이다.",
+    "type": [
+      "Craft"
+    ],
+    "icon": "Image/items[resources_basic_31]",
+    "price": 10,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "None",
+    "weight": 5.0
+  },
+  {
+    "id": 3201,
+    "name_kr": "철광석",
+    "name_en": "Iron Ore",
+    "rarity": "Common",
+    "description": "장비를 강화하는 철광석",
+    "type": [
+      "Craft"
+    ],
+    "icon": "Image/items[resources_basic_18]",
+    "price": 100,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "None",
+    "weight": 5.0
+  },
+  {
+    "id": 3202,
+    "name_kr": "토막난 나무",
+    "name_en": "broken wood",
+    "rarity": "Common",
+    "description": "토막난 나무다.",
+    "type": [
+      "Craft"
+    ],
+    "icon": "Image/items[resources_basic_0]",
+    "price": 20,
+    "isStackable": true,
+    "maxStack": 30,
+    "Alchemy": "None",
+    "weight": 15.0
+  },
+  {
+    "id": 3203,
+    "name_kr": "결이 고운 나무",
+    "name_en": "soft_wood",
+    "rarity": "Uncommon",
+    "description": "고운 나무다. 디자인 용으로 쓰기 좋다.",
+    "type": [
+      "Craft"
+    ],
+    "icon": "Image/items[resources_basic_1]",
+    "price": 80,
+    "isStackable": true,
+    "maxStack": 30,
+    "Alchemy": "None",
+    "weight": 20.0
+  },
+  {
+    "id": 3204,
+    "name_kr": "잡초",
+    "name_en": "weeds",
+    "rarity": "Common",
+    "description": "길에서 흔히 보이는 잡초다",
+    "type": [
+      "Common"
+    ],
+    "icon": "Image/Bush[Bush_22]",
+    "price": 10,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "None",
+    "weight": 1.0
+  },
+  {
+    "id": 3206,
+    "name_kr": "억쎈 풀",
+    "name_en": "tight_grass",
+    "rarity": "Common",
+    "description": "억쎈 풀이다.",
+    "type": [
+      "Craft"
+    ],
+    "icon": "Image/Bush[Bush_18]",
+    "price": 10,
+    "isStackable": true,
+    "maxStack": 30,
+    "Alchemy": "None",
+    "weight": 5.0
+  },
+  {
+    "id": 3207,
+    "name_kr": "허브",
+    "name_en": "hub",
+    "rarity": "Common",
+    "description": "약한 약재를 만드는 약초",
+    "type": [
+      "Alchemy"
+    ],
+    "icon": "Image/Bush[Bush_21]",
+    "price": 10,
+    "isStackable": true,
+    "maxStack": 99,
+    "Alchemy": "Heal",
+    "weight": 1.0
+  },
+  {
+    "id": 3208,
+    "name_kr": "금 조각",
+    "name_en": "gold_piece",
+    "rarity": "Rare",
+    "description": "돌에서 희귀하게 발견되고는 한다.",
+    "type": [
+      "Craft"
+    ],
+    "icon": "icon/gold_piece",
+    "price": 300,
+    "isStackable": true,
+    "maxStack": 30,
+    "Alchemy": "None",
+    "weight": 10.0
+  },
+  {
+    "id": 3209,
+    "name_kr": "순도 높은 광석",
+    "name_en": "big_stone",
+    "rarity": "Common",
+    "description": "돌의 결을 잘 부숴서 얻어낸 커다란 돌이다.",
+    "type": [
+      "Craft"
+    ],
+    "icon": "Stone[Stone_12]",
+    "price": 300,
+    "isStackable": true,
+    "maxStack": 30,
+    "Alchemy": "None",
+    "weight": 20.0
+  }
+]

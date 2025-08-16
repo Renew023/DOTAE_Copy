@@ -1,0 +1,250 @@
+[
+  {
+    "characterID": 501,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "WeaponNPC",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 502,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 503,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 504,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 505,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 506,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 507,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "EnhanceNPC",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 508,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 509,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 510,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 511,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 512,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "DeadBodyNPC",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 513,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "PositionNPC",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 514,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "ArmorNPC",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 801,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 802,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 803,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 804,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 805,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 806,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 807,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 808,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "OtherNPC",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 809,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "OtherNPC",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 810,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 811,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "EnhanceNPC",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 812,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "CasinoNPC",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 813,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 814,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 815,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 816,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  },
+  {
+    "characterID": 817,
+    "DiaglogList": [
+      0
+    ],
+    "npcType": "None",
+    "CharacterTalk": null
+  }
+]

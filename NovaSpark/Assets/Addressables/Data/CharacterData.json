@@ -1,0 +1,2470 @@
+[
+  {
+    "characterID": 1,
+    "characterType": "player",
+    "name_kr": "백성은",
+    "name_en": "seongeun",
+    "description": "손재주가 뛰어나지만 전투에는 약한 모습을 보인다",
+    "bloodType": "Person",
+    "familyType": "CasinoVill",
+    "Level": 1,
+    "health": 100.0,
+    "damage": 5.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 1.0,
+    "aimPercent": 1.0,
+    "missPercent": 1.0,
+    "force": 500,
+    "moveSpeed": 10.0,
+    "abilityName": [
+      "Run",
+      "Regeneration",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 2,
+    "characterType": "player",
+    "name_kr": "최종현",
+    "name_en": "choijonghyun",
+    "description": "드래곤은 뛰어난 회복력을 가지고 있으며 다른 종족에 비해 모든 능력이 높지만 성장이 느리다.",
+    "bloodType": "Dragon",
+    "familyType": "DragonRare",
+    "Level": 1,
+    "health": 500.0,
+    "damage": 40.0,
+    "defence": 10.0,
+    "attackSpeed": 0.7,
+    "attackRange": 3.0,
+    "criticalPercent": 10.0,
+    "aimPercent": 1.0,
+    "missPercent": 1.0,
+    "force": 1000,
+    "moveSpeed": 12.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      3
+    ],
+    "abilityValue": [
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 3,
+    "characterType": "player",
+    "name_kr": "손유민",
+    "name_en": "sonyumin",
+    "description": "경찰을 털다가 쫓겨날 정도로 어리석었다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 200.0,
+    "damage": 10.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "force": 500,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Run",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 4,
+    "characterType": "player",
+    "name_kr": "가일",
+    "name_en": "Guile",
+    "description": "유망한 기사였지만 언데드와의 전쟁 중 사망하고 스켈레톤으로 다시 깨어났다.",
+    "bloodType": "UnDead",
+    "familyType": "UndeadVill",
+    "Level": 1,
+    "health": 400.0,
+    "damage": 23.0,
+    "defence": 10.0,
+    "attackSpeed": 0.8,
+    "attackRange": 3.0,
+    "criticalPercent": 3.0,
+    "aimPercent": 100.0,
+    "missPercent": 2.0,
+    "force": 500,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Battle",
+      "Run",
+      "UnLock",
+      "Regeneration",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 5,
+    "characterType": "player",
+    "name_kr": "지승준",
+    "name_en": "jiseungjun",
+    "description": "눈을 떠보니 인간이였던 내가 언데드?",
+    "bloodType": "UnDead",
+    "familyType": "UndeadVill",
+    "Level": 1,
+    "health": 100.0,
+    "damage": 5.0,
+    "defence": 5.0,
+    "attackSpeed": 4.0,
+    "attackRange": 4.0,
+    "criticalPercent": 10.0,
+    "aimPercent": 1.0,
+    "missPercent": 1.5,
+    "force": 200,
+    "moveSpeed": 3.0,
+    "abilityName": [
+      "Regeneration"
+    ],
+    "abilityInitLevel": [
+      3
+    ],
+    "abilityValue": [
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 6,
+    "characterType": "player",
+    "name_kr": "호저",
+    "name_en": "hozer",
+    "description": "빈민가의 좀도둑 출신. 기사를 동경하지만, 눈 앞 현실에 집중하며 살아가고 있다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 300.0,
+    "damage": 20.0,
+    "defence": 8.0,
+    "attackSpeed": 1.2,
+    "attackRange": 3.0,
+    "criticalPercent": 8.0,
+    "aimPercent": 100.0,
+    "missPercent": 8.0,
+    "force": 500,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Still",
+      "Run"
+    ],
+    "abilityInitLevel": [
+      3,
+      3
+    ],
+    "abilityValue": [
+      1.2,
+      3.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 7,
+    "characterType": "player",
+    "name_kr": "밸런스맨",
+    "name_en": "balance",
+    "description": "밸런스를 잡기 위한 1포인트당 증가하는 능력치를 확인해보자(60 분배+레벨당 10) 총10개 스택",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 20.0,
+    "damage": 3.0,
+    "defence": 1.0,
+    "attackSpeed": 0.1,
+    "attackRange": 0.1,
+    "criticalPercent": 0.5,
+    "aimPercent": 0.2,
+    "missPercent": 0.2,
+    "force": 50,
+    "moveSpeed": 1.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 701,
+    "characterType": "enemy",
+    "name_kr": "테스트용 블럭",
+    "name_en": "sonyumin",
+    "description": "테스트용 블럭입니다",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 200.0,
+    "damage": 10.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "force": 500,
+    "moveSpeed": 36.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 102,
+    "characterType": "enemy",
+    "name_kr": "약탈자",
+    "name_en": "sonyumin",
+    "description": "경찰을 털다가 쫓겨날 정도로 어리석었다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 150.0,
+    "damage": 12.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "force": 501,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 103,
+    "characterType": "enemy",
+    "name_kr": "늑대 우두머리",
+    "name_en": "sonyumin",
+    "description": "야생에 서식하는 큰 늑대다",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 180.0,
+    "damage": 12.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "force": 502,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 201,
+    "characterType": "enemy",
+    "name_kr": "들개",
+    "name_en": "Wild Dog",
+    "description": "황무지에서 흔히 볼 수 있는 사나운 들개. 무리로 공격한다",
+    "bloodType": "Beast",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 100.0,
+    "damage": 11.0,
+    "defence": 1.0,
+    "attackSpeed": 0.7,
+    "attackRange": 0.5,
+    "criticalPercent": 2.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.5,
+    "force": 100,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "Bite",
+      "Howl"
+    ],
+    "abilityInitLevel": [
+      2,
+      3
+    ],
+    "abilityValue": [
+      1.1,
+      0.5
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 202,
+    "characterType": "enemy",
+    "name_kr": "거미",
+    "name_en": "Spider",
+    "description": "강한 맹독과 거미줄 공격이 특징. 숲과 동굴에 분포",
+    "bloodType": "Beast",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 100.0,
+    "damage": 9.0,
+    "defence": 2.0,
+    "attackSpeed": 0.8,
+    "attackRange": 0.7,
+    "criticalPercent": 2.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.7,
+    "force": 100,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "Poison_Bite",
+      "WebShot"
+    ],
+    "abilityInitLevel": [
+      2,
+      3
+    ],
+    "abilityValue": [
+      1.3,
+      0.9
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 203,
+    "characterType": "enemy",
+    "name_kr": "고블린",
+    "name_en": "Goblin",
+    "description": "약하지만 숫자가 많다. 때로는 무기를 들고 다닌다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 120.0,
+    "damage": 11.0,
+    "defence": 2.0,
+    "attackSpeed": 0.6,
+    "attackRange": 0.5,
+    "criticalPercent": 2.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.4,
+    "force": 100,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "Slash",
+      "Ambush"
+    ],
+    "abilityInitLevel": [
+      1,
+      2
+    ],
+    "abilityValue": [
+      1.0,
+      0.6
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 204,
+    "characterType": "enemy",
+    "name_kr": "슬라임",
+    "name_en": "Slime",
+    "description": "점액질 몸체로 물리 공격에 강하다. 움직임이 느리다.",
+    "bloodType": "Elemental",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 100.0,
+    "damage": 9.0,
+    "defence": 2.0,
+    "attackSpeed": 0.4,
+    "attackRange": 0.5,
+    "criticalPercent": 1.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.3,
+    "force": 100,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "Acid_Splash"
+    ],
+    "abilityInitLevel": [
+      2
+    ],
+    "abilityValue": [
+      0.7
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 205,
+    "characterType": "enemy",
+    "name_kr": "스켈레톤",
+    "name_en": "mutationskeleton",
+    "description": "실험으로 인해 피아식별이 불가능해진 스켈레톤이다",
+    "bloodType": "UnDead",
+    "familyType": "UndeadVill",
+    "Level": 1,
+    "health": 160.0,
+    "damage": 12.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.0,
+    "force": 100,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      3
+    ],
+    "abilityValue": [
+      3.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 206,
+    "characterType": "enemy",
+    "name_kr": "늑대",
+    "name_en": "wolf",
+    "description": "야생에 서식하는 평범한 늑대다",
+    "bloodType": "Beast",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 100.0,
+    "damage": 10.0,
+    "defence": 1.0,
+    "attackSpeed": 1.0,
+    "attackRange": 0.5,
+    "criticalPercent": 2.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.5,
+    "force": 100,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "Bite",
+      "Howl"
+    ],
+    "abilityInitLevel": [
+      2,
+      3
+    ],
+    "abilityValue": [
+      1.1,
+      0.5
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 301,
+    "characterType": "enemy",
+    "name_kr": "망자",
+    "name_en": "Hollow",
+    "description": "모두에게 잊혀져 망자가 되었다.",
+    "bloodType": "Hollow",
+    "familyType": "Cemetery",
+    "Level": 1,
+    "health": 120.0,
+    "damage": 10.0,
+    "defence": 1.0,
+    "attackSpeed": 1.0,
+    "attackRange": 0.5,
+    "criticalPercent": 2.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.5,
+    "force": 100,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "Bite",
+      "Howl"
+    ],
+    "abilityInitLevel": [
+      2,
+      4
+    ],
+    "abilityValue": [
+      1.1,
+      0.6
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 302,
+    "characterType": "enemy",
+    "name_kr": "망자 호위병",
+    "name_en": "Hollowguard",
+    "description": "라스 가문의 사람들이 망자가 되어 망자보다 강력하다,",
+    "bloodType": "Hollow",
+    "familyType": "Cemetery",
+    "Level": 1,
+    "health": 160.0,
+    "damage": 12.0,
+    "defence": 1.0,
+    "attackSpeed": 1.0,
+    "attackRange": 0.5,
+    "criticalPercent": 2.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.5,
+    "force": 100,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "Bite",
+      "Howl"
+    ],
+    "abilityInitLevel": [
+      2,
+      5
+    ],
+    "abilityValue": [
+      1.1,
+      0.7
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 401,
+    "characterType": "enemy",
+    "name_kr": "돼지",
+    "name_en": "pig",
+    "description": "자연으로부터 살아남기 위해서 성장했다. 잘못 사냥하다가 사상자가 나오곤 한다.",
+    "bloodType": "Beast",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 120.0,
+    "damage": 10.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.5,
+    "force": 1800,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Leg4",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 402,
+    "characterType": "enemy",
+    "name_kr": "소",
+    "name_en": "cow",
+    "description": "자연으로부터 살아남기 위해서 성장했다. 잘못 사냥하다가 사상자가 나오곤 한다.",
+    "bloodType": "Beast",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 120.0,
+    "damage": 10.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.5,
+    "force": 1800,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Leg4",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 403,
+    "characterType": "enemy",
+    "name_kr": "도적 우두머리",
+    "name_en": "gang_leader",
+    "description": "도적단 내에서 가장 무력이 쌔서 우두머리",
+    "bloodType": "Person",
+    "familyType": "Gang",
+    "Level": 1,
+    "health": 220.0,
+    "damage": 15.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.5,
+    "force": 1800,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 404,
+    "characterType": "enemy",
+    "name_kr": "도적",
+    "name_en": "gang",
+    "description": "무력으로 쉽게 살아가려는 이들.",
+    "bloodType": "Person",
+    "familyType": "Gang",
+    "Level": 1,
+    "health": 120.0,
+    "damage": 12.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.5,
+    "force": 1200,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 501,
+    "characterType": "npc",
+    "name_kr": "무기상인",
+    "name_en": "Chars",
+    "description": "무기상인",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 200.0,
+    "damage": 10.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.5,
+    "force": 503,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Run",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 502,
+    "characterType": "npc",
+    "name_kr": "오르투스",
+    "name_en": "Ortus",
+    "description": "가일을 언데드로 일으킨 네크로맨서. 가일의 성장에 흥미로워한다.",
+    "bloodType": "Person",
+    "familyType": "UndeadVill",
+    "Level": 1,
+    "health": 200.0,
+    "damage": 10.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "force": 504,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Run",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 503,
+    "characterType": "npc",
+    "name_kr": "루크",
+    "name_en": "Luke",
+    "description": "전쟁 중 심각한 부상을 입은 가일의 동료",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 1.0,
+    "damage": 0.0,
+    "defence": 0.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 1.0,
+    "missPercent": 0.0,
+    "force": 505,
+    "moveSpeed": 0.0,
+    "abilityName": [
+      "Run",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 504,
+    "characterType": "npc",
+    "name_kr": "벨그라스",
+    "name_en": "Belgras",
+    "description": "강한 개체를 만들기 위해선 그 어떤짓도 서슴치않는다. 자신의 실험병기들에 대한 자부심을 가지고있고 네크로맨서가 일으킨 초기의 언데드들을 무시하는 경향이 있다.",
+    "bloodType": "Person",
+    "familyType": "UndeadVill",
+    "Level": 1,
+    "health": 200.0,
+    "damage": 10.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "force": 506,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Run",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 505,
+    "characterType": "npc",
+    "name_kr": "병사",
+    "name_en": "soldier",
+    "description": "왕국의 병사",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 50.0,
+    "damage": 5.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.0,
+    "force": 100,
+    "moveSpeed": 3.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      3
+    ],
+    "abilityValue": [
+      3.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      1001,
+      1011
+    ],
+    "StartItemCount": [
+      1,
+      1
+    ]
+  },
+  {
+    "characterID": 506,
+    "characterType": "npc",
+    "name_kr": "스켈레톤",
+    "name_en": "skeleton",
+    "description": "네크로맨서의 기초적인 병사",
+    "bloodType": "UnDead",
+    "familyType": "UndeadVill",
+    "Level": 1,
+    "health": 60.0,
+    "damage": 6.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.0,
+    "force": 100,
+    "moveSpeed": 3.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      3
+    ],
+    "abilityValue": [
+      3.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 507,
+    "characterType": "npc",
+    "name_kr": "강화상인",
+    "name_en": "enhanceMan",
+    "description": "강화NPC",
+    "bloodType": "UnDead",
+    "familyType": "UndeadVill",
+    "Level": 1,
+    "health": 200.0,
+    "damage": 5.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.0,
+    "force": 100,
+    "moveSpeed": 3.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      3
+    ],
+    "abilityValue": [
+      3.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 508,
+    "characterType": "npc",
+    "name_kr": "커즈",
+    "name_en": "Kurz",
+    "description": "언데드왕국에서 인정받은 대장장이.",
+    "bloodType": "Person",
+    "familyType": "UndeadVill",
+    "Level": 1,
+    "health": 300.0,
+    "damage": 15.0,
+    "defence": 10.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.0,
+    "force": 500,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Run",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      10
+    ],
+    "abilityValue": [
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 509,
+    "characterType": "npc",
+    "name_kr": "정찰병",
+    "name_en": "Scout",
+    "description": "인간진영의 정찰대원",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 100.0,
+    "damage": 5.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 2.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.0,
+    "force": 100,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      3
+    ],
+    "abilityValue": [
+      3.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 510,
+    "characterType": "npc",
+    "name_kr": "정찰병대장",
+    "name_en": "ScoutLeader",
+    "description": "인간진영의 정찰대원을 이끄는 대장",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 150.0,
+    "damage": 8.0,
+    "defence": 5.0,
+    "attackSpeed": 1.0,
+    "attackRange": 1.0,
+    "criticalPercent": 2.0,
+    "aimPercent": 100.0,
+    "missPercent": 0.0,
+    "force": 100,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      3
+    ],
+    "abilityValue": [
+      3.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 511,
+    "characterType": "npc",
+    "name_kr": "네크로맨서",
+    "name_en": "Necromancer",
+    "description": "언데드진영의 네크로맨서",
+    "bloodType": "Person",
+    "familyType": "UndeadVill",
+    "Level": 1,
+    "health": 200.0,
+    "damage": 10.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "force": 504,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Run",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 512,
+    "characterType": "npc",
+    "name_kr": "플레이어시체",
+    "name_en": "DeadBody",
+    "description": "플레이어 사망 후 생성될 npc",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 0.0,
+    "damage": 0.0,
+    "defence": 0.0,
+    "attackSpeed": 0.0,
+    "attackRange": 0.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.0,
+    "missPercent": 0.0,
+    "force": 5000,
+    "moveSpeed": 0.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 513,
+    "characterType": "npc",
+    "name_kr": "소비상인",
+    "name_en": "consumptionMan",
+    "description": "소비상인이다",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 200.0,
+    "damage": 10.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "force": 503,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Run",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 514,
+    "characterType": "npc",
+    "name_kr": "방어구상인",
+    "name_en": "ArmorMan",
+    "description": "방어구를 판매하는 상인이다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 200.0,
+    "damage": 10.0,
+    "defence": 6.0,
+    "attackSpeed": 1.5,
+    "attackRange": 3.0,
+    "criticalPercent": 5.0,
+    "aimPercent": 100.0,
+    "missPercent": 1.5,
+    "force": 503,
+    "moveSpeed": 5.0,
+    "abilityName": [
+      "Run",
+      "Make"
+    ],
+    "abilityInitLevel": [
+      3,
+      3
+    ],
+    "abilityValue": [
+      3.0,
+      4.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 601,
+    "characterType": "npc",
+    "name_kr": "이벨트",
+    "name_en": "Ibelteu",
+    "description": "정체불명의 망자로 플레이어를 도와준다.",
+    "bloodType": "Hollow",
+    "familyType": "Cemetery",
+    "Level": 1,
+    "health": 0.0,
+    "damage": 0.0,
+    "defence": 0.0,
+    "attackSpeed": 0.0,
+    "attackRange": 0.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.0,
+    "missPercent": 0.0,
+    "force": 0,
+    "moveSpeed": 0.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 602,
+    "characterType": "npc",
+    "name_kr": "케인",
+    "name_en": "Kane",
+    "description": "남쪽 묘지를 지키는 경비병",
+    "bloodType": "Person",
+    "familyType": "Cemetery",
+    "Level": 1,
+    "health": 0.0,
+    "damage": 0.0,
+    "defence": 0.0,
+    "attackSpeed": 0.0,
+    "attackRange": 0.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.0,
+    "missPercent": 0.0,
+    "force": 0,
+    "moveSpeed": 0.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 603,
+    "characterType": "npc",
+    "name_kr": "리사",
+    "name_en": "Lisa",
+    "description": "케인의 하나뿐인 여동생",
+    "bloodType": "Person",
+    "familyType": "Cemetery",
+    "Level": 1,
+    "health": 0.0,
+    "damage": 0.0,
+    "defence": 0.0,
+    "attackSpeed": 0.0,
+    "attackRange": 0.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.0,
+    "missPercent": 0.0,
+    "force": 0,
+    "moveSpeed": 0.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 604,
+    "characterType": "npc",
+    "name_kr": "마을 사람들",
+    "name_en": "Villager",
+    "description": "마을 사람들",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 0.0,
+    "damage": 0.0,
+    "defence": 0.0,
+    "attackSpeed": 0.0,
+    "attackRange": 0.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.0,
+    "missPercent": 0.0,
+    "force": 0,
+    "moveSpeed": 0.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 605,
+    "characterType": "npc",
+    "name_kr": "어린 엘리사",
+    "name_en": "Child Elisha",
+    "description": "엘리사의 어릴 적 모습",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 0.0,
+    "damage": 0.0,
+    "defence": 0.0,
+    "attackSpeed": 0.0,
+    "attackRange": 0.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.0,
+    "missPercent": 0.0,
+    "force": 0,
+    "moveSpeed": 0.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 606,
+    "characterType": "npc",
+    "name_kr": "엘리사 엄마",
+    "name_en": "ElishaMother",
+    "description": "엘리사의 엄마",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 0.0,
+    "damage": 0.0,
+    "defence": 0.0,
+    "attackSpeed": 0.0,
+    "attackRange": 0.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.0,
+    "missPercent": 0.0,
+    "force": 0,
+    "moveSpeed": 0.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 607,
+    "characterType": "npc",
+    "name_kr": "그레이브",
+    "name_en": "Grave",
+    "description": "북쪽 묘지를 지키는 노인",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 0.0,
+    "damage": 0.0,
+    "defence": 0.0,
+    "attackSpeed": 0.0,
+    "attackRange": 0.0,
+    "criticalPercent": 0.0,
+    "aimPercent": 0.0,
+    "missPercent": 0.0,
+    "force": 0,
+    "moveSpeed": 0.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      4001
+    ],
+    "SkillListLevel": [
+      1
+    ],
+    "RiggingType": "None",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 801,
+    "characterType": "npc",
+    "name_kr": "좀도둑 친구(치누)",
+    "name_en": "thief_chinu",
+    "description": "호저의 친구, 도둑질을 하며 하루를 근근히 살아가고 있다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 120.0,
+    "damage": 18.0,
+    "defence": 6.0,
+    "attackSpeed": 0.6,
+    "attackRange": 0.6,
+    "criticalPercent": 3.0,
+    "aimPercent": 1.2,
+    "missPercent": 1.2,
+    "force": 300,
+    "moveSpeed": 6.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 802,
+    "characterType": "npc",
+    "name_kr": "좀도둑 보스",
+    "name_en": "thief_boss",
+    "description": "뒷세계를 관리하는 보스, 수전노 성격이라 일만 잘하면 좋아한다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 15,
+    "health": 1800.0,
+    "damage": 270.0,
+    "defence": 90.0,
+    "attackSpeed": 9.0,
+    "attackRange": 9.0,
+    "criticalPercent": 45.0,
+    "aimPercent": 18.0,
+    "missPercent": 18.0,
+    "force": 4500,
+    "moveSpeed": 90.0,
+    "abilityName": [
+      "Battle"
+    ],
+    "abilityInitLevel": [
+      5
+    ],
+    "abilityValue": [
+      1.2
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 803,
+    "characterType": "npc",
+    "name_kr": "배고픈 아이",
+    "name_en": "hungry_boy",
+    "description": "언제나 배고파한다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 1,
+    "health": 120.0,
+    "damage": 18.0,
+    "defence": 6.0,
+    "attackSpeed": 0.6,
+    "attackRange": 0.6,
+    "criticalPercent": 3.0,
+    "aimPercent": 1.2,
+    "missPercent": 1.2,
+    "force": 300,
+    "moveSpeed": 6.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 804,
+    "characterType": "npc",
+    "name_kr": "도둑 패거리",
+    "name_en": "thief_mob",
+    "description": "도둑. 근데 손버릇이 나빠 도둑질을 실패하면 무력을 휘두르려 든다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 3,
+    "health": 360.0,
+    "damage": 54.0,
+    "defence": 18.0,
+    "attackSpeed": 1.8,
+    "attackRange": 1.8,
+    "criticalPercent": 9.0,
+    "aimPercent": 3.6,
+    "missPercent": 3.6,
+    "force": 900,
+    "moveSpeed": 18.0,
+    "abilityName": [
+      "Battle"
+    ],
+    "abilityInitLevel": [
+      5
+    ],
+    "abilityValue": [
+      1.2
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 805,
+    "characterType": "npc",
+    "name_kr": "좀도둑 소두목(포치)",
+    "name_en": "thief_underboss",
+    "description": "보스의 자리를 호시탐탐 노리는 2인자.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 12,
+    "health": 1440.0,
+    "damage": 216.0,
+    "defence": 72.0,
+    "attackSpeed": 7.2,
+    "attackRange": 7.2,
+    "criticalPercent": 36.0,
+    "aimPercent": 14.4,
+    "missPercent": 14.4,
+    "force": 3600,
+    "moveSpeed": 72.0,
+    "abilityName": [
+      "Battle, Run"
+    ],
+    "abilityInitLevel": [
+      2,
+      2
+    ],
+    "abilityValue": [
+      1.2,
+      1.2
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 806,
+    "characterType": "npc",
+    "name_kr": "정보상(챠니)",
+    "name_en": "broker_chani",
+    "description": "정보도 팔고 \"뒷 일\"을 처리하고 큰 돈을 만지기도 한다",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 6,
+    "health": 720.0,
+    "damage": 108.0,
+    "defence": 36.0,
+    "attackSpeed": 3.6,
+    "attackRange": 3.6,
+    "criticalPercent": 18.0,
+    "aimPercent": 7.2,
+    "missPercent": 7.2,
+    "force": 1800,
+    "moveSpeed": 36.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 807,
+    "characterType": "npc",
+    "name_kr": "기사",
+    "name_en": "knight",
+    "description": "강한 무력을 가지고 있다. 범죄를 저지르면 이들과 적대하게 된다.",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 35,
+    "health": 4200.0,
+    "damage": 630.0,
+    "defence": 210.0,
+    "attackSpeed": 21.0,
+    "attackRange": 21.0,
+    "criticalPercent": 105.0,
+    "aimPercent": 42.0,
+    "missPercent": 42.0,
+    "force": 10500,
+    "moveSpeed": 210.0,
+    "abilityName": [
+      "Battle, Run"
+    ],
+    "abilityInitLevel": [
+      10,
+      2
+    ],
+    "abilityValue": [
+      2.0,
+      1.2
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 808,
+    "characterType": "npc",
+    "name_kr": "유랑상인 하히",
+    "name_en": "traintrader_hahi",
+    "description": "돌아다니는 상인이다. 유용한 물건을 판다.",
+    "bloodType": "Person",
+    "familyType": "TrainTrader",
+    "Level": 6,
+    "health": 720.0,
+    "damage": 108.0,
+    "defence": 36.0,
+    "attackSpeed": 3.6,
+    "attackRange": 3.6,
+    "criticalPercent": 18.0,
+    "aimPercent": 7.2,
+    "missPercent": 7.2,
+    "force": 1800,
+    "moveSpeed": 36.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 809,
+    "characterType": "npc",
+    "name_kr": "잡화상인",
+    "name_en": "other_trader",
+    "description": "잡화에 쓰이는 물건을 판매하는 상인",
+    "bloodType": "Person",
+    "familyType": "SosuVill",
+    "Level": 1,
+    "health": 120.0,
+    "damage": 18.0,
+    "defence": 6.0,
+    "attackSpeed": 0.6,
+    "attackRange": 0.6,
+    "criticalPercent": 3.0,
+    "aimPercent": 1.2,
+    "missPercent": 1.2,
+    "force": 300,
+    "moveSpeed": 6.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 810,
+    "characterType": "npc",
+    "name_kr": "마을 경비",
+    "name_en": "village_Guard",
+    "description": "마을 안에서 간단한 사건들을 해결한다. 언젠가 기사가 되는 것을 희망한다.",
+    "bloodType": "Person",
+    "familyType": "SosuVill",
+    "Level": 20,
+    "health": 2400.0,
+    "damage": 360.0,
+    "defence": 120.0,
+    "attackSpeed": 12.0,
+    "attackRange": 12.0,
+    "criticalPercent": 60.0,
+    "aimPercent": 24.0,
+    "missPercent": 24.0,
+    "force": 6000,
+    "moveSpeed": 120.0,
+    "abilityName": [
+      "Battle"
+    ],
+    "abilityInitLevel": [
+      5
+    ],
+    "abilityValue": [
+      1.2
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 811,
+    "characterType": "npc",
+    "name_kr": "강화상인",
+    "name_en": "enhanceMan",
+    "description": "아이템 강화를 해주는 아저씨다",
+    "bloodType": "Person",
+    "familyType": "SosuVill",
+    "Level": 1,
+    "health": 120.0,
+    "damage": 18.0,
+    "defence": 6.0,
+    "attackSpeed": 0.6,
+    "attackRange": 0.6,
+    "criticalPercent": 3.0,
+    "aimPercent": 1.2,
+    "missPercent": 1.2,
+    "force": 300,
+    "moveSpeed": 6.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 812,
+    "characterType": "npc",
+    "name_kr": "카지노 딜러",
+    "name_en": "casino_dealer",
+    "description": "사람의 비위를 잘 맞출줄 안다. 돈을 탈탈 털린 이들이 딜러를 적대하는 일은 거의 없다",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 10,
+    "health": 1200.0,
+    "damage": 180.0,
+    "defence": 60.0,
+    "attackSpeed": 6.0,
+    "attackRange": 6.0,
+    "criticalPercent": 30.0,
+    "aimPercent": 12.0,
+    "missPercent": 12.0,
+    "force": 3000,
+    "moveSpeed": 60.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 813,
+    "characterType": "npc",
+    "name_kr": "마을 안내원",
+    "name_en": "village_guide",
+    "description": "마을에 대소사적인 일들을 처리하는 일종의 공무원",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 8,
+    "health": 960.0,
+    "damage": 144.0,
+    "defence": 48.0,
+    "attackSpeed": 4.8,
+    "attackRange": 4.8,
+    "criticalPercent": 24.0,
+    "aimPercent": 9.6,
+    "missPercent": 9.6,
+    "force": 2400,
+    "moveSpeed": 48.0,
+    "abilityName": [
+      "None"
+    ],
+    "abilityInitLevel": [
+      0
+    ],
+    "abilityValue": [
+      0.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  },
+  {
+    "characterID": 814,
+    "characterType": "npc",
+    "name_kr": "돈주어(우두머리)",
+    "name_en": "donjua",
+    "description": "루키마을의 우두머리다",
+    "bloodType": "Person",
+    "familyType": "RookieVill",
+    "Level": 55,
+    "health": 6600.0,
+    "damage": 990.0,
+    "defence": 330.0,
+    "attackSpeed": 33.0,
+    "attackRange": 33.0,
+    "criticalPercent": 165.0,
+    "aimPercent": 66.0,
+    "missPercent": 66.0,
+    "force": 16500,
+    "moveSpeed": 330.0,
+    "abilityName": [
+      "Battle, Run"
+    ],
+    "abilityInitLevel": [
+      20,
+      10
+    ],
+    "abilityValue": [
+      5.0,
+      3.0
+    ],
+    "SkillListID": [
+      0
+    ],
+    "SkillListLevel": [
+      0
+    ],
+    "RiggingType": "Humanoid",
+    "StartItem": [
+      0
+    ],
+    "StartItemCount": [
+      0
+    ]
+  }
+]

@@ -1,0 +1,646 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3f699ff8a669f47138892a85e4a22a0e
+  m_SerializeEntries:
+  - m_GUID: d740afc82df4a485b9253f37a8e54776
+    m_Address: Consumable
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7078f3e89a26848a6b42e0b4de46d1cb
+    m_Address: Equipment
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99df94180e87e43628ce3965019de993
+    m_Address: Material
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1cb1871a2a0094feb8a65303fa90e1da
+    m_Address: SlotData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 74c87a2216a144fafb4d8327d825b817
+    m_Address: icon/slots/seven
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7aabb7b1d6e8843cbbc2fa9475814163
+    m_Address: icon/slots/cherry
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7bfdb28e6b7e2473d911666bd456341d
+    m_Address: icon/slots/apple
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e84cb098cfb6649438bf2e93bdd07ae7
+    m_Address: NpcDialogue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b2bea312131040d1b83de56f3429f8b
+    m_Address: Sound/SFX/slot_drumroll
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55891b817a0784b23ab598719b34c44f
+    m_Address: Sound/SFX/slot_stop
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2c1ac940434a5242b54d72b66654687
+    m_Address: ada
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16754cf0ad58d2441a3c425eb4b52161
+    m_Address: Sounds/SFX/PlayerAttack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53c7ce070b12d1a4293d089da8ff6838
+    m_Address: Sounds/SFX/AIDeath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77f0752956f442d4f9592b1b16a8bef3
+    m_Address: Sounds/SFX/AITakeDamage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99ffdbb1acbc0ab45873857d71eaedcb
+    m_Address: Sounds/SFX/Building
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c6ad7ac803180a40b580e3d954746aa
+    m_Address: Sounds/SFX/FarmingIng
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 164194280fb89764bbb1650af59b5fcc
+    m_Address: Sounds/SFX/FarmingSuccess
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41f6582f0cd62dd4cada935e021e6884
+    m_Address: Sounds/SFX/PlayerDeath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ed1c2e7009a7d140b8a5d3a1e412a08
+    m_Address: Sounds/SFX/PlayerTakeDamage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 265548a1b00c3da4ea0b6cf612463aac
+    m_Address: Particle/PlayerAttack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Effect
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0a7880bf9d2df745b41681132c75164
+    m_Address: Particle/PlayerWalk
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Effect
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f539d46514a6144490592900e5c4040
+    m_Address: BloodData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 909140716e767a449b6b71b9ec5d078e
+    m_Address: CharacterData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60d3cd69af207f84ea25de82364c5be0
+    m_Address: EnemyData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 939339a82c4ea824c847e8159bebfeb0
+    m_Address: NPCData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c664c802a8fdc64e912418c933a0e42
+    m_Address: PlayerData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6ca0654510c20f4ca9b46f636386ad8
+    m_Address: NPCDialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3f551a17b307c84f9efce1b1e2e8fde
+    m_Address: Image/items
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Images
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b66c4e5fa44568418258e164f26b0bc
+    m_Address: Stone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    - Images
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 12bdcca65db20514fb450e0a0a661306
+    m_Address: Image/Bush
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Images
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34332d4caf7e7934fabd73267562e806
+    m_Address: Image/Tree
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Images
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 318d45b91c21a8d488c7aa118e812c93
+    m_Address: AESKeyAsset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81193c4f966f7834487ca6737a447a0b
+    m_Address: RustySword
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c52c0b6aadcac1241ac2c451caa91fec
+    m_Address: Image/Weapon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Images
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73b6cc4865d0cae41971f193983fbb37
+    m_Address: icon_sword_dragon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1056437cb7e29914a8353a60f83fc3cc
+    m_Address: Side_501
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7008d749bb4e06c40890a4fd75d10712
+    m_Address: Forward_501
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 03edbf6ca1c53ad438cbc255c06bbdbd
+    m_Address: Back_501
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc314a9ea04583b47b8d118f35788024
+    m_Address: Forward_4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 888ef4d2e5eacd54dadba87072847165
+    m_Address: Side_6
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8871f197036e98e4c86ab7684c0d9620
+    m_Address: Back_6
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43497cb3d773e7f47a0c0b36def5e43b
+    m_Address: Side_4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d47d124bb077b8469baef8b1a4eafc4
+    m_Address: Forward_6
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 639a560da36d1c94e9b0241c455d7ab6
+    m_Address: Back_4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b494e738999b22d46a6760b47863a15d
+    m_Address: Forward_507
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16794dcdef6d5f94c830c42f8562219d
+    m_Address: Side_507
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5969aed39127ad479d00763669f6166
+    m_Address: Back_507
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Animator
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7b6705d66d930048a8a386280dbc46c
+    m_Address: 150004
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FarmingBlock
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ff1acf898380ca478508690352ef0c5
+    m_Address: 150003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FarmingBlock
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 21c8c9ec2bd5ae84ab58ca5994a65735
+    m_Address: 150002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FarmingBlock
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 00c55694945c5c44fb290d7d788b05ae
+    m_Address: 150001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FarmingBlock
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4944d3c4be948024d9be4f9a06149b84
+    m_Address: FarmingData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c223d9e9db2282b48bf025273b35a5a2
+    m_Address: 4_characterIcon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterIcon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c07d8448b055bf4db1875525f06d4e2
+    m_Address: 6_characterIcon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterIcon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af0bef404e9b0ce44acaf0d6bc62c113
+    m_Address: SilverBlade
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11761eca5ff7ab24db099363bb4b82f8
+    m_Address: FlameSaber
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb4c5b24535c17c4da2d752f7f431488
+    m_Address: DragonSlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce0d30c338f1cd1479502922c4acc7f2
+    m_Address: IronSword
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7908ec9158ee78542be881b86a9e4944
+    m_Address: icon_pants_rusty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa1cbceba71167d45a733402ef7af4b1
+    m_Address: icon_helmet_rusty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26e980ef27ef4bd408e72fcb1b908eb9
+    m_Address: icon_gloves_rusty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dbd7a3a696177af448364b7d2e8874c2
+    m_Address: icon_armor_rusty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 80b15bb784e3710419ab686a48b4be18
+    m_Address: icon_gloves_leather
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3629b52fc3c17604ca3ae0777e5a5d94
+    m_Address: icon_pants_leather
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c951a751b403ff4a99f6118e42138dc
+    m_Address: icon_armor_leather
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08ea8683df8cdc54d9b230bacb99b748
+    m_Address: icon_helmet_leather
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6716f970d7572fa40ab0793e48d3a0ab
+    m_Address: icon_gloves_iron
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f45c24d1ad1cdb748981f8ff902593de
+    m_Address: icon_pants_iron
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 638a753d5df19ab469af43e660fa12cf
+    m_Address: icon_armor_iron
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cb4b63db459ec64ab62a76dc6c2c39a
+    m_Address: icon_helmet_iron
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f1514180a1f4ad4e84ff755cf330423
+    m_Address: icon_sword_rusty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee7b25f1e5414d542bb46a43af8a6aa9
+    m_Address: icon_sword_iron
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d53856f8b88ad046bd754b63a138276
+    m_Address: icon_sword_silver
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 12986c1dcc2bc3148b0945ed8319d8c4
+    m_Address: icon_sword_flame
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 03574ec620b73734b8536584fd158b55
+    m_Address: icon_recipe_ironarmor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76284437fb9807742acffff22e3ba186
+    m_Address: icon_buff_attack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac6ea1ebd73c19b45b11efc15a687b12
+    m_Address: icon_buff_defense
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eaff7a25e9604d44f961e029bec1ef11
+    m_Address: icon_potion_large
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 087d270cdc6292948b5072e84221cafa
+    m_Address: icon_potion_small
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6ea71ddd9e425c44973ff8e79f37364
+    m_Address: icon_potion_ellxir
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc0338cf29b727843a758535ef960c7a
+    m_Address: icon_pig_beef
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3d1c42b7c7775548b8bff830214c0ee
+    m_Address: icon_cow_beef
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 65dc3fc87755991499d79d0163342281
+    m_Address: icon_bake_pig_beef
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f5a33120bd68634babc8d3f67aff90f
+    m_Address: iconbake_cow_beef
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e45dcf9079cbe44ca29151d5b017827
+    m_Address: 501_characterIcon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterIcon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 040a6938f680fae47bf11b0aa579438a
+    m_Address: 507_characterIcon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterIcon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5849503416712144d9f17569f9bc8042
+    m_Address: icon_wood_piece
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed91f2c079003874bb26bff926e00317
+    m_Address: icon_steel_ingot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7e61c852f1301349b7751905ecb3a7e
+    m_Address: icon_monster_hide
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b688e4ec70f89324dabcdb4942125d86
+    m_Address: icon_ore_iron
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Icons
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91c52f26fea2a6243adc3f76a56856b3
+    m_Address: Sounds/BGM/IngameBGM
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04502be87210dc1409331a8e86eae3cc
+    m_Address: Sounds/BGM/BattleBGM
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a90ca6bfe8bfe26418244ed4000e29d1
+    m_Address: Sounds/SFX/AIAttack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a125d153a00f7f34ba2447cc7e4fc045
+    m_Address: Sounds/BGM/LoadingBGM
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e144ab0ebf62e3949a4f0a3750c9f7cd
+    m_Address: Sounds/SFX/PlayerFootstep_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66e3c90a85e3dbc4998d97870a0a1612
+    m_Address: Sounds/SFX/PlayerFootstep_2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 462ec49bedf03fa478fcc6287b391a61
+    m_Address: Sounds/BGM/IntroBGM
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audios
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c674b66ba4e9bad4d805ccf567aeaae1
+    m_Address: AttackBall
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa9a8ff1f4ad9b74799441950eff9232
+    m_Address: 4001Skill
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 59ddb3acef00618408813c76ebf09710
+    m_Address: 4002Skill
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6ad86c78ad286b047be9c7f32721254b
+    m_Address: 4003Skill
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c22bb00536a7ed145bbc117a8edb5967
+    m_Address: 4004Skill
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a0f3254e7349624b8cbd8cd73f2800e
+    m_Address: SkillData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Jsons
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0cc894d8d0ad645bdaf2ef207db4cc9d, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 744d55e14d71140f78a927ac587d42e8, type: 2}
+    - {fileID: 11400000, guid: 4b194c370386343b69d4ab8fbbb1d2fc, type: 2}

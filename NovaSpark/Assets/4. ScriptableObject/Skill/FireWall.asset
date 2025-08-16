@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88051c166a326c54eaf04c0a35dfd9e5, type: 3}
+  m_Name: FireWall
+  m_EditorClassIdentifier: 
+  skillId: fireWall
+  skillName: FireWall
+  maxSkillLevel: 5
+  prerequisiteSkills:
+  - {fileID: 11400000, guid: 4232f1d138887c94c973767ec1d01d9c, type: 2}
+  requiredPlayerLevel: 11
+  requiredProficiency: 3
+  baseDamage: 10
+  baseCooldown: 10

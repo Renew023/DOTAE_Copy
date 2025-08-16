@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cherry",
+    "icon": "icon/slots/cherry",
+    "probability": 50,
+    "multiplier": 2
+  },
+  {
+    "id": "apple",
+    "icon": "icon/slots/apple",
+    "probability": 30,
+    "multiplier": 4
+  },
+  {
+    "id": "seven",
+    "icon": "icon/slots/seven",
+    "probability": 20,
+    "multiplier": 10
+  }
+]

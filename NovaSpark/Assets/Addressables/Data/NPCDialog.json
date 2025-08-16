@@ -1,0 +1,3222 @@
+[
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 10001,
+    "NPCID": 501,
+    "contexts": [
+      "안녕 나는 르탄이야!",
+      "너의 이름은 뭐야?"
+    ],
+    "talkCharacter": [
+      "르탄",
+      "유민"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 10002,
+    "NPCID": 501,
+    "contexts": [
+      "상점을 보러왔는가?"
+    ],
+    "talkCharacter": [
+      "르탄"
+    ],
+    "choiceTexts": [
+      "예",
+      "아니요"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "OpenShop",
+      "10003"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 10003,
+    "NPCID": 501,
+    "contexts": [
+      "아쉽구만"
+    ],
+    "talkCharacter": [
+      "르탄"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 10004,
+    "NPCID": 501,
+    "contexts": [
+      "부탁을 들어줘"
+    ],
+    "talkCharacter": [
+      "르타니"
+    ],
+    "choiceTexts": [
+      "수락",
+      "거절"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50001",
+      "10005"
+    ],
+    "questId": 50001,
+    "questType": "None",
+    "questName": "첫 퀘스트",
+    "questDescription": "과자를 구해줘.",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10001
+    ],
+    "dialogId": 10005,
+    "NPCID": 501,
+    "contexts": [
+      "이런 간단한 것도 못해줘?"
+    ],
+    "talkCharacter": [
+      "르타니"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10001,
+      50001
+    ],
+    "dialogId": 10006,
+    "NPCID": 501,
+    "contexts": [
+      "혹시 물도 가져다줄 수 있어?"
+    ],
+    "talkCharacter": [
+      "르타니"
+    ],
+    "choiceTexts": [
+      "수락",
+      "거절"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 50002,
+    "questType": "None",
+    "questName": "두번쨰",
+    "questDescription": "물도 구해줘",
+    "questWantID": null,
+    "failContexts": [
+      "아직 과자를 안 줬어."
+    ],
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      100001
+    ],
+    "dialogId": 10007,
+    "NPCID": 502,
+    "contexts": [
+      "전투가 끝났군",
+      "움직일 수 있는 스켈레톤은 전장의 전리품을 가지고와라"
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "복종"
+    ],
+    "questClearText": null,
+    "questClearDialog": 10008,
+    "choiceActions": [
+      "50003"
+    ],
+    "questId": 50003,
+    "questType": "Main",
+    "questName": "되살아난 자",
+    "questDescription": "무기와 방어구 3개 전달, 오르투스와 대화",
+    "questWantID": [
+      "1001",
+      "1011",
+      "502"
+    ],
+    "failContexts": [
+      "무얼 하는거지?"
+    ],
+    "questEventList": [
+      "collect",
+      "collect",
+      "talk"
+    ],
+    "questClearPercent": [
+      3,
+      3,
+      1
+    ],
+    "rewardItem": [
+      1001
+    ],
+    "rewardExp": 100.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      50003
+    ],
+    "dialogId": 10008,
+    "NPCID": 502,
+    "contexts": [
+      "그래 여기 두고 가라",
+      "(스켈레톤이 갑옷의 문양을 멍하니 본다)",
+      "....",
+      "잠시 정비가 필요하겠군",
+      "모든 스켈레톤은 마을로 모여라"
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "스켈레톤",
+      "스켈레톤",
+      "오르투스",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "복종"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50004"
+    ],
+    "questId": 50004,
+    "questType": "Main",
+    "questName": "집결",
+    "questDescription": "마을로 이동, 오르투스와 대화",
+    "questWantID": [
+      "502"
+    ],
+    "failContexts": [
+      "어서 움직여라"
+    ],
+    "questEventList": [
+      "Talk"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 100.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      50004
+    ],
+    "dialogId": 10009,
+    "NPCID": 502,
+    "contexts": [
+      "내가 정비하는동안 아직 살아있는자를 찾아라"
+    ],
+    "talkCharacter": [
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "복종"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50005"
+    ],
+    "questId": 50005,
+    "questType": "Main",
+    "questName": "균열",
+    "questDescription": "체크포인트를 순회, 생존자와 대화",
+    "questWantID": [
+      "체크포인트위치",
+      "503"
+    ],
+    "failContexts": [
+      "이상한 스켈레톤이군"
+    ],
+    "questEventList": [
+      "Arrival",
+      "Talk"
+    ],
+    "questClearPercent": [
+      5,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      50005
+    ],
+    "dialogId": 10010,
+    "NPCID": 503,
+    "contexts": [
+      "으아악 살려줘 제발",
+      "잠깐 가일의 갑옷이잖아..",
+      "제발.. 살려줘 가일 정신차리라고!"
+    ],
+    "talkCharacter": [
+      "루크",
+      "루크",
+      "루크"
+    ],
+    "choiceTexts": [
+      "죽인다"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50006"
+    ],
+    "questId": 50006,
+    "questType": "Main",
+    "questName": "동료 기사",
+    "questDescription": "루크를 죽인다 0/1, 오르투스와 대화",
+    "questWantID": [
+      "503",
+      "502"
+    ],
+    "failContexts": [
+      "제발.."
+    ],
+    "questEventList": [
+      "Kill",
+      "Talk"
+    ],
+    "questClearPercent": [
+      1,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 100.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      10010
+    ],
+    "dialogId": 10011,
+    "NPCID": 502,
+    "contexts": null,
+    "talkCharacter": null,
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 10012,
+    "choiceActions": null,
+    "questId": 50006,
+    "questType": "Main",
+    "questName": "동료 기사",
+    "questDescription": "루크를 죽인다 0/1, 오르투스와 대화",
+    "questWantID": [
+      "503",
+      "502"
+    ],
+    "failContexts": [
+      "제발.."
+    ],
+    "questEventList": [
+      "Kill",
+      "Talk"
+    ],
+    "questClearPercent": [
+      1,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 100.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      50006
+    ],
+    "dialogId": 10012,
+    "NPCID": 502,
+    "contexts": [
+      "역시 살아있는 놈이 남았었군",
+      "(누구였지.. 날 가일이라고..)",
+      "..넌 무언가 다르구나 어떻게 의식이 있지?",
+      "이름이 무엇이냐 기억에 있나?",
+      "가일..",
+      "(놀라는 표정을 짓는다)",
+      "처음보는 현상이다.\n..흥미롭군",
+      "좋아.. 너에대한 연구를 해보고싶구나",
+      "나는.. 언데드인가",
+      "그렇다",
+      "기분이.. 이상하군",
+      "그래 혼란스럽겠지",
+      "도와줄테니 언데드로서의 삶을 살아보는건 어떠냐.",
+      "그래.. 선택지가 없겠지"
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "스켈레톤",
+      "오르투스",
+      "오르투스",
+      "가일",
+      "오르투스",
+      "오르투스",
+      "오르투스",
+      "가일",
+      "오르투스",
+      "가일",
+      "오르투스",
+      "오르투스",
+      "가일"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10012
+    ],
+    "dialogId": 10013,
+    "NPCID": 502,
+    "contexts": [
+      "가일이라고 했지 넌 무조건적인 복종은 필요없다",
+      "대신 의식을 더 강하게 키워라",
+      "먼저 다른 스켈레톤과 다른점을 더 찾아볼까.",
+      "마을 주변 늑대를 죽여봐라"
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "오르투스",
+      "오르투스",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "알겠다"
+    ],
+    "questClearText": null,
+    "questClearDialog": 10015,
+    "choiceActions": [
+      "50007"
+    ],
+    "questId": 50007,
+    "questType": "Main",
+    "questName": "의식을 가진 스켈레톤",
+    "questDescription": "늑대 5마리를 죽인 후 오르투스와 대화",
+    "questWantID": [
+      "206",
+      "502"
+    ],
+    "failContexts": [
+      "생각보다 별볼일없었나"
+    ],
+    "questEventList": [
+      "Kill",
+      "Talk"
+    ],
+    "questClearPercent": [
+      5,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 150.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 10014,
+    "NPCID": 502,
+    "contexts": [
+      "스켈레톤이 거절을 하다니..!"
+    ],
+    "talkCharacter": [
+      "오르투스"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      50007
+    ],
+    "dialogId": 10015,
+    "NPCID": 502,
+    "contexts": [
+      "수고했다. 역시 너는 일반적인 스켈레톤과는 다르다",
+      "움직임도 판단도.. 마치 살아있는 자와 같군",
+      "하지만 늑대조차 버거웠다.",
+      "그렇겠지 결국 능력치는 스켈레톤 수준일테니까",
+      "하지만 걱정마라 스켈레톤은 멍청해서 부서질뿐이지 성장 할 수 있어",
+      "반가운소리군..",
+      "일단 언데드왕국으로 가자 널 성장시킬 방법이 많을것이야."
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "오르투스",
+      "가일",
+      "오르투스",
+      "오르투스",
+      "가일",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "기대되는군"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50008"
+    ],
+    "questId": 50008,
+    "questType": "Main",
+    "questName": "언데드 왕국으로",
+    "questDescription": "이곳은 인간 진영이다. 언데드 진영으로 이동해 오르투스를 다시 만나자",
+    "questWantID": [
+      "502"
+    ],
+    "failContexts": [
+      "왕국에서 보지"
+    ],
+    "questEventList": [
+      "Talk"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      1002
+    ],
+    "rewardExp": 100.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      10015
+    ],
+    "dialogId": 10016,
+    "NPCID": 502,
+    "contexts": [
+      "시간이 필요한가?"
+    ],
+    "talkCharacter": null,
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      50008
+    ],
+    "dialogId": 10017,
+    "NPCID": 502,
+    "contexts": [
+      "이곳이 언데드들의 왕국이다. \n나 이외에도 여러 네크로맨서들과 고위언데드들이 지내는 곳이지",
+      "고위 언데드?",
+      "그래. 너처럼 혼자 일으킨 언데드가 아니라 \n네크로맨서가 스스로를 리치로 만들거나",
+      "영웅급의 기사를 며칠간 정성 들여 되살린 존재들이지",
+      "그들도.. 나처럼 의식이 있나?",
+      "물론이지 하지만 하급 언데드가 의식을 갖는건 처음이다",
+      "그래서 내가 흥미로워한것이고",
+      "그렇군.. 그래서 난 이제 무얼해야하지?",
+      "나는 다른 네크로맨서에게 너의 존재에대해 알리고 오겠다",
+      "넌 그동안 대장간에 가 봐. \n가서 이 철검을 강화를 해봐라"
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "가일",
+      "오르투스",
+      "오르투스",
+      "가일",
+      "오르투스",
+      "오르투스",
+      "가일",
+      "오르투스",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "알겠다. 금방 다녀오지"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50009"
+    ],
+    "questId": 50009,
+    "questType": "Main",
+    "questName": "강해질 준비",
+    "questDescription": "대장간의 커즈와 대화",
+    "questWantID": [
+      "508"
+    ],
+    "failContexts": null,
+    "questEventList": [
+      "Talk"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 100.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      10017
+    ],
+    "dialogId": 10018,
+    "NPCID": 508,
+    "contexts": null,
+    "talkCharacter": null,
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 10019,
+    "choiceActions": [
+      "50009"
+    ],
+    "questId": 50009,
+    "questType": "Main",
+    "questName": "강해질 준비",
+    "questDescription": "대장간의 커즈와 대화",
+    "questWantID": [
+      "508"
+    ],
+    "failContexts": null,
+    "questEventList": [
+      "Talk"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 100.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      10018
+    ],
+    "dialogId": 10019,
+    "NPCID": 508,
+    "contexts": [
+      "여기서 무기를 강화할수있나?",
+      "음? 뭐야 하급 스켈레톤이 말을하는건가?",
+      "그래.. 좀 특이한 현상인 것 같더군",
+      "하하! 재미있네 그래 무기를 강화한다고?"
+    ],
+    "talkCharacter": [
+      "가일",
+      "커즈",
+      "가일",
+      "커즈"
+    ],
+    "choiceTexts": [
+      "뭐가 재밌다는진 모르겠지만.. 맞아",
+      "그래 강해지려면 필요하다더군"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "10020",
+      "10020"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10019
+    ],
+    "dialogId": 10020,
+    "NPCID": 508,
+    "contexts": [
+      "좋아 무기 하나쯤 손봐줄 수 있지"
+    ],
+    "talkCharacter": [
+      "커즈"
+    ],
+    "choiceTexts": [
+      "고맙군"
+    ],
+    "questClearText": null,
+    "questClearDialog": 10021,
+    "choiceActions": [
+      "50010"
+    ],
+    "questId": 50010,
+    "questType": "Main",
+    "questName": "무기강화",
+    "questDescription": "철검을 강화 한 후 커즈와 대화",
+    "questWantID": [
+      "1002",
+      "508"
+    ],
+    "failContexts": [
+      "강화 할 무기를 줘야지"
+    ],
+    "questEventList": [
+      "Enhance",
+      "Talk"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      1013
+    ],
+    "rewardExp": 100.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      50010
+    ],
+    "dialogId": 10021,
+    "NPCID": 508,
+    "contexts": [
+      "완벽하군!",
+      "그런데 무기만으로 되겠나?\n이거라도 가지고가라",
+      "살아남아서 재밌는 구경 시켜달라고 하급 스켈레톤"
+    ],
+    "talkCharacter": [
+      "커즈",
+      "커즈",
+      "커즈"
+    ],
+    "choiceTexts": [
+      "가일이다.. 감사히 받지",
+      "네 재미따윈 알바아니다. 그리고 가일이라고 불러"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "10022",
+      "10023"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10021
+    ],
+    "dialogId": 10022,
+    "NPCID": 508,
+    "contexts": [
+      "그래 또 찾아와라 가일!"
+    ],
+    "talkCharacter": [
+      "커즈"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10021
+    ],
+    "dialogId": 10023,
+    "NPCID": 508,
+    "contexts": [
+      "하하 까칠한 해골이구만 이거"
+    ],
+    "talkCharacter": [
+      "커즈"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      50010
+    ],
+    "dialogId": 10024,
+    "NPCID": 502,
+    "contexts": [
+      "강화는 마쳤군.이제 널 더 시험해볼 때다",
+      "이 왕국 외곽에… 실험에서 실패한 ‘돌연변이’가 돌아다닌다",
+      "내가 처리하라는 거군",
+      "맞아 그 돌연변이는 의식 없이 날뛰는 덩어리다",
+      "너와는 정반대의 존재지. \n네가 실패작들보다 특별하단 걸 증명해봐."
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "오르투스",
+      "가일",
+      "오르투스",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "좋아. 단순한 폭력은 쉽지",
+      "실험?"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50011",
+      "10025"
+    ],
+    "questId": 50011,
+    "questType": "Main",
+    "questName": "돌연변이 언데드",
+    "questDescription": "돌연변이 언데드 처치(0/10) 오르투스와 대화",
+    "questWantID": [
+      "205",
+      "502"
+    ],
+    "failContexts": [
+      "무서워서 안 가고있나?"
+    ],
+    "questEventList": [
+      "Kill",
+      "Talk"
+    ],
+    "questClearPercent": [
+      10,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 300.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      10024
+    ],
+    "dialogId": 10025,
+    "NPCID": 502,
+    "contexts": [
+      "아 지금 왕국엔 자아를 가진 스켈레톤을 만들겠다는 파가 있다",
+      "그 녀석이 널 보면 아주 재밌어할거야"
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "별로 엮이고 싶진않군 다녀오겠다."
+    ],
+    "questClearText": null,
+    "questClearDialog": 10026,
+    "choiceActions": [
+      "50011"
+    ],
+    "questId": 50011,
+    "questType": "Main",
+    "questName": "돌연변이 언데드",
+    "questDescription": "돌연변이 언데드 처치(0/10) 오르투스와 대화",
+    "questWantID": [
+      "205",
+      "502"
+    ],
+    "failContexts": [
+      "무서워서 안 가고있나?"
+    ],
+    "questEventList": [
+      "Kill",
+      "Talk"
+    ],
+    "questClearPercent": [
+      10,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 300.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      50011
+    ],
+    "dialogId": 10026,
+    "NPCID": 502,
+    "contexts": [
+      "훌륭해 이정도면 이미 하급 스켈레톤이라고 부를 수 없겠어"
+    ],
+    "talkCharacter": [
+      "오르투스"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10026
+    ],
+    "dialogId": 10027,
+    "NPCID": 502,
+    "contexts": [
+      "다른 네크로맨서들도 널 알게됐으니 주시하기 시작할거다",
+      "내가 그들에게 위협이 될 정도로 강하진 않을텐데",
+      "하지만 그들의 입장에서 네 존재는 통제되지 않는 변수야",
+      "물론 나처럼 흥미를 가지고있는 쪽도 있으니 당장 위협을 가하진 않을거다",
+      "귀찮게됐군 어떻게해야 경계를 풀 수 있지?",
+      "기회로 삼아라",
+      "스스로를 증명하면 그들은 널 위험이 아닌 언데드 진영의 자산으로 보게 될 거다",
+      "마침 적절한 일들이 있다",
+      "알겠다. 언데드로서 살기로한 이상 증명하는 수 밖에는 없겠군"
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "가일",
+      "오르투스",
+      "오르투스",
+      "가일",
+      "오르투스",
+      "오르투스",
+      "오르투스",
+      "가일"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10027
+    ],
+    "dialogId": 10028,
+    "NPCID": 502,
+    "contexts": [
+      "적절한 일이란게 뭐지",
+      "네가 깨어난 마을에서 인간들의 수색대가 목격됐다",
+      "인간들이 이미 파괴된 마을을 왜 다시오나?",
+      "무언가를 찾는 모양이지. 너에겐 좋은 기회야"
+    ],
+    "talkCharacter": [
+      "가일",
+      "오르투스",
+      "가일",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "무슨말인지 알겠다. 처리하지"
+    ],
+    "questClearText": [
+      "저기있군 빨리 처리하자"
+    ],
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50012"
+    ],
+    "questId": 50012,
+    "questType": "Main",
+    "questName": "인간 정찰대",
+    "questDescription": "정찰병 탐색",
+    "questWantID": [
+      "체크포인트 위치"
+    ],
+    "failContexts": [
+      "늦장부릴 시간은 없을텐데"
+    ],
+    "questEventList": [
+      "Arrival"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      50012
+    ],
+    "dialogId": 10029,
+    "NPCID": 510,
+    "contexts": [
+      "(모습을 들어낸다)",
+      "언데드..?",
+      "아직 남은녀석이 있었군 처리하자!",
+      "예!"
+    ],
+    "talkCharacter": [
+      "가일",
+      "정찰병대장",
+      "정찰병대장",
+      "정찰병 A,B"
+    ],
+    "choiceTexts": [
+      "(싸운다)"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50013"
+    ],
+    "questId": 50013,
+    "questType": "Main",
+    "questName": "정찰대 처리",
+    "questDescription": "정찰병대장 0/1 정찰병 0/2 오르투스에게 보고",
+    "questWantID": [
+      "510",
+      "509",
+      "502"
+    ],
+    "failContexts": null,
+    "questEventList": [
+      "Kill",
+      "Kill",
+      "Talk"
+    ],
+    "questClearPercent": [
+      1,
+      2,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 200.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      10029
+    ],
+    "dialogId": 10030,
+    "NPCID": 502,
+    "contexts": null,
+    "talkCharacter": null,
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 10031,
+    "choiceActions": null,
+    "questId": 50013,
+    "questType": "Main",
+    "questName": "정찰대 처리",
+    "questDescription": "정찰병대장 0/1 정찰병 0/2 오르투스에게 보고",
+    "questWantID": [
+      "510",
+      "509",
+      "502"
+    ],
+    "failContexts": null,
+    "questEventList": [
+      "Kill",
+      "Kill",
+      "Talk"
+    ],
+    "questClearPercent": [
+      1,
+      2,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 200.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      50013
+    ],
+    "dialogId": 10031,
+    "NPCID": 502,
+    "contexts": [
+      "정찰병이 진짜 있더군 전부 처리했다",
+      "좋아 다음 일만 하면 너를 경계하는 네크로맨서들을 설득할만해"
+    ],
+    "talkCharacter": [
+      "가일",
+      "오르투스"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10031
+    ],
+    "dialogId": 10032,
+    "NPCID": 502,
+    "contexts": [
+      "언데드진영의 다음 목표는 인간마을 서부에 있는 성이야",
+      "네가 성의 구조와 병력 규모를 알아온다면 우리측에 큰 공이겠지"
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "확실히.. 신뢰를 받을 수 있겠군",
+      "심부름꾼이 따로없군.."
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "10033",
+      "10034"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10032
+    ],
+    "dialogId": 10033,
+    "NPCID": 502,
+    "contexts": [
+      "그래 너가 돌아올쯤에 자리를 만들어두마"
+    ],
+    "talkCharacter": [
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "다녀오겠다"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50014"
+    ],
+    "questId": 50014,
+    "questType": "Main",
+    "questName": "인간 성 정찰",
+    "questDescription": "파괴당한 인간마을 서쪽에 위치한 성 정찰 (체크포인트 0/4), 오르투스와 대화",
+    "questWantID": [
+      "체크포인트위치",
+      "502"
+    ],
+    "failContexts": [
+      "들키지않게 조심해라"
+    ],
+    "questEventList": [
+      "Arrival",
+      "Talk"
+    ],
+    "questClearPercent": [
+      4,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 200.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      10032
+    ],
+    "dialogId": 10034,
+    "NPCID": 502,
+    "contexts": [
+      "어쩔 수 없다 워낙 폐쇄적인 곳이니"
+    ],
+    "talkCharacter": [
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "알겠다. 다녀오지"
+    ],
+    "questClearText": null,
+    "questClearDialog": 10035,
+    "choiceActions": [
+      "50014"
+    ],
+    "questId": 50014,
+    "questType": "Main",
+    "questName": "인간 성 정찰",
+    "questDescription": "파괴당한 인간마을 서쪽에 위치한 성 정찰 (체크포인트 0/4), 오르투스와 대화",
+    "questWantID": [
+      "체크포인트위치",
+      "502"
+    ],
+    "failContexts": [
+      "들키지않게 조심해라"
+    ],
+    "questEventList": [
+      "Arrival",
+      "Talk"
+    ],
+    "questClearPercent": [
+      4,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 200.0,
+    "rewardGold": 500
+  },
+  {
+    "preDialogueId": [
+      50014
+    ],
+    "dialogId": 10035,
+    "NPCID": 502,
+    "contexts": [
+      "모두 돌아보고왔다."
+    ],
+    "talkCharacter": [
+      "가일"
+    ],
+    "choiceTexts": [
+      "(정찰결과를 전달한다.)"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "10036"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10035
+    ],
+    "dialogId": 10036,
+    "NPCID": 502,
+    "contexts": [
+      "좋아 기대했던것보다 자세하군!",
+      "이제 모두 모인곳으로 가자 네 존재를 인정해줄것이야."
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "오르투스"
+    ],
+    "choiceTexts": [
+      "좋아"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "50015"
+    ],
+    "questId": 50015,
+    "questType": "Main",
+    "questName": "네크로맨서의 인정",
+    "questDescription": "네크로맨서 무리 속 오르투스와 대화",
+    "questWantID": [
+      "502"
+    ],
+    "failContexts": null,
+    "questEventList": [
+      "Talk"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      50015
+    ],
+    "dialogId": 10037,
+    "NPCID": 502,
+    "contexts": [
+      "지켜본결과 분명 의식은 있지만 언데드의 본성은 그대로다.",
+      "실패작들과는 달라.\n자신의 무의식과의 괴리가 일어나고있지 않아.",
+      "확실히.. 그런듯하군",
+      "네가 말해봐라 넌 인간이였고 우리는 적이였다.",
+      "어째서 적대감을 품지 않지?",
+      "그래 나 또한 인간이었겠지\n하지만 정확히 기억나지않는다.",
+      "이름도 내 갑옷을 본 인간이 알아보고 뱉은 이름일 뿐이야",
+      "기억 없이 의식이 살아났다.. 다음 실험이 정해졌군",
+      "호오.. 기억이없으니 본래 의식과 \n언데드로서 본능에 괴리가 없던것인가..",
+      "인정하겠다. 네 존재를. \n하지만 경계하는자가 아에 없진않을거야."
+    ],
+    "talkCharacter": [
+      "오르투스",
+      "오르투스",
+      "네크로맨서",
+      "네크로맨서",
+      "네크로맨서",
+      "가일",
+      "가일",
+      "오르투스",
+      "네크로맨서",
+      "네크로맨서"
+    ],
+    "choiceTexts": [
+      "그럴 수 있다 생각한다",
+      "내게 피해를 입히면 대가를 치룰것이다"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "10038",
+      "10039"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10037
+    ],
+    "dialogId": 10038,
+    "NPCID": 502,
+    "contexts": [
+      "그래 말이 잘 통하는군"
+    ],
+    "talkCharacter": [
+      "네크로맨서"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      10038
+    ],
+    "dialogId": 10039,
+    "NPCID": 502,
+    "contexts": [
+      "그건 뭐 알아서 해라."
+    ],
+    "talkCharacter": [
+      "네크로맨서"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 0,
+    "NPCID": 0,
+    "contexts": null,
+    "talkCharacter": null,
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 15001,
+    "NPCID": 601,
+    "contexts": [
+      "(엘리사가 눈을 뜨며 주위를 살핀다.) \n  …너는, 누구지?",
+      "이벨트…",
+      "…여긴 어디지… 왜 기억이…",
+      "붉은 실..이 필요해",
+      "붉은 실?",
+      "네 잃어 버린 기억… 붉은 실이 없으면 돌아오지 않아.\n 내가 찾는 걸 도와줄게"
+    ],
+    "talkCharacter": [
+      "엘리사",
+      "이벨트",
+      "엘리사",
+      "이벨트",
+      "엘리사",
+      "이벨트"
+    ],
+    "choiceTexts": [
+      "…아직 널 믿을 수 없어.",
+      "좋아, 믿어볼게. 어디서부터 찾으면 돼?"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "15002",
+      "15010"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15001
+    ],
+    "dialogId": 15002,
+    "NPCID": 601,
+    "contexts": [
+      "손목을 봐. 기억을 잃어버려 육체가 오염되고 있어.",
+      "이대로 두면 남아 있는 기억마저 사라져 온 몸이 오염될 거야\n 붉은 실만이 오염을 막을 수 있어",
+      "(조용히 손목을 본다.)\n …좋아. 찾겠어. 하지만 이 말이 거짓이라면… 후회하게 될 거야."
+    ],
+    "talkCharacter": [
+      "이벨트",
+      "이벨트",
+      "엘리사"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15001
+    ],
+    "dialogId": 15003,
+    "NPCID": 601,
+    "contexts": [
+      "실 조각은… 기억과 감정의 잔해야. 묘지, 숲…에 흩어져 있어"
+    ],
+    "talkCharacter": [
+      "이벨트"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 55001,
+    "questType": "Main",
+    "questName": "흰색 실 조각 수집",
+    "questDescription": "흰색 실 조각 획득(0/5)",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "collect"
+    ],
+    "questClearPercent": [
+      5
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15003
+    ],
+    "dialogId": 15004,
+    "NPCID": 602,
+    "contexts": [
+      "여기는 위험한 지역이야 어서 여기서 떠나",
+      "난 묘지에 들어가야 해",
+      "어이 제정신이야? 망자 심문관분들도 힘들어하는 곳이라고",
+      "난 꼭 들어가야해…",
+      "안돼 안 방법 없어 들여보내 줄 생각 없어 돌아가",
+      "(오염된 상처를 보여주며)\n  상처를 치유할 방법이 여기밖에 없어",
+      "윽.. 뭐야 너 괜찮은거야?",
+      "(머리를 헝클어뜨린다.)\n  그러면 내 부탁을 하나만 들어줘 그러면 몰래 들여보내줄게"
+    ],
+    "talkCharacter": [
+      "케인",
+      "엘리사",
+      "케인",
+      "엘리사",
+      "케인",
+      "엘리사",
+      "케인",
+      "케인"
+    ],
+    "choiceTexts": [
+      "경비병을 처리하고 들어간다.",
+      "알겠어 부탁이 뭐야?"
+    ],
+    "questClearText": [
+      "어째서….리...사..."
+    ],
+    "questClearDialog": 15011,
+    "choiceActions": [
+      "55002",
+      "15006"
+    ],
+    "questId": 55002,
+    "questType": "Sub",
+    "questName": "경비병 케인을 처리해라",
+    "questDescription": "케인 처치(0/1)",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "Kill"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15004,
+      55002
+    ],
+    "dialogId": 15005,
+    "NPCID": 602,
+    "contexts": null,
+    "talkCharacter": [
+      "케인"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": [
+      "케인은 살아있어"
+    ],
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15004
+    ],
+    "dialogId": 15006,
+    "NPCID": 602,
+    "contexts": [
+      "묘지로 근무지를 배정받은 뒤로 동생을 못 봤거든\n 마을에 있는 동생에게 편지를 전해줘"
+    ],
+    "talkCharacter": [
+      "케인"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 55003,
+    "questType": "Sub",
+    "questName": "케인의 편지를 전해주자",
+    "questDescription": "케인의 동생에게 편지를 전해주자",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "collect",
+      "Talk"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15006,
+      55003
+    ],
+    "dialogId": 15007,
+    "NPCID": 603,
+    "contexts": [
+      "누구세요..?",
+      "너가 리사지..? 여기 편지.. 너희 오빠가 전해달래\n(기뻐하며)\n 맞아요 제가 리사에요! 와 오빠 편지다! \n오빠는 건강하게 잘 있나요?",
+      "응 잘 있어\n고마워요 오빠가 이런거에 서툴거든요  아! 잠시만요",
+      "(편지를 쓴다.)\n 이거 오빠한테 전해주세요! 그리고 가끔씩이라도 집에 오라고 해주세요"
+    ],
+    "talkCharacter": [
+      "리사",
+      "엘리사",
+      "리사",
+      "엘리사",
+      "리사",
+      "리사"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 55003,
+    "questType": "Sub",
+    "questName": "리사의 편지를 전해주자",
+    "questDescription": "리사의 편지를 전해주자",
+    "questWantID": null,
+    "failContexts": [
+      "안녕하세요!\n저는 리사에요!"
+    ],
+    "questEventList": [
+      "Talk"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15007,
+      55003
+    ],
+    "dialogId": 15008,
+    "NPCID": 602,
+    "contexts": [
+      "잘 전해주고 왔어?",
+      "주고왔어",
+      "이거.."
+    ],
+    "talkCharacter": [
+      "케인",
+      "엘리사",
+      "엘리사"
+    ],
+    "choiceTexts": [
+      "리사의 편지를 전해준다.",
+      "편지를 주지 않는다."
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "15009",
+      "15010"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": [
+      "편지 잘 부탁할게"
+    ],
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15008,
+      55004
+    ],
+    "dialogId": 15009,
+    "NPCID": 602,
+    "contexts": [
+      "응? 이게뭐야?",
+      "(편지를 보고 눈물을 흘린다.)\n 꼴사나운 모습을 보였네 동생한테 편지를 받아보는게 처음이거든",
+      "별건 아니지만 북쪽 묘지에 들어갈 때 이 출입증이 있으면 들어가기 쉬울꺼야"
+    ],
+    "talkCharacter": [
+      "케인",
+      "케인",
+      "케인"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 15010,
+    "choiceActions": null,
+    "questId": 55005,
+    "questType": "Sub",
+    "questName": "북쪽 묘지에서 출입증을 보여주고 들어가자",
+    "questDescription": "북쪽 묘지 출입증 제시",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "collect"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15008
+    ],
+    "dialogId": 15010,
+    "NPCID": 602,
+    "contexts": [
+      "조심히 들어가"
+    ],
+    "talkCharacter": [
+      "케인"
+    ],
+    "choiceTexts": [
+      "(이동한다)"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "15011"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15004
+    ],
+    "dialogId": 15011,
+    "NPCID": 601,
+    "contexts": [
+      "여기에 붉은 실이 있을꺼야 들어가자.."
+    ],
+    "talkCharacter": [
+      "이벨트"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15011
+    ],
+    "dialogId": 15012,
+    "NPCID": 301,
+    "contexts": [
+      "실뭉치… 실뭉치 요정… 우리를 기억해줘…",
+      "실뭉치 요정이 뭐지…?"
+    ],
+    "talkCharacter": [
+      "망자",
+      "엘리사"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15012,
+      55001
+    ],
+    "dialogId": 15013,
+    "NPCID": 601,
+    "contexts": [
+      "붉은 실을 전부 모았어",
+      "아저씨! 아줌마! 제가 붉은 실로 만들었어요!",
+      "우리 실뭉치 요정 솜씨가 장난 아닌데?",
+      "엘리사, 얼른 밥 먹어야지~",
+      "그럼 저는 가볼게요!",
+      "이건 무슨 기억이지… \n 엘…리사? 왜 내 이름을 부른 거지… 기억이 나질 않아…",
+      "첫 번째 실 조각이 널 조금씩 되찾아주고 있어. \n 하지만 이건 시작일 뿐이야.",
+      "계속해서 실 조각을 모아야 한다는 거지?",
+      "그래. 다음은 묘지 남서쪽 묘비 구역. \n 그곳엔 사라지지 않은 망자의 호위병이 남아 있어.\n 그들을 처치하면, 더 짙고 진한 붉은 실이 너의 기억을 되돌려줄 거야"
+    ],
+    "talkCharacter": [
+      "엘리사",
+      "어린 엘리사",
+      "마을 사람들",
+      "엘리사 엄마",
+      "어린 엘리사",
+      "엘리사",
+      "이벨트",
+      "엘리사\n 이벨트"
+    ],
+    "choiceTexts": [
+      "이동하자"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "15014"
+    ],
+    "questId": 55006,
+    "questType": "Main",
+    "questName": "붉은 실 조각 수집",
+    "questDescription": "북쪽 묘지에서 붉은 실 조각을 획득해라(0/3)",
+    "questWantID": null,
+    "failContexts": [
+      "흰색 실 조각이 부족해"
+    ],
+    "questEventList": [
+      "collect"
+    ],
+    "questClearPercent": [
+      3
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15013
+    ],
+    "dialogId": 15014,
+    "NPCID": 607,
+    "contexts": [
+      "이런… 글씨가 또 지워졌군… 저주받은 망자들이 또 나왔나…",
+      "음? 자네는 누구인가?",
+      "(아무말 없이 비석을 가르킨다.)",
+      "아, 이건 몇 십년전에 억울하게 죽은 자들의 기리는 비석이네.\n 그런데 요즘… 밤만 되면, 비석에 새긴 이름이 지워지고 있어.\n 이름이 사라진 자들은 본인이 누군지도 모르고 망자가 되어 떠돌아다닌다고 하더군",
+      "(아무말 없이 들어가려고 한다.)",
+      "자네 제정신인가! 여기부터는 위험 지역이라고!\n 목숨이 아깝다면 얼른 돌아가게!"
+    ],
+    "talkCharacter": [
+      "그레이브",
+      "그레이브",
+      "엘리사",
+      "그레이브",
+      "엘리사",
+      "그레이브"
+    ],
+    "choiceTexts": [
+      "출입증을 보여준다.",
+      "(상처를 보여주며)\n상처를 치료하기 위해서는.. 들어가야해"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "15022",
+      "15016"
+    ],
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15014,
+      55005
+    ],
+    "dialogId": 15015,
+    "NPCID": 607,
+    "contexts": [
+      "(웃으며)\n그 꼬맹이 녀석에게 인정을 받았다니 좋네 들어가도 좋아",
+      "나중에 그 녀석에게 안부 전해주게"
+    ],
+    "talkCharacter": [
+      "그레이브",
+      "그레이브"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": [
+      "아무것도 없네만...?"
+    ],
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15014
+    ],
+    "dialogId": 15016,
+    "NPCID": 607,
+    "contexts": [
+      "자네 괜찮은가? 오래 살았지만 이런 상처는 처음봤네…",
+      "(고민하며)\n그렇다면 자네에게 부탁을 하나만 하겠네.\n도서관에서 호위병이 된 망자들의 이름을 찾아와주게"
+    ],
+    "talkCharacter": [
+      "그레이브"
+    ],
+    "choiceTexts": [
+      "(고개를 끄덕인다)"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 55007,
+    "questType": "Main",
+    "questName": "도서관에서 망자 호위병의 잃어버린 이름을 찾자",
+    "questDescription": "망자 호위병 이름을 찾자 (0/3)",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "collect"
+    ],
+    "questClearPercent": [
+      3
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15016
+    ],
+    "dialogId": 15017,
+    "NPCID": 608,
+    "contexts": [
+      "행운의 편지\n이 편지는 라스 가문에서 최초로 시작되어 일년에 한 바퀴를 돌면 서 받는 사람에게 행운을 주었고…"
+    ],
+    "talkCharacter": [
+      "책"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15016
+    ],
+    "dialogId": 15018,
+    "NPCID": 608,
+    "contexts": [
+      "잊힌 묘지, 세 마을의 흔적\n현재 묘지로 불리는 남쪽, 중앙, 북쪽 지역은 모두 과거 사람들이 살던 마을이었다.”\n남쪽: 섬유로 유명했던 마을 실렌티아\n중앙: 강철의 불꽃이 식지 않던 대장장이 마을 발케른\n북쪽: ‘라스 가문’이 끝까지 수호하던 마을 라스\n북쪽 마을은 마지막까지 외부의 침입을 막아냈으나,\n망자 심문관들의 ‘심판’으로 전멸한 것으로 기록된다."
+    ],
+    "talkCharacter": [
+      "책"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15016
+    ],
+    "dialogId": 15019,
+    "NPCID": 608,
+    "contexts": [
+      "멸망한 세계에서 살아남는 세 가지 방법\n멸망한 세계에서 살아남는 세 가지 방법만 알면 살아남을 수 있다는 얘기가 있다.\n나는 이 이야기를 무척 좋아한다."
+    ],
+    "talkCharacter": [
+      "책"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15016
+    ],
+    "dialogId": 15020,
+    "NPCID": 608,
+    "contexts": [
+      "라스 가문 최후의 세 형제 - 라스 브레넬, 라스 엘반, 라스 다르노.\n세 형제는 각각 남쪽, 중앙, 북쪽 마을에 배치되어\n어떤 침입자도 허용하지 않겠다는 결의를 다졌다고 전해진다."
+    ],
+    "talkCharacter": [
+      "책"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 15020,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15016
+    ],
+    "dialogId": 15021,
+    "NPCID": 0,
+    "contexts": [
+      "라스… 브레넬,  라스 엘반, 라스 다르노…\n이 이름들… 어쩐지 익숙한데…"
+    ],
+    "talkCharacter": [
+      "엘리사"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15016
+    ],
+    "dialogId": 15022,
+    "NPCID": 607,
+    "contexts": [
+      "벌써 이름을 찾아왔는가? 어서 말해주게",
+      "라스 브레넬, 라스 엘반, 라스 다르노…",
+      "(말없이 고개를 끄덕이며 비석에 이름을 적기 시작한다.)\n그곳에서는, 이제 편히 쉬거라…",
+      "고맙네… 마음속의 짐이 사라진 느낌이야.\n이젠, 이 늙은이가 도울 차례지.",
+      "저 안으로 들어가고 싶었지?\n문은 열었으니 들어가면되네! 건투를 빌겠네!"
+    ],
+    "talkCharacter": [
+      "그레이브",
+      "엘리사",
+      "그레이브",
+      "그레이브",
+      "그레이브"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": [
+      "부탁이네 이름을 찾아와주게나"
+    ],
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15014
+    ],
+    "dialogId": 15023,
+    "NPCID": 601,
+    "contexts": [
+      "여기서 더 짙은 붉은 실의 기운이 느껴져."
+    ],
+    "talkCharacter": [
+      "이벨트"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15023
+    ],
+    "dialogId": 15024,
+    "NPCID": 302,
+    "contexts": [
+      "침입자! 어떤 침입도 허락하지 않겠다!"
+    ],
+    "talkCharacter": [
+      "망자 호위병"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      15024
+    ],
+    "dialogId": 15025,
+    "NPCID": 601,
+    "contexts": [
+      "왜 아무 일도 안 일어났지..?",
+      "손목을 봐",
+      "상처가… 사라졌어.\n 이게… 붉은 실의 힘이야?",
+      "맞아. 붉은 실은 단순한 실이 아니야. \n 네 감정, 기억, 죄책감… 너의 과거가 엮인 거지.",
+      "그럼… 이것만 모으면 기억도 완전히 돌아오는 거야?\n 맞아 하지만 넌 아직 기억을 잃어 오염된 상처가 많아.",
+      "가장 진한 실, 잃어버린 기억이 가장 많이 있는 실을 찾아야해",
+      "…어디로 가야해?\n 중앙 묘지.. 폐허가 된 대장장이 마을로 가\n 거기에 가장 진한 실의 기운이 느껴져",
+      "하지만 지금까지 느껴본적 없는 망자의 힘도 느껴져\n 지금이라도 포기해도 괜찮아 오염은 지금처럼 붉은 실만 있으면 막을 수 있어"
+    ],
+    "talkCharacter": [
+      "엘리사",
+      "이벨트",
+      "엘리사",
+      "이벨트",
+      "엘리사",
+      "이벨트",
+      "이벨트",
+      "엘리사",
+      "이벨트",
+      "이벨트"
+    ],
+    "choiceTexts": [
+      "…그래도… 난 기억을 되찾아야겠어"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "15026"
+    ],
+    "questId": 55005,
+    "questType": "Main",
+    "questName": "검붉은 실 조각",
+    "questDescription": "중앙 묘지에서 검붉은 실을 얻어 기억을 되찾자",
+    "questWantID": null,
+    "failContexts": [
+      "붉은 실 조각이 부족해"
+    ],
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      100006
+    ],
+    "dialogId": 20001,
+    "NPCID": 801,
+    "contexts": [
+      "오늘도 일하러 나가볼까?",
+      "(사람이 많은 길로 나가보자)"
+    ],
+    "talkCharacter": [
+      "치누",
+      "나"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 60001,
+    "questType": "Main",
+    "questName": "좀도둑의 일자리",
+    "questDescription": "치누는 먼저 나가있다. 치누를 뒤따라 일자리로 향하자",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "Arrival"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 20.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      60001
+    ],
+    "dialogId": 20002,
+    "NPCID": 801,
+    "contexts": [
+      "도둑질을 할 시간이다!",
+      "(누군가의 짐을 빼돌리자)"
+    ],
+    "talkCharacter": [
+      "치누",
+      "나"
+    ],
+    "choiceTexts": null,
+    "questClearText": [
+      "물건을 모았으니 치누에게 다시 찾아가자"
+    ],
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 60002,
+    "questType": "Main",
+    "questName": "오늘도 일해야지",
+    "questDescription": "이곳을 걷는 수많은 사람들은 나에게 그저 일거리일 뿐이다.\n슬쩍 다가가서 물건을 훔쳐보자",
+    "questWantID": [
+      "0"
+    ],
+    "failContexts": null,
+    "questEventList": [
+      "collect"
+    ],
+    "questClearPercent": [
+      1,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 20.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      60002
+    ],
+    "dialogId": 20003,
+    "NPCID": 801,
+    "contexts": [
+      "벌써 훔쳤어? 그럼 돌아갈까?"
+    ],
+    "talkCharacter": [
+      "치누"
+    ],
+    "choiceTexts": [
+      "그래",
+      "아직 볼일이 남았어."
+    ],
+    "questClearText": null,
+    "questClearDialog": 20005,
+    "choiceActions": [
+      "60003",
+      "20004"
+    ],
+    "questId": 60003,
+    "questType": "Main",
+    "questName": "좀도둑의 본거지",
+    "questDescription": "좀도둑 보스를 만나 약탈한 물건을 건네자.",
+    "questWantID": [
+      "0",
+      "802"
+    ],
+    "failContexts": null,
+    "questEventList": [
+      "collect",
+      "Talk"
+    ],
+    "questClearPercent": [
+      1,
+      1
+    ],
+    "rewardItem": [
+      2209
+    ],
+    "rewardExp": 20.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      60002
+    ],
+    "dialogId": 20004,
+    "NPCID": 801,
+    "contexts": [
+      "그럼 볼일보고 말해줘"
+    ],
+    "talkCharacter": null,
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      1,
+      1
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      60003
+    ],
+    "dialogId": 20005,
+    "NPCID": 802,
+    "contexts": [
+      "역시 쓸만한 녀석이구나"
+    ],
+    "talkCharacter": [
+      "좀도둑 보스"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "60003",
+      "20004"
+    ],
+    "questId": 60003,
+    "questType": "Main",
+    "questName": "좀도둑의 본거지",
+    "questDescription": "좀도둑 보스를 만나 약탈한 물건을 건네자.",
+    "questWantID": [
+      "0",
+      "802"
+    ],
+    "failContexts": null,
+    "questEventList": [
+      "collect",
+      "Talk"
+    ],
+    "questClearPercent": [
+      1,
+      1
+    ],
+    "rewardItem": [
+      2209
+    ],
+    "rewardExp": 20.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 25001,
+    "NPCID": 701,
+    "contexts": [
+      "퀘스트 대화 테스트용입니다"
+    ],
+    "talkCharacter": [
+      "테스트01"
+    ],
+    "choiceTexts": [
+      "수락",
+      "다른 테스트를 진행할래"
+    ],
+    "questClearText": [
+      "나는 역시 대단해!"
+    ],
+    "questClearDialog": 0,
+    "choiceActions": [
+      "65001",
+      "0"
+    ],
+    "questId": 65001,
+    "questType": "Sub",
+    "questName": "내게 다시 대화를 걸어줘",
+    "questDescription": "내게 다시 대화를 걸어줘",
+    "questWantID": [
+      "701"
+    ],
+    "failContexts": [
+      "말만 걸면 된다니까?"
+    ],
+    "questEventList": [
+      "Talk"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      1001
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 25002,
+    "NPCID": 701,
+    "contexts": [
+      "퀘스트 장소 테스트용입니다"
+    ],
+    "talkCharacter": [
+      "테스트02"
+    ],
+    "choiceTexts": [
+      "수락",
+      "다른 테스트를 진행할래"
+    ],
+    "questClearText": [
+      "나는 역시 대단해!"
+    ],
+    "questClearDialog": 0,
+    "choiceActions": [
+      "65002",
+      "0"
+    ],
+    "questId": 65002,
+    "questType": "Sub",
+    "questName": "내 근처로 다가와줘",
+    "questDescription": "내 근처로 다가와줘",
+    "questWantID": [
+      "701"
+    ],
+    "failContexts": [
+      "근처만 오면 된다니까?"
+    ],
+    "questEventList": [
+      "Arrival"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      1001
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 25003,
+    "NPCID": 701,
+    "contexts": [
+      "퀘스트 킬 테스트용입니다"
+    ],
+    "talkCharacter": [
+      "테스트03"
+    ],
+    "choiceTexts": [
+      "수락",
+      "다른 테스트를 진행할래"
+    ],
+    "questClearText": [
+      "나는 역시 대단해!"
+    ],
+    "questClearDialog": 25006,
+    "choiceActions": [
+      "65003",
+      "0"
+    ],
+    "questId": 65003,
+    "questType": "Sub",
+    "questName": "나를 처치하고 다시 내게 와줘",
+    "questDescription": "나를 처치하고 다시 내게 와줘",
+    "questWantID": [
+      "701"
+    ],
+    "failContexts": [
+      "한대만 치면 된다니까?"
+    ],
+    "questEventList": [
+      "Kill"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      1001
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 25004,
+    "NPCID": 701,
+    "contexts": [
+      "퀘스트 소지 아이템 테스트 용입니다"
+    ],
+    "talkCharacter": [
+      "테스트04"
+    ],
+    "choiceTexts": [
+      "수락",
+      "다른 테스트를 진행할래"
+    ],
+    "questClearText": [
+      "나는 역시 대단해!"
+    ],
+    "questClearDialog": 25006,
+    "choiceActions": [
+      "65004",
+      "0"
+    ],
+    "questId": 65004,
+    "questType": "Sub",
+    "questName": "아이템을 획득하고 날 찾아줘",
+    "questDescription": "아이템을 획득하고 날 찾아줘",
+    "questWantID": [
+      "1001"
+    ],
+    "failContexts": [
+      "아이템 주면 된다니까?"
+    ],
+    "questEventList": [
+      "collect"
+    ],
+    "questClearPercent": [
+      1
+    ],
+    "rewardItem": [
+      1001
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 25005,
+    "NPCID": 701,
+    "contexts": [
+      "퀘스트 None 데이터 테스트 용입니다."
+    ],
+    "talkCharacter": [
+      "테스트05"
+    ],
+    "choiceTexts": [
+      "수락",
+      "다른 테스트를 진행할래"
+    ],
+    "questClearText": [
+      "나는 역시 대단해!"
+    ],
+    "questClearDialog": 25007,
+    "choiceActions": [
+      "65005",
+      "0"
+    ],
+    "questId": 65005,
+    "questType": "Sub",
+    "questName": "그냥 바로 클리어 될거야!",
+    "questDescription": "그냥 바로 클리어 될거야!",
+    "questWantID": [
+      "0"
+    ],
+    "failContexts": [
+      "왜 클리어가 안돼쌌냐"
+    ],
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      1001
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      0
+    ],
+    "dialogId": 25006,
+    "NPCID": 701,
+    "contexts": [
+      "완료가 되었다면 자동으로 연동되도록 해놓은 시스템입니다."
+    ],
+    "talkCharacter": [
+      "테스트06"
+    ],
+    "choiceTexts": null,
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": null,
+    "questId": 0,
+    "questType": "None",
+    "questName": "",
+    "questDescription": "",
+    "questWantID": null,
+    "failContexts": null,
+    "questEventList": [
+      "None"
+    ],
+    "questClearPercent": [
+      0
+    ],
+    "rewardItem": [
+      0
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  },
+  {
+    "preDialogueId": [
+      25001
+    ],
+    "dialogId": 25007,
+    "NPCID": 701,
+    "contexts": [
+      "연속 퀘스트 받기 의뢰 확인 용입니다"
+    ],
+    "talkCharacter": [
+      "테스트07"
+    ],
+    "choiceTexts": [
+      "수락",
+      "다른 테스트를 진행할래"
+    ],
+    "questClearText": null,
+    "questClearDialog": 0,
+    "choiceActions": [
+      "65006",
+      "0"
+    ],
+    "questId": 65006,
+    "questType": "Sub",
+    "questName": "퀘스트를 다시 받아주게나!",
+    "questDescription": "퀘스트를 다시 받아주게나!",
+    "questWantID": [
+      "701"
+    ],
+    "failContexts": null,
+    "questEventList": [
+      "Talk"
+    ],
+    "questClearPercent": [
+      2
+    ],
+    "rewardItem": [
+      1001
+    ],
+    "rewardExp": 0.0,
+    "rewardGold": 0
+  }
+]

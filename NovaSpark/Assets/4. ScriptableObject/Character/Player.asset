@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5999fd07b67c75948bd6be480cace5e4, type: 3}
+  m_Name: Player
+  m_EditorClassIdentifier: 
+  statData:
+    name: 
+    hp: 100
+    damage: 10
+    speed: 2
+    defecne: 1
+    attackSpeed: 2
+    attackRange: 1
+    criticalPercent: 5
+    level: 1
+    exp: 5
+  skillStatData:
+    UnlockLevel: 1
+    UnlockExp: 0
+    SellerLevel: 1
+    SellerExp: 0
+    RunningLevel: 1
+    RunningExp: 0
+    SwordLevel: 1
+    SwordExp: 0
+    SaberLevel: 1
+    SaberExp: 0
+    BowLevel: 1
+    BowExp: 0
+    SpearLevel: 1
+    SpearExp: 0
+    HammerLevel: 1
+    HammerExp: 0

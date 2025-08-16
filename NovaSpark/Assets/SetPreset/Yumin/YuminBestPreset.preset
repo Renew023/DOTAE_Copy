@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: YuminBestPreset
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 41beae01af1d46549bf8376ce6638590, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <hungryPerSeconds>k__BackingField
+    value: 0.45
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <thirstyPerSeconds>k__BackingField
+    value: 0.45
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <regenerationPerSeconds>k__BackingField
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isPlayerRespawn>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <playerLifeCount>k__BackingField
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <playerHPWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <playerDamageWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <playerDefWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <playerLevelUpExp>k__BackingField
+    value: 40
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <playerLevelUpPerStatWeights>k__BackingField
+    value: 0.03
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <playerLevelUpStatWeight>k__BackingField
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isBattleBetweenNPCs>k__BackingField
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isBattleBetweenEnemys>k__BackingField
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isNPCAttackEnable>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isNPCAttackMonster>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <criticalBalance>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <missBalance>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isStunEnable>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <stunBalance>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <stunTime>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isknockBackEnable>k__BackingField
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <KnockBackBalance>k__BackingField
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <KnockBackDistance>k__BackingField
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <monsterItemDropPercent>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isGetMaterial>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isGetMaterialExpPercent>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isKillExpPercent>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <SecondsPerDay>k__BackingField
+    value: 40
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <farmingBlockSettingCount>k__BackingField
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <farmingBlockPerOneDayCount>k__BackingField
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <farmingBlockPerOneDayWeight>k__BackingField
+    value: 1.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <farmingBlockMaxBlock>k__BackingField
+    value: 200
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <monsterMaxCount>k__BackingField
+    value: 40
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <npcMaxCount>k__BackingField
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <gameFrame>k__BackingField
+    value: 30
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <farmingBlockAttackDamage>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <farmingBlockAttackCountItem>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <farmingBlockItemDropPercent>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <hungryThirstyZeroDeath>k__BackingField
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <hungryThirstyZeroHealthMinus>k__BackingField
+    value: 0.7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isWaveClearReward>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isRandomMonsterSpawn>k__BackingField
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <isWaveClearMonsterSpawn>k__BackingField
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <spawnMonsterMinLoopSeconds>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <spawnMonsterMaxLoopSeconds>k__BackingField
+    value: 1.6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <startNpcSpawnCount>k__BackingField
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <spawnMonsterWaveMin>k__BackingField
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <spawnMonsterWaveMax>k__BackingField
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <monsterWaveMinSeconds>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <monsterWaveMaxSeconds>k__BackingField
+    value: 1.6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <monsterWaveSpawnValue>k__BackingField
+    value: 0.4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <monsterWaveSpawnSecondsValue>k__BackingField
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <waveNpcCount>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <monsterWaveStatUpWeight>k__BackingField
+    value: 0.02
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <waveClearExp>k__BackingField
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <waveClearGold>k__BackingField
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <waveClearCountWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <waveNotClearSpawnTime>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <waveNotClearTime>k__BackingField
+    value: 0.6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <waveClearMinTime>k__BackingField
+    value: 0.6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <AISpeedWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <attackDistance>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <enemyHPWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <enemyDamageWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <enemyDefWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <npcHPWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <npcDamageWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <npcDefWeight>k__BackingField
+    value: 1
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []

@@ -1,0 +1,206 @@
+[
+  {
+    "id": 4001,
+    "name_kr": "금빛섬광",
+    "name_er": "GoldLightSpeedAttack",
+    "description": "빠른 속도로 적을 타격하며 지나간다",
+    "icon": "Icon/SpeedAttack",
+    "isActive": true,
+    "time": [
+      0.1
+    ],
+    "cooltime": 7.0,
+    "distance": [
+      5.0
+    ],
+    "skillStatType": [
+      "Speed",
+      "Damage"
+    ],
+    "skillStatValue": [
+      10.0,
+      1.2
+    ],
+    "prevSkill": [
+      4007
+    ],
+    "isTargetSkill": false,
+    "prefab": [
+      "Skill/GoldSpeedAttack"
+    ]
+  },
+  {
+    "id": 4002,
+    "name_kr": "지옥불 지대",
+    "name_er": "Inferno Field",
+    "description": "지옥불로 영역을 생성하여 그 위에 있는 적에게 화염 피해를 입힌다",
+    "icon": "icon_Inferno Field",
+    "isActive": true,
+    "time": [
+      2.0
+    ],
+    "cooltime": 10.0,
+    "distance": [
+      5.0
+    ],
+    "skillStatType": [
+      "Damage"
+    ],
+    "skillStatValue": [
+      0.0
+    ],
+    "prevSkill": [
+      0
+    ],
+    "isTargetSkill": false,
+    "prefab": [
+      "Skill/Inferno Field"
+    ]
+  },
+  {
+    "id": 4003,
+    "name_kr": "광폭화",
+    "name_er": "Berserk",
+    "description": "광폭화 한다",
+    "icon": "icon/berserk",
+    "isActive": true,
+    "time": [
+      10.0
+    ],
+    "cooltime": 30.0,
+    "distance": [
+      0.0
+    ],
+    "skillStatType": [
+      "Damage"
+    ],
+    "skillStatValue": [
+      2.0,
+      2.0,
+      1.5
+    ],
+    "prevSkill": [
+      0
+    ],
+    "isTargetSkill": false,
+    "prefab": [
+      "skill/berserk"
+    ]
+  },
+  {
+    "id": 4004,
+    "name_kr": "힐",
+    "name_er": "SelfHeal",
+    "description": "자신의 체력을 회복시킨다.",
+    "icon": "icon/Heal",
+    "isActive": true,
+    "time": [
+      0.1
+    ],
+    "cooltime": 60.0,
+    "distance": [
+      0.0
+    ],
+    "skillStatType": [
+      "None"
+    ],
+    "skillStatValue": [
+      0.0
+    ],
+    "prevSkill": [
+      0
+    ],
+    "isTargetSkill": false,
+    "prefab": [
+      "Skill/Heal"
+    ]
+  },
+  {
+    "id": 4005,
+    "name_kr": "아이스스피어",
+    "name_er": "IceSpear",
+    "description": "얼음 창을 날려 적들을 관통한다",
+    "icon": "icon/IceSpear",
+    "isActive": true,
+    "time": [
+      0.1
+    ],
+    "cooltime": 10.0,
+    "distance": [
+      5.0
+    ],
+    "skillStatType": [
+      "Damage"
+    ],
+    "skillStatValue": [
+      3.0
+    ],
+    "prevSkill": [
+      0
+    ],
+    "isTargetSkill": false,
+    "prefab": [
+      "Skill/IceSpear"
+    ]
+  },
+  {
+    "id": 4006,
+    "name_kr": "반월참",
+    "name_er": "MoonStrike",
+    "description": "초승달 모양의 검기를 날린다",
+    "icon": "icon/MoonStrike",
+    "isActive": true,
+    "time": [
+      0.1,
+      0.4
+    ],
+    "cooltime": 10.0,
+    "distance": [
+      4.0,
+      1.0
+    ],
+    "skillStatType": [
+      "Damage"
+    ],
+    "skillStatValue": [
+      8.0
+    ],
+    "prevSkill": [
+      4001,
+      4007
+    ],
+    "isTargetSkill": false,
+    "prefab": [
+      "Skill/MoonStrike1",
+      "Skill/MoonStrike2"
+    ]
+  },
+  {
+    "id": 4007,
+    "name_kr": "빠른 베기",
+    "name_er": "FastAttack",
+    "description": "전방의 적에게 강한 빠른 공격을 한다.",
+    "icon": "icon/Attack",
+    "isActive": true,
+    "time": [
+      0.1
+    ],
+    "cooltime": 4.0,
+    "distance": [
+      1.0
+    ],
+    "skillStatType": [
+      "Damage"
+    ],
+    "skillStatValue": [
+      3.0
+    ],
+    "prevSkill": [
+      0
+    ],
+    "isTargetSkill": false,
+    "prefab": [
+      "Skill/Attack"
+    ]
+  }
+]

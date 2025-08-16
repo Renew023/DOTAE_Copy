@@ -1,0 +1,87 @@
+[
+  {
+    "BloodName": "Person",
+    "bloodAbility": [
+      "Run"
+    ],
+    "abilityInitLevel": [
+      1
+    ],
+    "abilityValue": [
+      2.0,
+      2.0
+    ],
+    "abilityMaxLevel": [
+      20,
+      20
+    ]
+  },
+  {
+    "BloodName": "Dragon",
+    "bloodAbility": [
+      "Battle"
+    ],
+    "abilityInitLevel": [
+      1
+    ],
+    "abilityValue": [
+      2.0,
+      2.0
+    ],
+    "abilityMaxLevel": [
+      20,
+      20
+    ]
+  },
+  {
+    "BloodName": "Undead",
+    "bloodAbility": [
+      "Regeneration"
+    ],
+    "abilityInitLevel": [
+      1
+    ],
+    "abilityValue": [
+      2.0,
+      2.0
+    ],
+    "abilityMaxLevel": [
+      20,
+      20
+    ]
+  },
+  {
+    "BloodName": "Hollow",
+    "bloodAbility": [
+      "Regeneration"
+    ],
+    "abilityInitLevel": [
+      1
+    ],
+    "abilityValue": [
+      2.0,
+      2.0
+    ],
+    "abilityMaxLevel": [
+      20,
+      20
+    ]
+  },
+  {
+    "BloodName": "Beast",
+    "bloodAbility": [
+      "Regeneration"
+    ],
+    "abilityInitLevel": [
+      1
+    ],
+    "abilityValue": [
+      2.0,
+      2.0
+    ],
+    "abilityMaxLevel": [
+      20,
+      20
+    ]
+  }
+]

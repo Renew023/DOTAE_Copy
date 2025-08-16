@@ -1,0 +1,119 @@
+[
+  {
+    "FarmingBlockID": 150001,
+    "name_kr": "돌",
+    "name_en": "stone",
+    "description": "작은돌| 철을 캘 수 있다",
+    "blockHp": 10,
+    "dropCount": 20,
+    "defence": 1,
+    "getItemIdList": [
+      3200,
+      3201,
+      3209
+    ],
+    "getItemMaxDropValue": [
+      3,
+      1,
+      1
+    ],
+    "itemDropValue": [
+      50.0,
+      10.0,
+      10.0
+    ],
+    "respawnCooltime": 60.0,
+    "toolId": 1002,
+    "toolDamageUpPercent": 5.0
+  },
+  {
+    "FarmingBlockID": 150002,
+    "name_kr": "나무",
+    "name_en": "wood",
+    "description": "나뭇가지| 나무를 얻을 수 있다.",
+    "blockHp": 10,
+    "dropCount": 20,
+    "defence": 2,
+    "getItemIdList": [
+      3202,
+      3203,
+      2205,
+      2206,
+      2207
+    ],
+    "getItemMaxDropValue": [
+      3,
+      1,
+      1,
+      1,
+      1
+    ],
+    "itemDropValue": [
+      30.0,
+      15.0,
+      30.0,
+      10.0,
+      10.0
+    ],
+    "respawnCooltime": 60.0,
+    "toolId": 1003,
+    "toolDamageUpPercent": 5.0
+  },
+  {
+    "FarmingBlockID": 150003,
+    "name_kr": "잡초",
+    "name_en": "grass",
+    "description": "희귀한 꽃| 씨앗 등을 얻을 수 있다",
+    "blockHp": 5,
+    "dropCount": 1,
+    "defence": 0,
+    "getItemIdList": [
+      3204,
+      2213,
+      2204
+    ],
+    "getItemMaxDropValue": [
+      2,
+      1,
+      1
+    ],
+    "itemDropValue": [
+      10.0,
+      10.0,
+      30.0
+    ],
+    "respawnCooltime": 60.0,
+    "toolId": 1004,
+    "toolDamageUpPercent": 5.0
+  },
+  {
+    "FarmingBlockID": 150004,
+    "name_kr": "덤불",
+    "name_en": "bush",
+    "description": "약초를 얻을 수 있다.",
+    "blockHp": 5,
+    "dropCount": 5,
+    "defence": 1,
+    "getItemIdList": [
+      3206,
+      3207,
+      2007,
+      2213
+    ],
+    "getItemMaxDropValue": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "itemDropValue": [
+      20.0,
+      10.0,
+      30.0,
+      10.0
+    ],
+    "respawnCooltime": 60.0,
+    "toolId": 1005,
+    "toolDamageUpPercent": 5.0
+  }
+]

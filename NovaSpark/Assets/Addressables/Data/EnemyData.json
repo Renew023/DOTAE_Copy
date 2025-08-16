@@ -1,0 +1,359 @@
+[
+  {
+    "characterID": 101,
+    "isFirst": true,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      0
+    ],
+    "DropRates": [
+      0.0
+    ],
+    "DropCounts": [
+      0
+    ],
+    "DropGoldMin": 0,
+    "DropGoldMax": 0
+  },
+  {
+    "characterID": 102,
+    "isFirst": true,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2212,
+      3004
+    ],
+    "DropRates": [
+      20.0,
+      50.0
+    ],
+    "DropCounts": [
+      1,
+      1
+    ],
+    "DropGoldMin": 0,
+    "DropGoldMax": 10
+  },
+  {
+    "characterID": 103,
+    "isFirst": true,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2212,
+      3004
+    ],
+    "DropRates": [
+      20.0,
+      50.0
+    ],
+    "DropCounts": [
+      1,
+      1
+    ],
+    "DropGoldMin": 0,
+    "DropGoldMax": 10
+  },
+  {
+    "characterID": 201,
+    "isFirst": true,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2212,
+      3004
+    ],
+    "DropRates": [
+      20.0,
+      50.0
+    ],
+    "DropCounts": [
+      1,
+      1
+    ],
+    "DropGoldMin": 0,
+    "DropGoldMax": 0
+  },
+  {
+    "characterID": 202,
+    "isFirst": true,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      0
+    ],
+    "DropRates": [
+      0.0
+    ],
+    "DropCounts": [
+      0
+    ],
+    "DropGoldMin": 5,
+    "DropGoldMax": 10
+  },
+  {
+    "characterID": 203,
+    "isFirst": true,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2212,
+      2203,
+      3004
+    ],
+    "DropRates": [
+      20.0,
+      20.0,
+      50.0
+    ],
+    "DropCounts": [
+      1,
+      1,
+      1
+    ],
+    "DropGoldMin": 0,
+    "DropGoldMax": 10
+  },
+  {
+    "characterID": 204,
+    "isFirst": true,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2210
+    ],
+    "DropRates": [
+      30.0
+    ],
+    "DropCounts": [
+      1
+    ],
+    "DropGoldMin": 0,
+    "DropGoldMax": 0
+  },
+  {
+    "characterID": 205,
+    "isFirst": false,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      0
+    ],
+    "DropRates": [
+      0.0
+    ],
+    "DropCounts": [
+      0
+    ],
+    "DropGoldMin": 10,
+    "DropGoldMax": 15
+  },
+  {
+    "characterID": 206,
+    "isFirst": false,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2212,
+      3004
+    ],
+    "DropRates": [
+      20.0,
+      50.0
+    ],
+    "DropCounts": [
+      1,
+      1
+    ],
+    "DropGoldMin": 0,
+    "DropGoldMax": 0
+  },
+  {
+    "characterID": 301,
+    "isFirst": true,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      0
+    ],
+    "DropRates": [
+      0.0
+    ],
+    "DropCounts": [
+      0
+    ],
+    "DropGoldMin": 10,
+    "DropGoldMax": 15
+  },
+  {
+    "characterID": 302,
+    "isFirst": true,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      0
+    ],
+    "DropRates": [
+      0.0
+    ],
+    "DropCounts": [
+      0
+    ],
+    "DropGoldMin": 10,
+    "DropGoldMax": 20
+  },
+  {
+    "characterID": 401,
+    "isFirst": false,
+    "targetingRange": 17.0,
+    "wanderMoveRange": 3.0,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2201,
+      3004
+    ],
+    "DropRates": [
+      20.0,
+      50.0
+    ],
+    "DropCounts": [
+      1,
+      1
+    ],
+    "DropGoldMin": 0,
+    "DropGoldMax": 0
+  },
+  {
+    "characterID": 402,
+    "isFirst": false,
+    "targetingRange": 17.0,
+    "wanderMoveRange": 3.0,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2202,
+      3004
+    ],
+    "DropRates": [
+      20.0,
+      50.0
+    ],
+    "DropCounts": [
+      1,
+      1
+    ],
+    "DropGoldMin": 0,
+    "DropGoldMax": 0
+  },
+  {
+    "characterID": 403,
+    "isFirst": false,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2208,
+      2209,
+      2211,
+      3004
+    ],
+    "DropRates": [
+      10.0,
+      10.0,
+      30.0,
+      50.0
+    ],
+    "DropCounts": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "DropGoldMin": 5,
+    "DropGoldMax": 15
+  },
+  {
+    "characterID": 404,
+    "isFirst": false,
+    "targetingRange": 8.5,
+    "wanderMoveRange": 5.5,
+    "AttackRange": 120.0,
+    "spawnPlace": [
+      "Field"
+    ],
+    "DropItemIDs": [
+      2208,
+      2209,
+      2211,
+      3004
+    ],
+    "DropRates": [
+      10.0,
+      10.0,
+      30.0,
+      50.0
+    ],
+    "DropCounts": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "DropGoldMin": 5,
+    "DropGoldMax": 10
+  }
+]
